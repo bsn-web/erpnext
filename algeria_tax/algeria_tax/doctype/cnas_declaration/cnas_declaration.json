@@ -1,0 +1,138 @@
+{
+  "actions": [],
+  "autoname": "field:declaration_reference",
+  "creation": "2026-11-05 10:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "declaration_reference",
+    "company",
+    "declaration_type",
+    "fiscal_year",
+    "period_label",
+    "numero_employeur_cnas",
+    "centre_paiement_cnas",
+    "status",
+    "effectif_declare",
+    "total_assiette_cnas",
+    "total_part_salariale_9",
+    "total_part_patronale_26",
+    "total_cotisations_35",
+    "employees",
+    "das_txt_export"
+  ],
+  "fields": [
+    {
+      "fieldname": "declaration_reference",
+      "fieldtype": "Data",
+      "label": "Référence Déclaration CNAS",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Société / المؤسسة",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "declaration_type",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Type de Déclaration",
+      "options": "DAC Mensuelle (Bordereau de Cotisations)\nDAS Annuelle (Déclaration Annuelle des Salaires)"
+    },
+    {
+      "fieldname": "fiscal_year",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Exercice Fiscal",
+      "options": "Fiscal Year",
+      "reqd": 1
+    },
+    {
+      "fieldname": "period_label",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Période Déclarée"
+    },
+    {
+      "fieldname": "numero_employeur_cnas",
+      "fieldtype": "Data",
+      "label": "N° Adhérent Employeur CNAS (10 chiffres)"
+    },
+    {
+      "fieldname": "centre_paiement_cnas",
+      "fieldtype": "Data",
+      "label": "Agence / Centre de Paiement CNAS"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Statut",
+      "options": "Brouillon\nCalculé & Contrôlé\nTélé-déclaré (teledeclaration.cnas.dz)\nPayé par Virement"
+    },
+    {
+      "fieldname": "effectif_declare",
+      "fieldtype": "Int",
+      "label": "Effectif Salariés Déclaré"
+    },
+    {
+      "fieldname": "total_assiette_cnas",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Total Assiette Cotisable CNAS (DZD)"
+    },
+    {
+      "fieldname": "total_part_salariale_9",
+      "fieldtype": "Currency",
+      "label": "Total Part Ouvrière 9% (Compte 431)"
+    },
+    {
+      "fieldname": "total_part_patronale_26",
+      "fieldtype": "Currency",
+      "label": "Total Part Patronale 26% (Compte 635 -> 431)"
+    },
+    {
+      "fieldname": "total_cotisations_35",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Total Global à Payer CNAS 35% (DZD)"
+    },
+    {
+      "fieldname": "employees",
+      "fieldtype": "Table",
+      "label": "Détail Nominatif des Salariés (Assiette & Cotisations)",
+      "options": "CNAS Employee Line"
+    },
+    {
+      "fieldname": "das_txt_export",
+      "fieldtype": "Code",
+      "label": "Fichier Magnétique Officiel (.TXT teledeclaration.cnas.dz)"
+    }
+  ],
+  "modified": "2026-11-06 18:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Algeria Tax",
+  "name": "CNAS Declaration",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

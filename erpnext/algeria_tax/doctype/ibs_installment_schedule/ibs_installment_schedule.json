@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "IBS-SCHED-.YYYY.-.###",
+ "creation": "2026-11-04 15:25:00.140812",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_header",
+  "company",
+  "fiscal_year",
+  "col_1",
+  "reference_ibs_n1",
+  "is_first_year_exempt",
+  "sec_acomptes",
+  "acompte_1_amount",
+  "acompte_1_paid",
+  "col_ac1",
+  "acompte_2_amount",
+  "acompte_2_paid",
+  "col_ac2",
+  "acompte_3_amount",
+  "acompte_3_paid",
+  "sec_solde",
+  "actual_ibs_due",
+  "total_acomptes_paid",
+  "col_solde",
+  "solde_a_payer",
+  "credit_ibs_reportable"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_header",
+   "fieldtype": "Section Break",
+   "label": "Exercice & Base N-1"
+  },
+  {
+   "default": "Build And Secure Networks",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Soci\u00e9t\u00e9",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Exercice d'Application",
+   "options": "Fiscal Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_ibs_n1",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Montant IBS de R\u00e9f\u00e9rence (Exercice N-1)",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_first_year_exempt",
+   "fieldtype": "Check",
+   "label": "Dispense 1\u00e8re Ann\u00e9e de Cr\u00e9ation (Art. 356)"
+  },
+  {
+   "fieldname": "sec_acomptes",
+   "fieldtype": "Section Break",
+   "label": "\u00c9ch\u00e9ancier des 3 Acomptes Provisionnels (30% chacun)"
+  },
+  {
+   "fieldname": "acompte_1_amount",
+   "fieldtype": "Currency",
+   "label": "1er Acompte (30%) - 20 Mars",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "acompte_1_paid",
+   "fieldtype": "Check",
+   "label": "1er Acompte Acquitt\u00e9"
+  },
+  {
+   "fieldname": "col_ac1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "acompte_2_amount",
+   "fieldtype": "Currency",
+   "label": "2\u00e8me Acompte (30%) - 20 Juin",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "acompte_2_paid",
+   "fieldtype": "Check",
+   "label": "2\u00e8me Acompte Acquitt\u00e9"
+  },
+  {
+   "fieldname": "col_ac2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "acompte_3_amount",
+   "fieldtype": "Currency",
+   "label": "3\u00e8me Acompte (30%) - 20 Novembre",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "acompte_3_paid",
+   "fieldtype": "Check",
+   "label": "3\u00e8me Acompte Acquitt\u00e9"
+  },
+  {
+   "fieldname": "sec_solde",
+   "fieldtype": "Section Break",
+   "label": "Liquidation & Solde D\u00e9finitif (20 Mai N+1)"
+  },
+  {
+   "fieldname": "actual_ibs_due",
+   "fieldtype": "Currency",
+   "label": "IBS R\u00e9el D\u00e9finitif de l'Exercice (Tableau 9)"
+  },
+  {
+   "fieldname": "total_acomptes_paid",
+   "fieldtype": "Currency",
+   "label": "Total des Acomptes Vers\u00e9s",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_solde",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "solde_a_payer",
+   "fieldtype": "Currency",
+   "label": "Solde Net d'IBS \u00e0 Payer (au 20 Mai)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "credit_ibs_reportable",
+   "fieldtype": "Currency",
+   "label": "Exc\u00e9dent de Versement (Cr\u00e9dit d'IBS Reportable)",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-04 15:25:00.140812",
+ "modified_by": "Administrator",
+ "module": "Algeria Tax",
+ "name": "IBS Installment Schedule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

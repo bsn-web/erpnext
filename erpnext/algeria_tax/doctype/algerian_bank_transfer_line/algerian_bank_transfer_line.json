@@ -1,0 +1,79 @@
+{
+  "actions": [],
+  "creation": "2026-11-06 18:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "beneficiary_type",
+    "beneficiary_code",
+    "beneficiary_name",
+    "beneficiary_bank",
+    "beneficiary_rib",
+    "rib_valid",
+    "payment_reference",
+    "amount"
+  ],
+  "fields": [
+    {
+      "fieldname": "beneficiary_type",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Type Bénéficiaire",
+      "options": "Employee\nSupplier\nRecette des Impôts (DGI)\nCaisse Sociale (CNAS / CASNOS / CACOBATPH)\nCompagnie d'Assurance"
+    },
+    {
+      "fieldname": "beneficiary_code",
+      "fieldtype": "Data",
+      "label": "Matricule / Code Tiers"
+    },
+    {
+      "fieldname": "beneficiary_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Nom ou Raison Sociale du Bénéficiaire / المستفيد",
+      "reqd": 1
+    },
+    {
+      "fieldname": "beneficiary_bank",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Banque Bénéficiaire (BNA, BEA, CPA, BADR, CCP...)"
+    },
+    {
+      "fieldname": "beneficiary_rib",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "RIB Algérien (20 chiffres) ou CCP",
+      "reqd": 1
+    },
+    {
+      "fieldname": "rib_valid",
+      "fieldtype": "Check",
+      "label": "Clé RIB Valide (Modulo 97)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "payment_reference",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Motif / Référence (Paie, G50, Facture, Police)"
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Montant à Virer (DZD)",
+      "reqd": 1
+    }
+  ],
+  "istable": 1,
+  "modified": "2026-11-06 18:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Algeria Tax",
+  "name": "Algerian Bank Transfer Line",
+  "owner": "Administrator",
+  "permissions": [],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

@@ -1,0 +1,3241 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "BF-BSN-.fiscal_year.-.###",
+ "creation": "2026-11-04 15:52:26.809981",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_ident",
+  "sec_guide_officiel",
+  "html_guide_scf",
+  "sec_ident",
+  "company",
+  "fiscal_year",
+  "status",
+  "col_h1",
+  "nif",
+  "company_name_fiscal",
+  "activity",
+  "col_h2",
+  "address",
+  "period_start_date",
+  "period_end_date",
+  "is_fiscal_closed",
+  "sec_synthese_controle",
+  "ecart_equilibre_bilan",
+  "col_syn_1",
+  "ecart_resultat_tcr_passif",
+  "col_syn_2",
+  "ecart_amort_bilan_tab5",
+  "tab_actif",
+  "sec_anc_incorp",
+  "ecart_acquisition_brut",
+  "ecart_acquisition_amort",
+  "ecart_acquisition_net",
+  "ecart_acquisition_net_n1",
+  "col_anc_incorp",
+  "immo_incorporelles_brut",
+  "immo_incorporelles_amort",
+  "immo_incorporelles_net",
+  "immo_incorporelles_net_n1",
+  "sec_anc_corp",
+  "terrains_brut",
+  "terrains_amort",
+  "terrains_net",
+  "terrains_net_n1",
+  "batiments_brut",
+  "batiments_amort",
+  "batiments_net",
+  "batiments_net_n1",
+  "col_anc_corp_1",
+  "autres_immo_corporelles_brut",
+  "autres_immo_corporelles_amort",
+  "autres_immo_corporelles_net",
+  "autres_immo_corporelles_net_n1",
+  "immo_concession_brut",
+  "immo_concession_amort",
+  "immo_concession_net",
+  "immo_concession_net_n1",
+  "col_anc_corp_2",
+  "immo_encours_brut",
+  "immo_encours_amort",
+  "immo_encours_net",
+  "immo_encours_net_n1",
+  "sec_anc_fin",
+  "titres_equivalence_brut",
+  "titres_equivalence_amort",
+  "titres_equivalence_net",
+  "titres_equivalence_net_n1",
+  "autres_participations_brut",
+  "autres_participations_amort",
+  "autres_participations_net",
+  "autres_participations_net_n1",
+  "col_anc_fin_1",
+  "autres_titres_immo_brut",
+  "autres_titres_immo_amort",
+  "autres_titres_immo_net",
+  "autres_titres_immo_net_n1",
+  "prets_actifs_fin_non_courants_brut",
+  "prets_actifs_fin_non_courants_amort",
+  "prets_actifs_fin_non_courants_net",
+  "prets_actifs_fin_non_courants_net_n1",
+  "col_anc_fin_2",
+  "impots_differes_actif_brut",
+  "impots_differes_actif_amort",
+  "impots_differes_actif_net",
+  "impots_differes_actif_net_n1",
+  "total_actif_non_courant_brut",
+  "total_actif_non_courant_amort",
+  "total_actif_non_courant_net",
+  "total_actif_non_courant_net_n1",
+  "sec_actif_courant",
+  "stocks_encours_brut",
+  "stocks_encours_amort",
+  "stocks_encours_net",
+  "stocks_encours_net_n1",
+  "clients_brut",
+  "clients_amort",
+  "clients_net",
+  "clients_net_n1",
+  "autres_debiteurs_brut",
+  "autres_debiteurs_amort",
+  "autres_debiteurs_net",
+  "autres_debiteurs_net_n1",
+  "col_ac_1",
+  "impots_assimiles_actif_brut",
+  "impots_assimiles_actif_amort",
+  "impots_assimiles_actif_net",
+  "impots_assimiles_actif_net_n1",
+  "autres_creances_emplois_brut",
+  "autres_creances_emplois_amort",
+  "autres_creances_emplois_net",
+  "autres_creances_emplois_net_n1",
+  "placements_courants_brut",
+  "placements_courants_amort",
+  "placements_courants_net",
+  "placements_courants_net_n1",
+  "col_ac_tot",
+  "tresorerie_actif_brut",
+  "tresorerie_actif_amort",
+  "tresorerie_actif_net",
+  "tresorerie_actif_net_n1",
+  "total_actif_courant_brut",
+  "total_actif_courant_amort",
+  "total_actif_courant_net",
+  "total_actif_courant_net_n1",
+  "sec_tot_actif",
+  "total_general_actif_brut",
+  "total_general_actif_amort",
+  "col_tot_act",
+  "total_general_actif_net",
+  "total_general_actif_net_n1",
+  "tab_passif",
+  "sec_passif_cp",
+  "capital_emis",
+  "capital_emis_n1",
+  "capital_non_appele",
+  "capital_non_appele_n1",
+  "primes_et_reserves",
+  "primes_et_reserves_n1",
+  "col_cp_1",
+  "ecart_reevaluation",
+  "ecart_reevaluation_n1",
+  "ecart_equivalence",
+  "ecart_equivalence_n1",
+  "resultat_net_passif",
+  "resultat_net_passif_n1",
+  "col_cp_tot",
+  "report_a_nouveau",
+  "report_a_nouveau_n1",
+  "part_societe_consolidante",
+  "part_societe_consolidante_n1",
+  "part_minoritaires",
+  "part_minoritaires_n1",
+  "total_capitaux_propres_i",
+  "total_capitaux_propres_i_n1",
+  "sec_passif_dettes",
+  "emprunts_dettes_financieres",
+  "emprunts_dettes_financieres_n1",
+  "impots_differes_passif",
+  "impots_differes_passif_n1",
+  "autres_dettes_non_courantes",
+  "autres_dettes_non_courantes_n1",
+  "provisions_produits_constates_avance",
+  "provisions_produits_constates_avance_n1",
+  "total_passifs_non_courants_ii",
+  "total_passifs_non_courants_ii_n1",
+  "col_p_courant",
+  "fournisseurs_comptes_rattaches",
+  "fournisseurs_comptes_rattaches_n1",
+  "impots_passif",
+  "impots_passif_n1",
+  "col_p_autres",
+  "autres_dettes_passif",
+  "autres_dettes_passif_n1",
+  "tresorerie_passif",
+  "tresorerie_passif_n1",
+  "total_passifs_courants_iii",
+  "total_passifs_courants_iii_n1",
+  "sec_tot_passif",
+  "total_general_passif",
+  "col_tot_pas",
+  "total_general_passif_n1",
+  "tab_tcr",
+  "sec_tcr_prod",
+  "ventes_marchandises",
+  "ventes_marchandises_n1",
+  "produits_fabriques",
+  "produits_fabriques_n1",
+  "production_services",
+  "production_services_n1",
+  "vente_travaux",
+  "vente_travaux_n1",
+  "col_tcr_prod_1",
+  "produits_annexes",
+  "produits_annexes_n1",
+  "rabais_accordes",
+  "rabais_accordes_n1",
+  "chiffre_affaires_net",
+  "chiffre_affaires_net_n1",
+  "col_tcr_prod_2",
+  "production_stockee",
+  "production_stockee_n1",
+  "production_immobilisee",
+  "production_immobilisee_n1",
+  "subventions_exploitation",
+  "subventions_exploitation_n1",
+  "total_production_i",
+  "total_production_i_n1",
+  "sec_tcr_conso",
+  "achats_marchandises",
+  "achats_marchandises_n1",
+  "matieres_premieres",
+  "matieres_premieres_n1",
+  "autres_approvisionnements",
+  "autres_approvisionnements_n1",
+  "variations_stocks",
+  "variations_stocks_n1",
+  "achats_etudes_services",
+  "achats_etudes_services_n1",
+  "autres_consommations",
+  "autres_consommations_n1",
+  "rabais_obtenus_achats",
+  "rabais_obtenus_achats_n1",
+  "col_tcr_conso_1",
+  "services_sous_traitance",
+  "services_sous_traitance_n1",
+  "services_locations",
+  "services_locations_n1",
+  "services_entretien",
+  "services_entretien_n1",
+  "services_assurances",
+  "services_assurances_n1",
+  "services_personnel_exterieur",
+  "services_personnel_exterieur_n1",
+  "services_honoraires",
+  "services_honoraires_n1",
+  "col_tcr_conso_2",
+  "services_publicite",
+  "services_publicite_n1",
+  "services_deplacements",
+  "services_deplacements_n1",
+  "autres_services",
+  "autres_services_n1",
+  "rabais_obtenus_services",
+  "rabais_obtenus_services_n1",
+  "total_consommations_ii",
+  "total_consommations_ii_n1",
+  "valeur_ajoutee_iii",
+  "valeur_ajoutee_iii_n1",
+  "sec_tcr_res",
+  "charges_personnel",
+  "charges_personnel_n1",
+  "impots_taxes_assimiles",
+  "impots_taxes_assimiles_n1",
+  "excedent_brut_exploitation_iv",
+  "excedent_brut_exploitation_iv_n1",
+  "col_tcr_op",
+  "autres_produits_operationnels",
+  "autres_produits_operationnels_n1",
+  "autres_charges_operationnelles",
+  "autres_charges_operationnelles_n1",
+  "dotations_amortissements",
+  "dotations_amortissements_n1",
+  "dotations_provisions",
+  "dotations_provisions_n1",
+  "pertes_de_valeur",
+  "pertes_de_valeur_n1",
+  "reprises_pertes_provisions",
+  "reprises_pertes_provisions_n1",
+  "resultat_operationnel_v",
+  "resultat_operationnel_v_n1",
+  "col_tcr_net",
+  "produits_financiers",
+  "produits_financiers_n1",
+  "charges_financieres",
+  "charges_financieres_n1",
+  "resultat_financier_vi",
+  "resultat_financier_vi_n1",
+  "resultat_ordinaire_vii",
+  "resultat_ordinaire_vii_n1",
+  "elements_extraordinaires_produits",
+  "elements_extraordinaires_produits_n1",
+  "elements_extraordinaires_charges",
+  "elements_extraordinaires_charges_n1",
+  "resultat_extraordinaire_viii",
+  "resultat_extraordinaire_viii_n1",
+  "impots_exigibles_ibs",
+  "impots_exigibles_ibs_n1",
+  "impots_differes_variation",
+  "impots_differes_variation_n1",
+  "resultat_net_exercice_ix",
+  "resultat_net_exercice_ix_n1",
+  "tab_annexes_1_8",
+  "sec_tab_1_2",
+  "marge_brute_marchandises_consommees",
+  "marge_brute_marchandises_consommees_n1",
+  "marge_brute_ventes_etat",
+  "marge_brute_ventes_etat_n1",
+  "tab1_stocks_neant",
+  "tab1_total_debut",
+  "tab1_total_debit",
+  "tab1_total_credit",
+  "tab1_total_fin",
+  "col_tab_2",
+  "tab2_production_stockee_neant",
+  "tab2_debit",
+  "tab2_credit",
+  "tab2_solde_fin",
+  "sec_tab_3_4",
+  "tab3_charges_personnel_neant",
+  "tab3_total_1_autres_services",
+  "tab3_total_2_personnel",
+  "tab3_total_3_impots_taxes",
+  "tab3_total_general_1_2_3",
+  "col_tab_4",
+  "tab4_charges_produits_operationnels_neant",
+  "tab4_total_charges_op",
+  "tab4_total_produits_op",
+  "sec_tab_5_6",
+  "tab5_dotations_cumulees_debut",
+  "tab5_dotations_exercice",
+  "tab5_diminutions_sorties",
+  "tab5_dotations_cumulees_fin",
+  "tab5_dotations_fiscales",
+  "tab5_ecart_amort",
+  "col_tab_6",
+  "tab6_immo_creees_acquises_neant",
+  "tab6_total_brut",
+  "tab6_total_tva_deduite",
+  "tab6_total_net_amortir",
+  "sec_tab6_grid",
+  "tab6_lignes",
+  "sec_tab7_grid",
+  "tab7_immo_cedees_neant",
+  "tab7_total_vo",
+  "tab7_total_amort",
+  "col_tab7_tot",
+  "tab7_total_vnc",
+  "tab7_total_prix_cession",
+  "tab7_total_pmv",
+  "sec_tab7_table",
+  "tab7_lignes",
+  "sec_tab8_grid",
+  "tab8_provisions_neant",
+  "tab8_1_pertes_creances_neant",
+  "col_tab8_tot",
+  "tab8_1_total_creances",
+  "tab8_1_total_provisions",
+  "tab8_2_pertes_actions_neant",
+  "sec_tab8_1_table",
+  "tab8_1_lignes",
+  "tab_annexes_9_13",
+  "sec_tab9_header",
+  "tab9_resultat_fiscal_neant",
+  "tab9_benefice_comptable",
+  "col_tab9_h1",
+  "tab9_perte_comptable",
+  "sec_tab9_reint",
+  "tab9_reint_charges_immeubles",
+  "tab9_reint_cadeaux_pub",
+  "tab9_reint_sponsoring",
+  "tab9_reint_frais_reception",
+  "tab9_reint_cotisations_dons",
+  "tab9_reint_impots_taxes",
+  "tab9_reint_provisions",
+  "tab9_reint_amortissements",
+  "col_tab9_r1",
+  "tab9_reint_frais_rd",
+  "tab9_reint_amort_cb_preneur",
+  "tab9_reint_loyers_cb_bailleur",
+  "tab9_reint_ibs_exigible",
+  "tab9_reint_impot_differe",
+  "tab9_reint_pertes_valeur",
+  "tab9_reint_amendes_penalites",
+  "tab9_reint_autres",
+  "tab9_total_reintegrations",
+  "sec_tab9_deduct",
+  "tab9_deduct_pv_cession",
+  "tab9_deduct_produits_actions_opcvm",
+  "tab9_deduct_revenus_dividendes",
+  "tab9_deduct_amort_cb_bailleur",
+  "tab9_deduct_loyers_cb_preneur",
+  "tab9_deduct_complement_amort",
+  "tab9_deduct_autres",
+  "tab9_total_deductions",
+  "col_tab9_d1",
+  "tab9_deficit_2022",
+  "tab9_deficit_2023",
+  "tab9_deficit_2024",
+  "tab9_deficit_2025",
+  "tab9_total_deficits",
+  "tab9_resultat_fiscal_benefice",
+  "tab9_resultat_fiscal_deficit",
+  "sec_tab_10_13",
+  "tab10_affectation_resultat_neant",
+  "tab10_orig_ran_n1",
+  "tab10_orig_resultat_n1",
+  "tab10_orig_prelev_reserves",
+  "tab10_total_origine",
+  "col_tab_10_aff",
+  "tab10_aff_reserves",
+  "tab10_aff_aug_capital",
+  "tab10_aff_dividendes",
+  "tab10_aff_ran",
+  "tab10_total_affectation",
+  "col_tab_11_13",
+  "tab11_participations_neant",
+  "tab11_total_valeur_comptable",
+  "tab11_total_dividendes",
+  "tab13_tap_neant",
+  "sec_tab11_table",
+  "tab11_lignes",
+  "sec_tab12_table",
+  "tab12_commissions_honoraires_neant",
+  "col_tab12_tot1",
+  "tab12_total_montant",
+  "col_tab12_tot2",
+  "ecart_tab12_tcr",
+  "sec_tab12_grid_rows",
+  "tab12_lignes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_ident",
+   "fieldtype": "Section Break",
+   "label": "Identification Administrative & Fiscale du Contribuable"
+  },
+  {
+   "default": "Build And Secure Networks",
+   "description": "[IDENTIFICATION] Entité juridique soumise au régime du réel (IBS).",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Société",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "default": "2026",
+   "description": "[PÉRIODE FISCALE] Exercice comptable clos au 31 décembre (Art. 151 CIDTA).",
+   "fieldname": "fiscal_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Exercice Fiscal",
+   "options": "Fiscal Year",
+   "reqd": 1
+  },
+  {
+   "default": "Brouillon",
+   "description": "[STATUT LÉGAL] Passe automatiquement en 'Clôturé & Verrouillé (Lecture Seule)' après clôture de l'exercice.",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Statut de la Liasse",
+   "options": "Brouillon\nCalculé & Contrôlé\nClôturé & Verrouillé (Lecture Seule)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_h1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "001716099938766",
+   "description": "[IDENTIFICATION DGI] Numéro d'Identification Fiscale officiel à 15 chiffres.",
+   "fieldname": "nif",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "N.I.F (15 Chiffres)",
+   "reqd": 1
+  },
+  {
+   "default": "EURL BUILD AND SECURE NETWORKS",
+   "description": "[IDENTIFICATION DGI] Raison sociale telle qu'inscrite au Registre du Commerce et à la carte fiscale.",
+   "fieldname": "company_name_fiscal",
+   "fieldtype": "Data",
+   "label": "Désignation de l'Entreprise"
+  },
+  {
+   "default": "SERVICE INFORMATIQUE",
+   "description": "[IDENTIFICATION DGI] Activité principale exercée (détermine le taux d'IBS : 19% Production, 23% BTPH/Tourisme, 26% Services/Commerce - Art. 150 CIDTA).",
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "label": "Activité"
+  },
+  {
+   "fieldname": "col_h2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "AISSA LALAM N°13 RDC EL MOURADIA -ALGER-",
+   "description": "[IDENTIFICATION DGI] Adresse complète du siège social ou du principal établissement.",
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Adresse du Siège Social"
+  },
+  {
+   "default": "2026-01-01",
+   "fieldname": "period_start_date",
+   "fieldtype": "Date",
+   "label": "Date Début Exercice"
+  },
+  {
+   "default": "2026-12-31",
+   "fieldname": "period_end_date",
+   "fieldtype": "Date",
+   "label": "Date Clôture Exercice"
+  },
+  {
+   "default": "2049257",
+   "description": "[COMPTE SCF] Comptes 215 (Installations techniques, matériel et outillage) et 218 (2181 Agencements, 2182 Matériel de transport, 2183 Matériel informatique/bureau, 2184 Mobilier) [SD].",
+   "fieldname": "autres_immo_corporelles_brut",
+   "fieldtype": "Currency",
+   "label": "Autres Immo. Corporelles - Brut"
+  },
+  {
+   "default": "1908344",
+   "description": "[COMPTE SCF] Comptes 2815, 2818 (Amortissements matériel, transport, informatique, mobilier) et 2915, 2918 (Pertes de valeur) [SC].",
+   "fieldname": "autres_immo_corporelles_amort",
+   "fieldtype": "Currency",
+   "label": "Autres Immo. Corporelles - Amort/Prov"
+  },
+  {
+   "default": "140912",
+   "description": "[FORMULE DGI] = Autres Immo. Corporelles Brut - Amort/Prov.",
+   "fieldname": "autres_immo_corporelles_net",
+   "fieldtype": "Currency",
+   "label": "Autres Immo. Corporelles - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "140912",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "autres_immo_corporelles_net_n1",
+   "fieldtype": "Currency",
+   "label": "Autres Immo. Corporelles - Net N-1"
+  },
+  {
+   "description": "[FORMULE DGI] = Somme des montants Bruts des 12 rubriques de l'Actif Non Courant (Comptes 20 à 27 + 133).",
+   "fieldname": "total_actif_non_courant_brut",
+   "fieldtype": "Currency",
+   "label": "TOTAL ACTIF NON COURANT - Brut",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DGI] = Somme des Amortissements et Pertes de valeur des 12 rubriques de l'Actif Non Courant (Comptes 28 et 29).",
+   "fieldname": "total_actif_non_courant_amort",
+   "fieldtype": "Currency",
+   "label": "TOTAL ACTIF NON COURANT - Amort/Prov",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DGI] = TOTAL ACTIF NON COURANT Brut - TOTAL ACTIF NON COURANT Amort/Prov.",
+   "fieldname": "total_actif_non_courant_net",
+   "fieldtype": "Currency",
+   "label": "TOTAL ACTIF NON COURANT - Net N",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DGI] = Somme des montants Nets N-1 des 12 rubriques de l'Actif Non Courant.",
+   "fieldname": "total_actif_non_courant_net_n1",
+   "fieldtype": "Currency",
+   "label": "TOTAL ACTIF NON COURANT - Net N-1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_actif_courant",
+   "fieldtype": "Section Break",
+   "label": "ACTIF COURANT — Stocks, Créances & Disponibilités (Classes 3, 4 et 5)"
+  },
+  {
+   "default": "11288519",
+   "description": "[COMPTE SCF] Comptes 411 (Clients), 413 (Clients effets à recevoir), 416 (Clients douteux), 417 (Créances sur travaux/prestations en cours), 418 (Clients produits non encore facturés) [SD].",
+   "fieldname": "clients_brut",
+   "fieldtype": "Currency",
+   "label": "Clients - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 491 (Pertes de valeur sur comptes de clients - déductibles uniquement si action en justice engagée) [SC].",
+   "fieldname": "clients_amort",
+   "fieldtype": "Currency",
+   "label": "Clients - Pertes de valeur"
+  },
+  {
+   "default": "11288519",
+   "description": "[FORMULE DGI] = Clients Brut (411..418) - Pertes de valeur Clients (491).",
+   "fieldname": "clients_net",
+   "fieldtype": "Currency",
+   "label": "Clients - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "11288519",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "clients_net_n1",
+   "fieldtype": "Currency",
+   "label": "Clients - Net N-1"
+  },
+  {
+   "default": "414300",
+   "description": "[COMPTE SCF] Comptes 409 (Fournisseurs débiteurs : avances et acomptes versés), 425/427 (Personnel avances), 438, 45 (Groupe et associés SD), 462/465/467 (Débiteurs divers SD), 486 (Charges constatées d'avance) [SD].",
+   "fieldname": "autres_debiteurs_brut",
+   "fieldtype": "Currency",
+   "label": "Autres débiteurs - Brut"
+  },
+  {
+   "default": "414300",
+   "description": "[FORMULE DGI] = Autres débiteurs Brut - Pertes de valeur (495, 496).",
+   "fieldname": "autres_debiteurs_net",
+   "fieldtype": "Currency",
+   "label": "Autres débiteurs - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "414300",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "autres_debiteurs_net_n1",
+   "fieldtype": "Currency",
+   "label": "Autres débiteurs - Net N-1"
+  },
+  {
+   "fieldname": "col_ac_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "145385",
+   "description": "[COMPTE SCF] Comptes 444 (État - Acomptes IBS versés et excédent d'IBS SD), 4456 (TVA déductible sur immos 44561, sur biens/services 44562, crédit de TVA à reporter 44567), 441 (Subventions à recevoir), 4487 [SD].",
+   "fieldname": "impots_assimiles_actif_brut",
+   "fieldtype": "Currency",
+   "label": "Impôts et assimilés (Actif) - Brut"
+  },
+  {
+   "default": "145385",
+   "description": "[FORMULE DGI] = Impôts et assimilés (Actif) Brut.",
+   "fieldname": "impots_assimiles_actif_net",
+   "fieldtype": "Currency",
+   "label": "Impôts et assimilés (Actif) - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "145385",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "impots_assimiles_actif_net_n1",
+   "fieldtype": "Currency",
+   "label": "Impôts et assimilés (Actif) - Net N-1"
+  },
+  {
+   "default": "3941584",
+   "description": "[COMPTE SCF] Comptes 511 (Valeurs à l'encaissement), 512 (Banques comptes courants SD), 515 (Trésor Public), 517 (CCP et autres organismes financiers), 52 (Instruments de trésorerie), 53 (Caisse 531), 54 (Régies d'avances et accréditifs) [SD].",
+   "fieldname": "tresorerie_actif_brut",
+   "fieldtype": "Currency",
+   "label": "Trésorerie (Disponibilités) - Brut"
+  },
+  {
+   "default": "3941584",
+   "description": "[FORMULE DGI] = Trésorerie Brut - Pertes de valeur (594).",
+   "fieldname": "tresorerie_actif_net",
+   "fieldtype": "Currency",
+   "label": "Trésorerie - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "3941584",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "tresorerie_actif_net_n1",
+   "fieldtype": "Currency",
+   "label": "Trésorerie - Net N-1"
+  },
+  {
+   "fieldname": "col_ac_tot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "[FORMULE DGI] = Somme des montants Bruts des 7 rubriques de l'Actif Courant (Stocks + Clients + Autres débiteurs + Impôts + Autres créances + Placements + Trésorerie).",
+   "fieldname": "total_actif_courant_brut",
+   "fieldtype": "Currency",
+   "label": "TOTAL ACTIF COURANT - Brut",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DGI] = Somme des Pertes de valeur des 7 rubriques de l'Actif Courant (Comptes 39, 49, 59).",
+   "fieldname": "total_actif_courant_amort",
+   "fieldtype": "Currency",
+   "label": "TOTAL ACTIF COURANT - Amort/Prov",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DGI] = TOTAL ACTIF COURANT Brut - TOTAL ACTIF COURANT Amort/Prov.",
+   "fieldname": "total_actif_courant_net",
+   "fieldtype": "Currency",
+   "label": "TOTAL ACTIF COURANT - Net N",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DGI] = Somme des montants Nets N-1 des 7 rubriques de l'Actif Courant.",
+   "fieldname": "total_actif_courant_net_n1",
+   "fieldtype": "Currency",
+   "label": "TOTAL ACTIF COURANT - Net N-1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tot_actif",
+   "fieldtype": "Section Break",
+   "label": "TOTAL GÉNÉRAL ACTIF (Actif Non Courant + Actif Courant)"
+  },
+  {
+   "description": "[FORMULE DGI] = TOTAL ACTIF NON COURANT Brut + TOTAL ACTIF COURANT Brut.",
+   "fieldname": "total_general_actif_brut",
+   "fieldtype": "Currency",
+   "label": "TOTAL GÉNÉRAL ACTIF - Brut",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DGI] = TOTAL ACTIF NON COURANT Amort/Prov + TOTAL ACTIF COURANT Amort/Prov.",
+   "fieldname": "total_general_actif_amort",
+   "fieldtype": "Currency",
+   "label": "TOTAL GÉNÉRAL ACTIF - Amort/Prov",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tot_act",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "[FORMULE DGI] = TOTAL GÉNÉRAL ACTIF Brut - TOTAL GÉNÉRAL ACTIF Amort/Prov (Égal à TOTAL ACTIF NON COURANT Net N + TOTAL ACTIF COURANT Net N).",
+   "fieldname": "total_general_actif_net",
+   "fieldtype": "Currency",
+   "label": "TOTAL GÉNÉRAL ACTIF - Net N",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DGI] = TOTAL ACTIF NON COURANT Net N-1 + TOTAL ACTIF COURANT Net N-1.",
+   "fieldname": "total_general_actif_net_n1",
+   "fieldtype": "Currency",
+   "label": "TOTAL GÉNÉRAL ACTIF - Net N-1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_passif_cp",
+   "fieldtype": "Section Break",
+   "label": "CAPITAUX PROPRES — Rubriques 1 à 9 & Total I (Classe 10, 11, 12)"
+  },
+  {
+   "default": "100000",
+   "description": "[COMPTE SCF] Comptes 101 (Capital émis / capital social / fonds de dotation) et 108 (Compte de l'exploitant) [SC].",
+   "fieldname": "capital_emis",
+   "fieldtype": "Currency",
+   "label": "Capital émis (N)"
+  },
+  {
+   "default": "100000",
+   "description": "[REPORT N-1] Solde du compte 101/108 à la clôture N-1.",
+   "fieldname": "capital_emis_n1",
+   "fieldtype": "Currency",
+   "label": "Capital émis (N-1)"
+  },
+  {
+   "default": "10000",
+   "description": "[COMPTE SCF] Comptes 103 (Primes liées au capital social : émission, fusion, apport), 104 (Écart d'évaluation) et 106 (1061 Réserve légale, 1062 Statutaires, 1063 Réglementées dont réinvestissement 30% AAPI, 1068 Autres réserves) [SC_NET].",
+   "fieldname": "primes_et_reserves",
+   "fieldtype": "Currency",
+   "label": "Primes et réserves - Réserves consolidées (1) (N)"
+  },
+  {
+   "default": "10000",
+   "description": "[REPORT N-1] Solde des comptes 103, 104 et 106 N-1.",
+   "fieldname": "primes_et_reserves_n1",
+   "fieldtype": "Currency",
+   "label": "Primes et réserves (N-1)"
+  },
+  {
+   "fieldname": "col_cp_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1399897",
+   "description": "[COMPTE SCF & CONCORDANCE TCR] Compte 12 (120 Bénéfice de l'exercice [SC > 0] ou 129 Perte de l'exercice [SD < 0]). Doit être strictement égal à la rubrique IX du Compte de Résultat.",
+   "fieldname": "resultat_net_passif",
+   "fieldtype": "Currency",
+   "label": "Résultat net - Résultat net part du groupe (1) (N)"
+  },
+  {
+   "default": "1399897",
+   "description": "[REPORT N-1] Résultat net de l'exercice N-1.",
+   "fieldname": "resultat_net_passif_n1",
+   "fieldtype": "Currency",
+   "label": "Résultat net (N-1)"
+  },
+  {
+   "default": "7301169",
+   "description": "[COMPTE SCF] Comptes 110 (Report à nouveau solde créditeur [+]) ou 119 (Report à nouveau solde débiteur [-]) [SC_NET]. Concorde à 100% avec le Report à nouveau du Tableau 10 (Affectation du résultat).",
+   "fieldname": "report_a_nouveau",
+   "fieldtype": "Currency",
+   "label": "Autres capitaux propres - Report à nouveau (N)"
+  },
+  {
+   "default": "7301168",
+   "description": "[REPORT N-1] Solde des comptes 110/119 N-1 (égal à la ligne Report à nouveau de l'origine du Tableau 10).",
+   "fieldname": "report_a_nouveau_n1",
+   "fieldtype": "Currency",
+   "label": "Autres capitaux propres - Report à nouveau (N-1)"
+  },
+  {
+   "fieldname": "col_cp_tot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "[FORMULE DGI] = Capital émis - Capital non appelé + Primes et réserves + Écart de réévaluation + Écart d'équivalence + Résultat net + Report à nouveau + Part consolidante + Part minoritaires.",
+   "fieldname": "total_capitaux_propres_i",
+   "fieldtype": "Currency",
+   "label": "TOTAL I (Capitaux Propres) N",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DGI] = Somme algébrique des Capitaux Propres N-1.",
+   "fieldname": "total_capitaux_propres_i_n1",
+   "fieldtype": "Currency",
+   "label": "TOTAL I (Capitaux Propres) N-1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_passif_dettes",
+   "fieldtype": "Section Break",
+   "label": "PASSIFS NON-COURANTS (Total II - Classes 13, 15, 16, 17) & PASSIFS COURANTS (Total III - Classes 4, 5)"
+  },
+  {
+   "default": "296130",
+   "description": "[COMPTE SCF] Comptes 16 (161 Titres participatifs, 163 Emprunts obligataires, 164 Emprunts auprès des établissements de crédit, 165 Dépôts et cautionnements reçus, 167 Dettes sur contrat de crédit-bail, 168 Autres emprunts) et 17 (Dettes rattachées à des participations) [SC].",
+   "fieldname": "emprunts_dettes_financieres",
+   "fieldtype": "Currency",
+   "label": "Emprunts et dettes financières (N)"
+  },
+  {
+   "default": "296130",
+   "description": "[REPORT N-1] Solde des comptes 16 et 17 N-1.",
+   "fieldname": "emprunts_dettes_financieres_n1",
+   "fieldtype": "Currency",
+   "label": "Emprunts et dettes financières (N-1)"
+  },
+  {
+   "description": "[FORMULE DGI] = Emprunts et dettes financières + Impôts (différés et provisionnés) + Autres dettes non courantes + Provisions et produits constatés d'avance.",
+   "fieldname": "total_passifs_non_courants_ii",
+   "fieldtype": "Currency",
+   "label": "TOTAL II (Passifs Non-Courants) N",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DGI] = Somme des Passifs Non-Courants N-1.",
+   "fieldname": "total_passifs_non_courants_ii_n1",
+   "fieldtype": "Currency",
+   "label": "TOTAL II (Passifs Non-Courants) N-1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_p_courant",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2490506",
+   "description": "[COMPTE SCF] Comptes 401 (Fournisseurs de stocks et services), 403 (Fournisseurs effets à payer), 404 (Fournisseurs d'immobilisations), 405 (Fournisseurs d'immos effets à payer), 408 (Fournisseurs factures non parvenues - FNP) [SC].",
+   "fieldname": "fournisseurs_comptes_rattaches",
+   "fieldtype": "Currency",
+   "label": "Fournisseurs et comptes rattachés (N)"
+  },
+  {
+   "default": "2490506",
+   "description": "[REPORT N-1] Solde des comptes 401 à 408 N-1.",
+   "fieldname": "fournisseurs_comptes_rattaches_n1",
+   "fieldtype": "Currency",
+   "label": "Fournisseurs et comptes rattachés (N-1)"
+  },
+  {
+   "default": "1730330",
+   "description": "[COMPTE SCF] Comptes 442 (État - Impôts et taxes recouvrables sur des tiers : IRG salaires, RAS), 444 (État - Impôts sur les résultats : solde IBS dû), 4455/4457/4458 (État - TVA collectée et TVA à décaisser G50), 447 (Autres impôts, taxes et versements assimilés dus) [SC].",
+   "fieldname": "impots_passif",
+   "fieldtype": "Currency",
+   "label": "Impôts (Passif Courant) (N)"
+  },
+  {
+   "default": "1730330",
+   "description": "[REPORT N-1] Solde des dettes fiscales (442, 444, 445, 447) N-1.",
+   "fieldname": "impots_passif_n1",
+   "fieldtype": "Currency",
+   "label": "Impôts (Passif Courant) (N-1)"
+  },
+  {
+   "fieldname": "col_p_autres",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2602669",
+   "description": "[COMPTE SCF] Comptes 419 (Clients créditeurs : avances et acomptes reçus), 42 (Personnel : 421 Rémunérations dues, 428 Charges à payer), 43 (Organismes sociaux : CNAS, CASNOS, CACOBATPH), 45 (Groupe et associés SC : 455 Comptes courants d'associés, 457 Dividendes à payer), 46 (Créditeurs divers), 481 (Provisions passifs courants), 487 (Produits constatés d'avance) [SC].",
+   "fieldname": "autres_dettes_passif",
+   "fieldtype": "Currency",
+   "label": "Autres dettes (Passif Courant) (N)"
+  },
+  {
+   "default": "2602668",
+   "description": "[REPORT N-1] Solde des comptes 419, 42, 43, 45, 46, 481, 487 N-1.",
+   "fieldname": "autres_dettes_passif_n1",
+   "fieldtype": "Currency",
+   "label": "Autres dettes (Passif Courant) (N-1)"
+  },
+  {
+   "description": "[FORMULE DGI] = Fournisseurs et comptes rattachés + Impôts + Autres dettes + Trésorerie passif.",
+   "fieldname": "total_passifs_courants_iii",
+   "fieldtype": "Currency",
+   "label": "TOTAL III (Passifs Courants) N",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DGI] = Somme des Passifs Courants N-1.",
+   "fieldname": "total_passifs_courants_iii_n1",
+   "fieldtype": "Currency",
+   "label": "TOTAL III (Passifs Courants) N-1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tot_passif",
+   "fieldtype": "Section Break",
+   "label": "TOTAL GÉNÉRAL PASSIF (I + II + III)"
+  },
+  {
+   "description": "[FORMULE DGI] = TOTAL I (Capitaux Propres) + TOTAL II (Passifs Non-Courants) + TOTAL III (Passifs Courants). Doit être égal au TOTAL GÉNÉRAL ACTIF Net N.",
+   "fieldname": "total_general_passif",
+   "fieldtype": "Currency",
+   "label": "TOTAL GÉNÉRAL PASSIF (I+II+III) N",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DGI] = TOTAL I N-1 + TOTAL II N-1 + TOTAL III N-1.",
+   "fieldname": "total_general_passif_n1",
+   "fieldtype": "Currency",
+   "label": "TOTAL GÉNÉRAL PASSIF (I+II+III) N-1",
+   "read_only": 1
+  },
+  {
+   "description": "[FORMULE DE CONTRÔLE] = Total Général Actif Net N - Total Général Passif N. Doit impérativement être égal à 0,00 DZD (Principe de la partie double SCF).",
+   "fieldname": "ecart_equilibre_bilan",
+   "fieldtype": "Currency",
+   "label": "1. Écart Équilibre Bilan (Total Actif Net - Total Passif)",
+   "read_only": 1
+  },
+  {
+   "default": "10525694",
+   "description": "[COMPTE SCF] Compte 700 (Ventes de marchandises revendues en l'état) [SC - Crédit].",
+   "fieldname": "ventes_marchandises",
+   "fieldtype": "Currency",
+   "label": "Ventes de marchandises (N)"
+  },
+  {
+   "default": "2480000",
+   "description": "[COMPTE SCF] Comptes 705 (Ventes d'études) et 706 (Autres prestations de services) [SC - Crédit].",
+   "fieldname": "production_services",
+   "fieldtype": "Currency",
+   "label": "Production vendue - Prestations de services (N)"
+  },
+  {
+   "default": "13005694",
+   "description": "[FORMULE DGI] = Ventes de marchandises (700) + Produits fabriqués (701..703) + Prestations de services (705..706) + Vente de travaux (704) + Produits annexes (708) - Rabais, remises, ristournes accordés (709).",
+   "fieldname": "chiffre_affaires_net",
+   "fieldtype": "Currency",
+   "label": "Chiffre d'affaires net des Rabais, remises, ristournes (N)",
+   "read_only": 1
+  },
+  {
+   "default": "13005694",
+   "description": "[FORMULE DGI] = Chiffre d'affaires net des RRR + Production stockée ou déstockée (72) + Production immobilisée (73) + Subventions d'exploitation (74).",
+   "fieldname": "total_production_i",
+   "fieldtype": "Currency",
+   "label": "I - PRODUCTION DE L'EXERCICE (N)",
+   "read_only": 1
+  },
+  {
+   "default": "10063349",
+   "description": "[COMPTE SCF] Compte 600 (Achats de marchandises vendues) [SD - Débit].",
+   "fieldname": "achats_marchandises",
+   "fieldtype": "Currency",
+   "label": "Achats de marchandises vendues (N)"
+  },
+  {
+   "default": "53220",
+   "description": "[COMPTE SCF] Comptes 605 (Achats de matériels, équipements et travaux), 606 (Achats non stockés de matières et fournitures), 607 (Eau, énergie, carburant, fournitures) et 608 (Frais accessoires d'achat) [SD - Débit].",
+   "fieldname": "autres_consommations",
+   "fieldtype": "Currency",
+   "label": "Autres consommations (N)"
+  },
+  {
+   "default": "360000",
+   "description": "[COMPTE SCF] Compte 613 (Locations mobilières et immobilières) [SD - Débit]. Attention : loyers véhicule tourisme plafonnés à 200 000 DZD/an (Art. 169-1 CIDTA). Le compte 614 est rattaché à Autres services pour concorder avec le Tableau 3.",
+   "fieldname": "services_locations",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Locations (N)"
+  },
+  {
+   "default": "30110",
+   "description": "[COMPTE SCF] Compte 623 (Publicité, publication, relations publiques, annonces, cadeaux publicitaires, sponsoring) [SD - Débit]. Plafond cadeaux : 1 000 DZD TTC/u (Art. 169-1 CIDTA).",
+   "fieldname": "services_publicite",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Publicité (N)"
+  },
+  {
+   "default": "89010",
+   "description": "[COMPTE SCF] Comptes 614 (Charges locatives et de copropriété), 617 (Études et recherches), 618 (Documentation), 624 (Transports de biens et du personnel), 626 (Frais postaux et télécommunications), 627 (Services bancaires et assimilés), 628 (Cotisations et divers) [SD - Débit]. Concorde à 100% avec le TOTAL (1) du Tableau 3.",
+   "fieldname": "autres_services",
+   "fieldtype": "Currency",
+   "label": "Autres services (N)"
+  },
+  {
+   "default": "10595689",
+   "description": "[FORMULE DGI] = Somme des Achats consommés (600 à 608 - 609) + Services extérieurs (611 à 628 - 619 - 629).",
+   "fieldname": "total_consommations_ii",
+   "fieldtype": "Currency",
+   "label": "II - CONSOMMATIONS DE L'EXERCICE (N)",
+   "read_only": 1
+  },
+  {
+   "default": "2410005",
+   "description": "[FORMULE DGI] = I (Production de l'exercice) - II (Consommations de l'exercice).",
+   "fieldname": "valeur_ajoutee_iii",
+   "fieldtype": "Currency",
+   "label": "III - VALEUR AJOUTÉE D'EXPLOITATION (I - II) (N)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tcr_res",
+   "fieldtype": "Section Break",
+   "label": "IV à IX — EBE, RÉSULTAT OPÉRATIONNEL, FINANCIER, ORDINAIRE & RÉSULTAT NET (Page 4)"
+  },
+  {
+   "default": "502527",
+   "description": "[COMPTE SCF] Compte 63 (631 Rémunérations du personnel, 634 Rémunération de l'exploitant, 635 Cotisations aux organismes sociaux CNAS, 636 Charges sociales exploitant CASNOS, 637 Autres charges sociales, 638 Autres charges de personnel) [SD - Débit].",
+   "fieldname": "charges_personnel",
+   "fieldtype": "Currency",
+   "label": "Charges de personnel (N)"
+  },
+  {
+   "default": "98280",
+   "description": "[COMPTE SCF] Compte 64 (641 Impôts et taxes sur rémunérations TFP/TA, 642 Impôts et taxes non récupérables sur CA, 645 Autres impôts et taxes hors IBS : timbre, enregistrement, taxe foncière, vignette) [SD - Débit].",
+   "fieldname": "impots_taxes_assimiles",
+   "fieldtype": "Currency",
+   "label": "Impôts et taxes et versements assimilés (N)"
+  },
+  {
+   "default": "1809198",
+   "description": "[FORMULE DGI] = III (Valeur ajoutée d'exploitation) - Charges de personnel (63) - Impôts, taxes et versements assimilés (64).",
+   "fieldname": "excedent_brut_exploitation_iv",
+   "fieldtype": "Currency",
+   "label": "IV - EXCÉDENT BRUT D'EXPLOITATION (EBE) (N)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tcr_op",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "95",
+   "description": "[COMPTE SCF] Compte 75 (751 Redevances, 752 Plus-values sur sorties d'actifs immobilisés, 753 Jetons de présence, 754 Quotes-parts de subventions d'investissement virées au résultat, 755 Opérations en commun, 756 Rentrées sur créances amorties, 757 Produits exceptionnels sur opérations de gestion, 758 Autres produits de gestion courante) [SC - Crédit].",
+   "fieldname": "autres_produits_operationnels",
+   "fieldtype": "Currency",
+   "label": "Autres produits opérationnels (N)"
+  },
+  {
+   "default": "2754",
+   "description": "[COMPTE SCF] Compte 65 (651 Redevances, 652 Moins-values sur sortie d'actifs immobilisés, 653 Jetons de présence, 654 Pertes sur créances irrécouvrables, 655 Opérations en commun, 656 Amendes et pénalités, subventions accordées, dons et libéralités, 657 Charges exceptionnelles de gestion, 658 Autres charges de gestion courante) [SD - Débit].",
+   "fieldname": "autres_charges_operationnelles",
+   "fieldtype": "Currency",
+   "label": "Autres charges opérationnelles (N)"
+  },
+  {
+   "default": "396642",
+   "description": "[COMPTE SCF & PC COMPTA] Comptes 681 (6811/6812), 682 et 685 hors provisions (6815/6855 ou 68?9) et hors pertes de valeur (6816/6817/6856 ou 68?8) [SD - Débit].",
+   "fieldname": "dotations_amortissements",
+   "fieldtype": "Currency",
+   "label": "Dotations aux amortissements (N)"
+  },
+  {
+   "default": "1409897",
+   "description": "[FORMULE DGI] = IV (EBE) + Autres produits opérationnels (75) - Autres charges opérationnelles (65) - Dotations aux amortissements - Provisions - Pertes de valeur + Reprises sur pertes de valeur et provisions (781/785).",
+   "fieldname": "resultat_operationnel_v",
+   "fieldtype": "Currency",
+   "label": "V - RÉSULTAT OPÉRATIONNEL (N)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tcr_net",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1409897",
+   "description": "[FORMULE DGI] = V (Résultat opérationnel) + VI (Résultat financier).",
+   "fieldname": "resultat_ordinaire_vii",
+   "fieldtype": "Currency",
+   "label": "VII - RÉSULTAT ORDINAIRE (V + VI) (N)",
+   "read_only": 1
+  },
+  {
+   "default": "10000",
+   "description": "[COMPTE SCF] Comptes 695 (Impôts sur les bénéfices basés sur le résultat des activités ordinaires - IBS) et 698 (Autres impôts sur les résultats) [SD - Débit]. Minimum forfaitaire légal : 10 000 DZD (Art. 365 bis CIDTA).",
+   "fieldname": "impots_exigibles_ibs",
+   "fieldtype": "Currency",
+   "label": "Impôts exigibles sur résultats (IBS) (N)"
+  },
+  {
+   "default": "1399897",
+   "description": "[FORMULE DGI] = VII (Résultat ordinaire) + VIII (Résultat extraordinaire) - Impôts exigibles sur résultats (695) - Impôts différés (692/693). Doit être égal au Résultat Net du Passif (Compte 12).",
+   "fieldname": "resultat_net_exercice_ix",
+   "fieldtype": "Currency",
+   "label": "IX - RÉSULTAT NET DE L'EXERCICE (N)",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 1] Cocher si l'entreprise n'a aucun stock (Comptes 30 à 37). Formule du tableau : Solde fin = Solde début + Mouvements Débit (Entrées) - Mouvements Crédit (Sorties).",
+   "fieldname": "tab1_stocks_neant",
+   "fieldtype": "Check",
+   "label": "1. Tableau des mouvements des stocks : Mentionner == NÉANT =="
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 2] Cocher si aucune production stockée (Compte 72). Formule : Solde fin = Crédit (Stock final 33/34/35) - Débit (Stock initial 33/34/35).",
+   "fieldname": "tab2_production_stockee_neant",
+   "fieldtype": "Check",
+   "label": "2. Tableau de la fluctuation de la production stockée : Mentionner == NÉANT =="
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 3] Si décoché, imprime la ventilation détaillée des sous-comptes 614-628 (Total 1), 631-638 (Total 2) et 641-645 (Total 3).",
+   "fieldname": "tab3_charges_personnel_neant",
+   "fieldtype": "Check",
+   "label": "3. Tableau 3 : Afficher == NÉANT == sur l'imprimé"
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 4] Ventilation des comptes 651 à 658 (Autres charges opérationnelles) et 751 à 758 (Autres produits opérationnels).",
+   "fieldname": "tab4_charges_produits_operationnels_neant",
+   "fieldtype": "Check",
+   "label": "4. Tableau 4 : Afficher == NÉANT == sur l'imprimé"
+  },
+  {
+   "default": "1908344",
+   "description": "[COMPTE SCF] Solde créditeur au 01/01 des comptes 281 et 291 (Amortissements et pertes de valeur cumulés à l'ouverture).",
+   "fieldname": "tab5_dotations_cumulees_debut",
+   "fieldtype": "Currency",
+   "label": "5. Immos Corporelles - Dotations cumulées début d'exercice"
+  },
+  {
+   "default": "1908344",
+   "description": "[FORMULE DGI] = Dotations cumulées début + Dotations de l'exercice (1) - Diminutions éléments sortis (Doit être égal aux Amortissements de l'Actif Non Courant).",
+   "fieldname": "tab5_dotations_cumulees_fin",
+   "fieldtype": "Currency",
+   "label": "5. Immos Corporelles - Dotations cumulées fin d'exercice",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 6] Cocher si aucune acquisition d'immobilisation durant l'exercice. Formule : Montant net à amortir = Montant brut - TVA déduite.",
+   "fieldname": "tab6_immo_creees_acquises_neant",
+   "fieldtype": "Check",
+   "label": "6. Tableau des immobilisations créées ou acquises : Mentionner == NÉANT =="
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 7] Cocher si aucune cession d'immobilisation. Formules : VNC = Montant brut - Amortissements pratiqués ; Plus/Moins-value = Prix de cession - VNC (Art. 172-173 CIDTA).",
+   "fieldname": "tab7_immo_cedees_neant",
+   "fieldtype": "Check",
+   "label": "7. Tableau des immobilisations cédées : Mentionner == NÉANT =="
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 8] Comptes 15, 29, 39, 49. Formule : Provisions cumulées fin = Provisions début + Dotations de l'exercice - Reprises sur l'exercice.",
+   "fieldname": "tab8_provisions_neant",
+   "fieldtype": "Check",
+   "label": "8. Tableau des provisions et pertes de valeurs : Mentionner == NÉANT =="
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 8/1] Détail nominatif des clients douteux (Compte 491). Rappel ONEC : provision non déductible sans action en justice.",
+   "fieldname": "tab8_1_pertes_creances_neant",
+   "fieldtype": "Check",
+   "label": "8/1. Relevé des pertes de valeurs sur créances : Mentionner == NÉANT =="
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 8/2] Détail des dépréciations de titres de participation (Comptes 296, 297). Formule : VNC = Valeur nominale début - Perte de valeur constituée.",
+   "fieldname": "tab8_2_pertes_actions_neant",
+   "fieldtype": "Check",
+   "label": "8/2. Relevé des pertes de valeurs sur actions et parts sociales : Mentionner == NÉANT =="
+  },
+  {
+   "default": "1",
+   "description": "[OPTION D'IMPRESSION DGI] Si coché, imprime la mention == NÉANT == en travers du Tableau 9 (comme sur le modèle fourni). Si décoché, imprime les montants détaillés ci-dessous.",
+   "fieldname": "tab9_resultat_fiscal_neant",
+   "fieldtype": "Check",
+   "label": "9. Afficher l'estampille == NÉANT == en filigrane sur le Tableau 9 imprimé"
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 10] Affectation décidée par l'AGO. Formule : Total Origine (RAN N-1 + Résultat N-1 + Prélèvements sur réserves) == Total Affectation (Réserves + Augmentation capital + Dividendes + Nouveau RAN).",
+   "fieldname": "tab10_affectation_resultat_neant",
+   "fieldtype": "Check",
+   "label": "10. Tableau d'affectation du résultat et des réserves (N-1) : Mentionner == NÉANT =="
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 11] Détail des titres de participation (Comptes 261, 262, 265), quote-part de capital détenu %, prêts accordés (266/267) et dividendes encaissés (761).",
+   "fieldname": "tab11_participations_neant",
+   "fieldtype": "Check",
+   "label": "11. Tableau des participations (filiales et entités associées) : Mentionner == NÉANT =="
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 12 - Art. 176 CIDTA] État détaillé obligatoire des sommes versées à des tiers au titre des comptes 611 (Sous-traitance) et 622 (Honoraires, commissions) avec NIF et adresse des bénéficiaires sous peine de rejet de déductibilité.",
+   "fieldname": "tab12_commissions_honoraires_neant",
+   "fieldtype": "Check",
+   "label": "12. Commissions, courtages, redevances, honoraires, sous-traitance : Mentionner == NÉANT =="
+  },
+  {
+   "default": "1",
+   "description": "[ÉTAT ANNEXE 13 - Art. 14 Loi de Finances 2024] La TAP (anciens Art. 217 à 231 du CIDTA) est abrogée depuis le 01/01/2024 pour toutes les activités de droit commun. Ce tableau reste servi avec la mention NÉANT.",
+   "fieldname": "tab13_tap_neant",
+   "fieldtype": "Check",
+   "label": "13. Taxe sur l'activité professionnelle (TAP) : Mentionner == NÉANT =="
+  },
+  {
+   "default": "0",
+   "description": "[SÉCURITÉ FISCALE] Verrouille définitivement toutes les cases du Bilan Fiscal en lecture seule dès la clôture de l'exercice.",
+   "fieldname": "is_fiscal_closed",
+   "fieldtype": "Check",
+   "label": "Exercice Clôturé & Verrouillé",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tab_ident",
+   "fieldtype": "Tab Break",
+   "label": "1. Identification & Synthèse"
+  },
+  {
+   "fieldname": "sec_guide_officiel",
+   "fieldtype": "Section Break",
+   "label": "Référentiel Officiel DGI & Système Comptable Financier (SCF)"
+  },
+  {
+   "fieldname": "html_guide_scf",
+   "fieldtype": "HTML",
+   "label": "Guide Officiel",
+   "options": "\n        <div style=\"background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #0f172a; border-radius:6px; padding:12px 16px; font-size:12.5px; line-height:1.5; color:#1e293b;\">\n            <div style=\"font-weight:700; font-size:13.5px; color:#0f172a; margin-bottom:6px;\">\n                🏛️ Référentiel Légal &amp; Normatif à Jour (DGI Algérie / SCF / Lois de Finances 2024–2026)\n            </div>\n            <ul style=\"margin:0; padding-left:18px;\">\n                <li><b>Nomenclature &amp; États Financiers SCF :</b> Conforme à la <i>Loi n° 07-11 du 25 novembre 2007</i> et à l'<i>Arrêté ministériel du 26 juillet 2008 (JORA n° 19 du 25/03/2009)</i> fixant les règles d'évaluation, de comptabilisation et les tableaux de correspondance des comptes SCF (Classes 1 à 7).</li>\n                <li><b>Liasse Fiscale DGI (Série G n° 4 / Jibayatic) :</b> Chaque case du Bilan Actif, Bilan Passif, Compte de Résultat (TCR) et des 13 Tableaux Annexes distingue strictement :\n                    <span style=\"background:#dcfce7; color:#166534; padding:1px 6px; border-radius:4px; font-weight:600;\">[COMPTE SCF]</span> (montant issu du solde Débiteur <b>SD</b> ou Créditeur <b>SC</b> des comptes généraux) et\n                    <span style=\"background:#dbeafe; color:#1e40af; padding:1px 6px; border-radius:4px; font-weight:600;\">[FORMULE DGI]</span> (case calculée automatiquement en lecture seule).\n                </li>\n                <li><b>Dispositions Fiscales CIDTA à Jour :</b> Plafond amortissement véhicule de tourisme <b>3 000 000 DZD TTC</b> (Art. 141-2), cadeaux publicitaires <b>1 000 DZD TTC/unité</b> (Art. 169-1), sponsoring <b>10% CA / 30 000 000 DZD</b> (Art. 169-2), dons humanitaires <b>4 000 000 DZD</b> (Art. 169-1), R&amp;D <b>30% / 200 000 000 DZD</b> (Art. 171), report déficitaire <b>4 ans</b> (Art. 147), minimum forfaitaire IBS <b>10 000 DZD</b> (Art. 365 bis), abrogation de la TAP par l'<b>Art. 14 de la Loi de Finances 2024</b>.</li>\n            </ul>\n        </div>\n    "
+  },
+  {
+   "fieldname": "sec_synthese_controle",
+   "fieldtype": "Section Break",
+   "label": "Synthèse des Contrôles Fondamentaux de Cohérence (Expert-Comptable / CAC)"
+  },
+  {
+   "fieldname": "col_syn_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "[FORMULE DE CONTRÔLE] = Résultat Net de l'Exercice (TCR IX) - Résultat Net inscrit au Passif (Compte 12). Doit être égal à 0,00 DZD.",
+   "fieldname": "ecart_resultat_tcr_passif",
+   "fieldtype": "Currency",
+   "label": "2. Écart Concordance Résultat (TCR IX - Passif Ligne 6)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_syn_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "[FORMULE DE CONTRÔLE] = Total Amortissements Actif Non Courant - Total Dotations Cumulées Fin (Tableau 5). Doit être égal à 0,00 DZD.",
+   "fieldname": "ecart_amort_bilan_tab5",
+   "fieldtype": "Currency",
+   "label": "3. Écart Concordance Amortissements (Actif - Tableau 5)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tab_actif",
+   "fieldtype": "Tab Break",
+   "label": "2. Bilan Actif (Page 1)"
+  },
+  {
+   "fieldname": "sec_anc_incorp",
+   "fieldtype": "Section Break",
+   "label": "ACTIFS NON COURANTS — Goodwill & Immobilisations Incorporelles (Classe 20)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 207 (SD : Écart d'acquisition positif / goodwill). Réf: Arrêté du 26/07/2008.",
+   "fieldname": "ecart_acquisition_brut",
+   "fieldtype": "Currency",
+   "label": "Écart d'acquisition (Goodwill) - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 2807, 2907 (SC : Amortissements et pertes de valeur sur écart d'acquisition).",
+   "fieldname": "ecart_acquisition_amort",
+   "fieldtype": "Currency",
+   "label": "Écart d'acquisition (Goodwill) - Amort/Pertes"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Écart d'acquisition Brut - Amort/Pertes.",
+   "fieldname": "ecart_acquisition_net",
+   "fieldtype": "Currency",
+   "label": "Écart d'acquisition (Goodwill) - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net de l'exercice précédent (Comptes 207 - 2807 - 2907 N-1).",
+   "fieldname": "ecart_acquisition_net_n1",
+   "fieldtype": "Currency",
+   "label": "Écart d'acquisition (Goodwill) - Net N-1"
+  },
+  {
+   "fieldname": "col_anc_incorp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 203 (Frais de développement), 204 (Logiciels informatiques), 205 (Brevets, licences, marques), 208 (Autres immos incorporelles) [SD].",
+   "fieldname": "immo_incorporelles_brut",
+   "fieldtype": "Currency",
+   "label": "Immobilisations Incorporelles - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 2803, 2804, 2805, 2808 (Amortissements) et 2903, 2904, 2905, 2908 (Pertes de valeur) [SC].",
+   "fieldname": "immo_incorporelles_amort",
+   "fieldtype": "Currency",
+   "label": "Immobilisations Incorporelles - Amort/Pertes"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Immobilisations Incorporelles Brut - Amort/Pertes.",
+   "fieldname": "immo_incorporelles_net",
+   "fieldtype": "Currency",
+   "label": "Immobilisations Incorporelles - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net de l'exercice précédent.",
+   "fieldname": "immo_incorporelles_net_n1",
+   "fieldtype": "Currency",
+   "label": "Immobilisations Incorporelles - Net N-1"
+  },
+  {
+   "fieldname": "sec_anc_corp",
+   "fieldtype": "Section Break",
+   "label": "ACTIFS NON COURANTS — Immobilisations Corporelles & En Cours (Classes 21, 22, 23)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 211 (Terrains nus, bâtis, carrières) et 212 (Agencements et aménagements de terrain) [SD].",
+   "fieldname": "terrains_brut",
+   "fieldtype": "Currency",
+   "label": "Terrains - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 2812 (Amort. agencements/carrières), 2911, 2912 (Pertes de valeur sur terrains) [SC].",
+   "fieldname": "terrains_amort",
+   "fieldtype": "Currency",
+   "label": "Terrains - Amort/Pertes"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Terrains Brut - Terrains Amort/Pertes.",
+   "fieldname": "terrains_net",
+   "fieldtype": "Currency",
+   "label": "Terrains - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "terrains_net_n1",
+   "fieldtype": "Currency",
+   "label": "Terrains - Net N-1"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 213 (Constructions, bâtiments industriels, administratifs et commerciaux, voies et réseaux) [SD].",
+   "fieldname": "batiments_brut",
+   "fieldtype": "Currency",
+   "label": "Bâtiments - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 2813 (Amortissements des constructions) et 2913 (Pertes de valeur sur constructions) [SC].",
+   "fieldname": "batiments_amort",
+   "fieldtype": "Currency",
+   "label": "Bâtiments - Amort/Pertes"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Bâtiments Brut - Bâtiments Amort/Pertes.",
+   "fieldname": "batiments_net",
+   "fieldtype": "Currency",
+   "label": "Bâtiments - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "batiments_net_n1",
+   "fieldtype": "Currency",
+   "label": "Bâtiments - Net N-1"
+  },
+  {
+   "fieldname": "col_anc_corp_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 22 (221 Terrains en concession, 222 Agencements, 223 Constructions, 225 Installations, 228 Autres) [SD].",
+   "fieldname": "immo_concession_brut",
+   "fieldtype": "Currency",
+   "label": "Immobilisations en Concession - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 282 (Amortissements des immos mises en concession) et 292 (Pertes de valeur) [SC].",
+   "fieldname": "immo_concession_amort",
+   "fieldtype": "Currency",
+   "label": "Immobilisations en Concession - Amort/Pertes"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Immobilisations en Concession Brut - Amort/Pertes.",
+   "fieldname": "immo_concession_net",
+   "fieldtype": "Currency",
+   "label": "Immobilisations en Concession - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "immo_concession_net_n1",
+   "fieldtype": "Currency",
+   "label": "Immobilisations en Concession - Net N-1"
+  },
+  {
+   "fieldname": "col_anc_corp_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 232 (Immos corporelles en cours), 237 (Immos incorporelles en cours), 238 (Avances et acomptes versés sur commandes d'immobilisations) [SD].",
+   "fieldname": "immo_encours_brut",
+   "fieldtype": "Currency",
+   "label": "Immobilisations en Cours - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 293 (Pertes de valeur sur immobilisations en cours) [SC].",
+   "fieldname": "immo_encours_amort",
+   "fieldtype": "Currency",
+   "label": "Immobilisations en Cours - Pertes de valeur"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Immobilisations en Cours Brut - Pertes de valeur.",
+   "fieldname": "immo_encours_net",
+   "fieldtype": "Currency",
+   "label": "Immobilisations en Cours - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "immo_encours_net_n1",
+   "fieldtype": "Currency",
+   "label": "Immobilisations en Cours - Net N-1"
+  },
+  {
+   "fieldname": "sec_anc_fin",
+   "fieldtype": "Section Break",
+   "label": "ACTIFS NON COURANTS — Immobilisations Financières (Classes 26, 27) & Impôts Différés (133)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 265 (Titres de participation évalués par équivalence - entreprises associées) [SD].",
+   "fieldname": "titres_equivalence_brut",
+   "fieldtype": "Currency",
+   "label": "Titres mis en équivalence - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 2965 (Pertes de valeur sur titres mis en équivalence) [SC].",
+   "fieldname": "titres_equivalence_amort",
+   "fieldtype": "Currency",
+   "label": "Titres mis en équivalence - Pertes"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Titres mis en équivalence Brut - Pertes.",
+   "fieldname": "titres_equivalence_net",
+   "fieldtype": "Currency",
+   "label": "Titres mis en équivalence - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "titres_equivalence_net_n1",
+   "fieldtype": "Currency",
+   "label": "Titres mis en équivalence - Net N-1"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 261 (Titres de filiales), 262 (Autres titres de participation), 266/267 (Créances rattachées à des participations), 268 (Intérêts courus), diminués du 269 [SD].",
+   "fieldname": "autres_participations_brut",
+   "fieldtype": "Currency",
+   "label": "Autres participations et créances rattachées - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 2961, 2962, 2966, 2967, 2968 (Pertes de valeur sur participations et créances rattachées) [SC].",
+   "fieldname": "autres_participations_amort",
+   "fieldtype": "Currency",
+   "label": "Autres participations - Pertes de valeur"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Autres participations Brut - Pertes de valeur.",
+   "fieldname": "autres_participations_net",
+   "fieldtype": "Currency",
+   "label": "Autres participations - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "autres_participations_net_n1",
+   "fieldtype": "Currency",
+   "label": "Autres participations - Net N-1"
+  },
+  {
+   "fieldname": "col_anc_fin_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 271 (Titres immobilisés autres que TIAP - droit de propriété), 272 (Titres représentatifs de droit de créance : obligations, bons), 273 (TIAP) [SD].",
+   "fieldname": "autres_titres_immo_brut",
+   "fieldtype": "Currency",
+   "label": "Autres titres immobilisés - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 2971, 2972, 2973 (Pertes de valeur sur autres titres immobilisés) [SC].",
+   "fieldname": "autres_titres_immo_amort",
+   "fieldtype": "Currency",
+   "label": "Autres titres immobilisés - Pertes"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Autres titres immobilisés Brut - Pertes.",
+   "fieldname": "autres_titres_immo_net",
+   "fieldtype": "Currency",
+   "label": "Autres titres immobilisés - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "autres_titres_immo_net_n1",
+   "fieldtype": "Currency",
+   "label": "Autres titres immobilisés - Net N-1"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 274 (Prêts et créances sur contrat de location-financement), 275 (Dépôts et cautionnements versés), 276 (Autres créances immobilisées), 278 (Intérêts courus) [SD].",
+   "fieldname": "prets_actifs_fin_non_courants_brut",
+   "fieldtype": "Currency",
+   "label": "Prêts et autres actifs financiers non courants - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 2974, 2975, 2976, 2978 (Pertes de valeur sur prêts et créances immobilisées) [SC].",
+   "fieldname": "prets_actifs_fin_non_courants_amort",
+   "fieldtype": "Currency",
+   "label": "Prêts et autres actifs fin. non courants - Pertes"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Prêts et actifs financiers non courants Brut - Pertes.",
+   "fieldname": "prets_actifs_fin_non_courants_net",
+   "fieldtype": "Currency",
+   "label": "Prêts et autres actifs fin. non courants - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "prets_actifs_fin_non_courants_net_n1",
+   "fieldtype": "Currency",
+   "label": "Prêts et autres actifs fin. non courants - Net N-1"
+  },
+  {
+   "fieldname": "col_anc_fin_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 133 (Impôts différés actif : différences temporelles déductibles et déficits fiscaux reportables) [SD]. Non amortissable.",
+   "fieldname": "impots_differes_actif_brut",
+   "fieldtype": "Currency",
+   "label": "Impôts différés actif - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[RÈGLE SCF] Toujours égal à 0 (un impôt différé actif ne s'amortit pas ; il est ajusté via le compte 692).",
+   "fieldname": "impots_differes_actif_amort",
+   "fieldtype": "Currency",
+   "label": "Impôts différés actif - Amort/Pertes",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Impôts différés actif Brut.",
+   "fieldname": "impots_differes_actif_net",
+   "fieldtype": "Currency",
+   "label": "Impôts différés actif - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "impots_differes_actif_net_n1",
+   "fieldtype": "Currency",
+   "label": "Impôts différés actif - Net N-1"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 30 (Marchandises), 31 (Matières premières), 32 (Autres approvisionnements), 33/34 (En-cours de production), 35 (Stocks de produits), 36 (Stocks issus d'immos), 37 (Stocks à l'extérieur), 38 [SD].",
+   "fieldname": "stocks_encours_brut",
+   "fieldtype": "Currency",
+   "label": "Stocks et encours - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 39 (390 à 397 : Pertes de valeur sur stocks et en-cours) [SC].",
+   "fieldname": "stocks_encours_amort",
+   "fieldtype": "Currency",
+   "label": "Stocks et encours - Pertes de valeur"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Stocks et encours Brut - Pertes de valeur (39).",
+   "fieldname": "stocks_encours_net",
+   "fieldtype": "Currency",
+   "label": "Stocks et encours - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "stocks_encours_net_n1",
+   "fieldtype": "Currency",
+   "label": "Stocks et encours - Net N-1"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 495 (Pertes de valeur sur comptes du groupe et associés) et 496 (Pertes de valeur sur comptes de débiteurs divers) [SC].",
+   "fieldname": "autres_debiteurs_amort",
+   "fieldtype": "Currency",
+   "label": "Autres débiteurs - Pertes de valeur"
+  },
+  {
+   "default": "0",
+   "description": "[RÈGLE SCF] Toujours 0 (les créances sur l'État ne font pas l'objet de provision pour dépréciation).",
+   "fieldname": "impots_assimiles_actif_amort",
+   "fieldtype": "Currency",
+   "label": "Impôts et assimilés (Actif) - Pertes",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 47 (Comptes transitoires ou d'attente débiteurs à régulariser) et autres créances d'exploitation [SD].",
+   "fieldname": "autres_creances_emplois_brut",
+   "fieldtype": "Currency",
+   "label": "Autres créances et emplois assimilés - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 498 (Pertes de valeur sur autres comptes de tiers) [SC].",
+   "fieldname": "autres_creances_emplois_amort",
+   "fieldtype": "Currency",
+   "label": "Autres créances et emplois assimilés - Pertes"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Autres créances et emplois assimilés Brut - Pertes.",
+   "fieldname": "autres_creances_emplois_net",
+   "fieldtype": "Currency",
+   "label": "Autres créances et emplois assimilés - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "autres_creances_emplois_net_n1",
+   "fieldtype": "Currency",
+   "label": "Autres créances et emplois assimilés - Net N-1"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 50 (501 Parts dans entreprises liées, 503 Actions, 506 Obligations et bons du Trésor à court terme, 508 Autres VMP et intérêts courus), net du 509 [SD].",
+   "fieldname": "placements_courants_brut",
+   "fieldtype": "Currency",
+   "label": "Placements et autres actifs fin. courants - Brut"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 591 (Pertes de valeur sur valeurs mobilières de placement) [SC].",
+   "fieldname": "placements_courants_amort",
+   "fieldtype": "Currency",
+   "label": "Placements et autres actifs fin. courants - Pertes"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Placements et actifs financiers courants Brut - Pertes (591).",
+   "fieldname": "placements_courants_net",
+   "fieldtype": "Currency",
+   "label": "Placements et autres actifs fin. courants - Net N",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant Net N-1.",
+   "fieldname": "placements_courants_net_n1",
+   "fieldtype": "Currency",
+   "label": "Placements et autres actifs fin. courants - Net N-1"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 594 (Pertes de valeur sur comptes de régies d'avances et accréditifs) [SC].",
+   "fieldname": "tresorerie_actif_amort",
+   "fieldtype": "Currency",
+   "label": "Trésorerie - Pertes de valeur"
+  },
+  {
+   "fieldname": "tab_passif",
+   "fieldtype": "Tab Break",
+   "label": "3. Bilan Passif (Page 2)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 109 (Actionnaires : capital souscrit non appelé) [SD - vient en déduction des capitaux propres].",
+   "fieldname": "capital_non_appele",
+   "fieldtype": "Currency",
+   "label": "Capital non appelé (N)"
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Solde du compte 109 N-1.",
+   "fieldname": "capital_non_appele_n1",
+   "fieldtype": "Currency",
+   "label": "Capital non appelé (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 105 (Écart de réévaluation des immobilisations) [SC].",
+   "fieldname": "ecart_reevaluation",
+   "fieldtype": "Currency",
+   "label": "Écart de réévaluation (N)"
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Solde du compte 105 N-1.",
+   "fieldname": "ecart_reevaluation_n1",
+   "fieldtype": "Currency",
+   "label": "Écart de réévaluation (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 107 (Écart d'équivalence - réservé aux états financiers consolidés) [SC].",
+   "fieldname": "ecart_equivalence",
+   "fieldtype": "Currency",
+   "label": "Écart d'équivalence (1) (N)"
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Solde du compte 107 N-1.",
+   "fieldname": "ecart_equivalence_n1",
+   "fieldtype": "Currency",
+   "label": "Écart d'équivalence (1) (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[CONSOLIDATION SCF] Quote-part de la société consolidante (états consolidés uniquement).",
+   "fieldname": "part_societe_consolidante",
+   "fieldtype": "Currency",
+   "label": "Part de la société consolidante (1) (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "part_societe_consolidante_n1",
+   "fieldtype": "Currency",
+   "label": "Part de la société consolidante (1) (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[CONSOLIDATION SCF] Intérêts minoritaires (états consolidés uniquement).",
+   "fieldname": "part_minoritaires",
+   "fieldtype": "Currency",
+   "label": "Part des minoritaires (1) (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "part_minoritaires_n1",
+   "fieldtype": "Currency",
+   "label": "Part des minoritaires (1) (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 134 (Impôts différés passif) et 155 (Provisions pour impôts à long terme) [SC].",
+   "fieldname": "impots_differes_passif",
+   "fieldtype": "Currency",
+   "label": "Impôts (différés et provisionnés) (N)"
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Solde des comptes 134 et 155 N-1.",
+   "fieldname": "impots_differes_passif_n1",
+   "fieldtype": "Currency",
+   "label": "Impôts (différés et provisionnés) (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 269/279 (Versements restant à effectuer sur titres non libérés à long terme) et autres dettes à plus d'un an [SC].",
+   "fieldname": "autres_dettes_non_courantes",
+   "fieldtype": "Currency",
+   "label": "Autres dettes non courantes (N)"
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Montant N-1.",
+   "fieldname": "autres_dettes_non_courantes_n1",
+   "fieldtype": "Currency",
+   "label": "Autres dettes non courantes (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 131 (Subventions d'équipement), 132 (Autres subventions d'investissement), 138 (Autres produits et charges différés), 153 (Provisions pour pensions et obligations similaires), 156, 158 (Autres provisions pour charges - passifs non courants) [SC].",
+   "fieldname": "provisions_produits_constates_avance",
+   "fieldtype": "Currency",
+   "label": "Provisions et produits constatés d'avance (N)"
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Solde des comptes 131, 132, 138, 153, 156, 158 N-1.",
+   "fieldname": "provisions_produits_constates_avance_n1",
+   "fieldtype": "Currency",
+   "label": "Provisions et produits constatés d'avance (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 519 (Concours bancaires courants : découverts bancaires, mobilisations de créances, facilités de caisse) et 512 (Banques soldes créditeurs) [SC].",
+   "fieldname": "tresorerie_passif",
+   "fieldtype": "Currency",
+   "label": "Trésorerie passif (N)"
+  },
+  {
+   "default": "0",
+   "description": "[REPORT N-1] Solde des comptes 519 et 512 créditeurs N-1.",
+   "fieldname": "tresorerie_passif_n1",
+   "fieldtype": "Currency",
+   "label": "Trésorerie passif (N-1)"
+  },
+  {
+   "fieldname": "col_tot_pas",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tab_tcr",
+   "fieldtype": "Tab Break",
+   "label": "4. Compte de Résultat TCR (Pages 3 & 4)"
+  },
+  {
+   "fieldname": "sec_tcr_prod",
+   "fieldtype": "Section Break",
+   "label": "I — PRODUCTION DE L'EXERCICE (Comptes 70, 72, 73, 74)"
+  },
+  {
+   "default": "10525694",
+   "fieldname": "ventes_marchandises_n1",
+   "fieldtype": "Currency",
+   "label": "Ventes de marchandises (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 701 (Ventes de produits finis), 702 (Ventes de produits intermédiaires), 703 (Ventes de produits résiduels) [SC - Crédit].",
+   "fieldname": "produits_fabriques",
+   "fieldtype": "Currency",
+   "label": "Production vendue - Produits fabriqués (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "produits_fabriques_n1",
+   "fieldtype": "Currency",
+   "label": "Production vendue - Produits fabriqués (N-1)"
+  },
+  {
+   "default": "2480000",
+   "fieldname": "production_services_n1",
+   "fieldtype": "Currency",
+   "label": "Production vendue - Prestations de services (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 704 (Ventes de travaux BTPH et ingénierie) [SC - Crédit].",
+   "fieldname": "vente_travaux",
+   "fieldtype": "Currency",
+   "label": "Production vendue - Vente de travaux (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "vente_travaux_n1",
+   "fieldtype": "Currency",
+   "label": "Production vendue - Vente de travaux (N-1)"
+  },
+  {
+   "fieldname": "col_tcr_prod_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 708 (Produits des activités annexes : ports et frais facturés, cessions de matières, locations diverses) [SC - Crédit].",
+   "fieldname": "produits_annexes",
+   "fieldtype": "Currency",
+   "label": "Produits annexes (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "produits_annexes_n1",
+   "fieldtype": "Currency",
+   "label": "Produits annexes (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 709 (Rabais, remises et ristournes accordés par l'entreprise sur ventes) [SD - Débit, vient en déduction du CA].",
+   "fieldname": "rabais_accordes",
+   "fieldtype": "Currency",
+   "label": "Rabais, remises, ristournes accordés (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "rabais_accordes_n1",
+   "fieldtype": "Currency",
+   "label": "Rabais, remises, ristournes accordés (N-1)"
+  },
+  {
+   "default": "13005694",
+   "description": "[FORMULE DGI] = Somme des ventes N-1 (700 à 708) - RRR accordés N-1 (709).",
+   "fieldname": "chiffre_affaires_net_n1",
+   "fieldtype": "Currency",
+   "label": "Chiffre d'affaires net des RRR (N-1)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tcr_prod_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 72 (723 Variation de stocks d'en-cours, 724 Variation de stocks de produits) [SC positif si stockage / SD négatif si déstockage].",
+   "fieldname": "production_stockee",
+   "fieldtype": "Currency",
+   "label": "Production stockée ou déstockée (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "production_stockee_n1",
+   "fieldtype": "Currency",
+   "label": "Production stockée ou déstockée (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 73 (731 Production immobilisée d'actifs incorporels, 732 Production immobilisée d'actifs corporels) [SC - Crédit].",
+   "fieldname": "production_immobilisee",
+   "fieldtype": "Currency",
+   "label": "Production immobilisée (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "production_immobilisee_n1",
+   "fieldtype": "Currency",
+   "label": "Production immobilisée (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 74 (741 Subventions d'équilibre, 748 Autres subventions d'exploitation) [SC - Crédit].",
+   "fieldname": "subventions_exploitation",
+   "fieldtype": "Currency",
+   "label": "Subventions d'exploitation (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "subventions_exploitation_n1",
+   "fieldtype": "Currency",
+   "label": "Subventions d'exploitation (N-1)"
+  },
+  {
+   "default": "13005694",
+   "description": "[FORMULE DGI] = Total de la Production de l'exercice N-1.",
+   "fieldname": "total_production_i_n1",
+   "fieldtype": "Currency",
+   "label": "I - PRODUCTION DE L'EXERCICE (N-1)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tcr_conso",
+   "fieldtype": "Section Break",
+   "label": "II — CONSOMMATIONS DE L'EXERCICE (Comptes 60, 61, 62) & III — VALEUR AJOUTÉE"
+  },
+  {
+   "default": "10063349",
+   "fieldname": "achats_marchandises_n1",
+   "fieldtype": "Currency",
+   "label": "Achats de marchandises vendues (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 601 (Matières premières consommées) [SD - Débit].",
+   "fieldname": "matieres_premieres",
+   "fieldtype": "Currency",
+   "label": "Matières premières (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "matieres_premieres_n1",
+   "fieldtype": "Currency",
+   "label": "Matières premières (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 602 (Autres approvisionnements consommés : matières consommables, fournitures, emballages) [SD - Débit].",
+   "fieldname": "autres_approvisionnements",
+   "fieldtype": "Currency",
+   "label": "Autres approvisionnements (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "autres_approvisionnements_n1",
+   "fieldtype": "Currency",
+   "label": "Autres approvisionnements (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 603 (6030, 6031, 6032 : Variations des stocks d'approvisionnements et marchandises) [SD ou SC].",
+   "fieldname": "variations_stocks",
+   "fieldtype": "Currency",
+   "label": "Variations des stocks (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "variations_stocks_n1",
+   "fieldtype": "Currency",
+   "label": "Variations des stocks (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 604 (Achats d'études et de prestations de services) [SD - Débit].",
+   "fieldname": "achats_etudes_services",
+   "fieldtype": "Currency",
+   "label": "Achats d'études et de prestations de services (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "achats_etudes_services_n1",
+   "fieldtype": "Currency",
+   "label": "Achats d'études et de prestations de services (N-1)"
+  },
+  {
+   "default": "53220",
+   "fieldname": "autres_consommations_n1",
+   "fieldtype": "Currency",
+   "label": "Autres consommations (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 609 (Rabais, remises et ristournes obtenus sur achats) [SC - Crédit, vient en déduction des achats consommés].",
+   "fieldname": "rabais_obtenus_achats",
+   "fieldtype": "Currency",
+   "label": "Rabais, remises, ristournes obtenus sur achats (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "rabais_obtenus_achats_n1",
+   "fieldtype": "Currency",
+   "label": "Rabais, remises, ristournes obtenus sur achats (N-1)"
+  },
+  {
+   "fieldname": "col_tcr_conso_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 611 (Sous-traitance générale) [SD - Débit]. À déclarer également au Tableau 12.",
+   "fieldname": "services_sous_traitance",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Sous-traitance générale (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "services_sous_traitance_n1",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Sous-traitance générale (N-1)"
+  },
+  {
+   "default": "360000",
+   "fieldname": "services_locations_n1",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Locations (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 615 (Entretien, réparations et maintenance sur biens immobiliers et mobiliers) [SD - Débit].",
+   "fieldname": "services_entretien",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Entretien, réparations et maintenance (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "services_entretien_n1",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Entretien et maintenance (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 616 (Primes d'assurances multirisques, transport, responsabilité civile) [SD - Débit].",
+   "fieldname": "services_assurances",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Primes d'assurances (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "services_assurances_n1",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Primes d'assurances (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 621 (Personnel extérieur à l'entreprise : intérim, détachement) [SD - Débit].",
+   "fieldname": "services_personnel_exterieur",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Personnel extérieur à l'entreprise (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "services_personnel_exterieur_n1",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Personnel extérieur (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 622 (Rémunérations d'intermédiaires, honoraires comptables, juridiques, commissariat aux comptes, frais d'actes et de contentieux) [SD - Débit]. À détailler au Tableau 12.",
+   "fieldname": "services_honoraires",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Rémunération d'intermédiaires et honoraires (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "services_honoraires_n1",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Honoraires (N-1)"
+  },
+  {
+   "fieldname": "col_tcr_conso_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "30110",
+   "fieldname": "services_publicite_n1",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Publicité (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 625 (Voyages et déplacements, missions, réceptions) [SD - Débit]. Doivent être dûment justifiés et liés à l'exploitation (Art. 141-1 CIDTA).",
+   "fieldname": "services_deplacements",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Déplacements, missions et réceptions (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "services_deplacements_n1",
+   "fieldtype": "Currency",
+   "label": "Services extérieurs - Déplacements, missions et réceptions (N-1)"
+  },
+  {
+   "default": "89010",
+   "fieldname": "autres_services_n1",
+   "fieldtype": "Currency",
+   "label": "Autres services (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 619 et 629 (RRR obtenus sur services extérieurs) [SC - Crédit, vient en diminution des services extérieurs].",
+   "fieldname": "rabais_obtenus_services",
+   "fieldtype": "Currency",
+   "label": "Rabais, remises, ristournes obtenus sur services extérieurs (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "rabais_obtenus_services_n1",
+   "fieldtype": "Currency",
+   "label": "Rabais, remises, ristournes obtenus sur services extérieurs (N-1)"
+  },
+  {
+   "default": "10595689",
+   "description": "[FORMULE DGI] = Total des Consommations de l'exercice N-1.",
+   "fieldname": "total_consommations_ii_n1",
+   "fieldtype": "Currency",
+   "label": "II - CONSOMMATIONS DE L'EXERCICE (N-1)",
+   "read_only": 1
+  },
+  {
+   "default": "2410005",
+   "description": "[FORMULE DGI] = I (Production N-1) - II (Consommations N-1).",
+   "fieldname": "valeur_ajoutee_iii_n1",
+   "fieldtype": "Currency",
+   "label": "III - VALEUR AJOUTÉE D'EXPLOITATION (I - II) (N-1)",
+   "read_only": 1
+  },
+  {
+   "default": "502527",
+   "fieldname": "charges_personnel_n1",
+   "fieldtype": "Currency",
+   "label": "Charges de personnel (N-1)"
+  },
+  {
+   "default": "98280",
+   "fieldname": "impots_taxes_assimiles_n1",
+   "fieldtype": "Currency",
+   "label": "Impôts et taxes et versements assimilés (N-1)"
+  },
+  {
+   "default": "1809197",
+   "description": "[FORMULE DGI] = Valeur ajoutée N-1 - Charges de personnel N-1 - Impôts et taxes N-1.",
+   "fieldname": "excedent_brut_exploitation_iv_n1",
+   "fieldtype": "Currency",
+   "label": "IV - EXCÉDENT BRUT D'EXPLOITATION (N-1)",
+   "read_only": 1
+  },
+  {
+   "default": "95",
+   "fieldname": "autres_produits_operationnels_n1",
+   "fieldtype": "Currency",
+   "label": "Autres produits opérationnels (N-1)"
+  },
+  {
+   "default": "2752",
+   "fieldname": "autres_charges_operationnelles_n1",
+   "fieldtype": "Currency",
+   "label": "Autres charges opérationnelles (N-1)"
+  },
+  {
+   "default": "396642",
+   "fieldname": "dotations_amortissements_n1",
+   "fieldtype": "Currency",
+   "label": "Dotations aux amortissements (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF & PC COMPTA] Comptes 6815/6855 (SCF Officiel) ou 68?9 (Convention PC COMPTA : 6819/6859) — Dotations aux provisions pour risques et charges [SD - Débit].",
+   "fieldname": "dotations_provisions",
+   "fieldtype": "Currency",
+   "label": "Provision (Dotations aux provisions) (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "dotations_provisions_n1",
+   "fieldtype": "Currency",
+   "label": "Provision (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF & PC COMPTA] Comptes 6816/6817/6856 (SCF Officiel) ou 68?8 (Convention PC COMPTA : 6818/6858) — Pertes de valeur sur immobilisations, stocks et créances [SD - Débit].",
+   "fieldname": "pertes_de_valeur",
+   "fieldtype": "Currency",
+   "label": "Pertes de valeur (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "pertes_de_valeur_n1",
+   "fieldtype": "Currency",
+   "label": "Pertes de valeur (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 781 (Reprises d'exploitation sur pertes de valeur et provisions - actifs non courants) et 785 (Reprises d'exploitation sur pertes de valeur et provisions - actifs courants) [SC - Crédit].",
+   "fieldname": "reprises_pertes_provisions",
+   "fieldtype": "Currency",
+   "label": "Reprise sur pertes de valeur et provisions (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "reprises_pertes_provisions_n1",
+   "fieldtype": "Currency",
+   "label": "Reprise sur pertes de valeur et provisions (N-1)"
+  },
+  {
+   "default": "1409897",
+   "description": "[FORMULE DGI] = Résultat opérationnel N-1.",
+   "fieldname": "resultat_operationnel_v_n1",
+   "fieldtype": "Currency",
+   "label": "V - RÉSULTAT OPÉRATIONNEL (N-1)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 76 (761 Produits de participations, 762 Revenus des actifs financiers, 763 Revenus de créances, 765 Écart d'évaluation plus-values, 766 Gains de change, 767 Profits nets sur cessions VMP, 768 Autres produits financiers) et 786 (Reprises financières) [SC - Crédit].",
+   "fieldname": "produits_financiers",
+   "fieldtype": "Currency",
+   "label": "Produits financiers (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "produits_financiers_n1",
+   "fieldtype": "Currency",
+   "label": "Produits financiers (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 66 (661 Charges d'intérêts, 664 Pertes sur créances liées à des participations, 665 Écart d'évaluation moins-values, 666 Pertes de change, 667 Pertes nettes sur cessions VMP, 668 Autres charges financières) et 686 (Dotations financières) [SD - Débit].",
+   "fieldname": "charges_financieres",
+   "fieldtype": "Currency",
+   "label": "Charges financières (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "charges_financieres_n1",
+   "fieldtype": "Currency",
+   "label": "Charges financières (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Produits financiers (76 + 786) - Charges financières (66 + 686).",
+   "fieldname": "resultat_financier_vi",
+   "fieldtype": "Currency",
+   "label": "VI - RÉSULTAT FINANCIER (N)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Produits financiers N-1 - Charges financières N-1.",
+   "fieldname": "resultat_financier_vi_n1",
+   "fieldtype": "Currency",
+   "label": "VI - RÉSULTAT FINANCIER (N-1)",
+   "read_only": 1
+  },
+  {
+   "default": "1409897",
+   "description": "[FORMULE DGI] = V (Résultat opérationnel N-1) + VI (Résultat financier N-1).",
+   "fieldname": "resultat_ordinaire_vii_n1",
+   "fieldtype": "Currency",
+   "label": "VII - RÉSULTAT ORDINAIRE (V + VI) (N-1)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 77 (Produits des éléments extraordinaires - événements imprévisibles hors activité ordinaire) [SC - Crédit].",
+   "fieldname": "elements_extraordinaires_produits",
+   "fieldtype": "Currency",
+   "label": "Éléments extraordinaires (produits) (*) (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "elements_extraordinaires_produits_n1",
+   "fieldtype": "Currency",
+   "label": "Éléments extraordinaires (produits) (*) (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 67 (Charges des éléments extraordinaires) [SD - Débit].",
+   "fieldname": "elements_extraordinaires_charges",
+   "fieldtype": "Currency",
+   "label": "Éléments extraordinaires (charges) (*) (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "elements_extraordinaires_charges_n1",
+   "fieldtype": "Currency",
+   "label": "Éléments extraordinaires (charges) (*) (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Éléments extraordinaires (produits) (77) - Éléments extraordinaires (charges) (67).",
+   "fieldname": "resultat_extraordinaire_viii",
+   "fieldtype": "Currency",
+   "label": "VIII - RÉSULTAT EXTRAORDINAIRE (N)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Produits extraordinaires N-1 - Charges extraordinaires N-1.",
+   "fieldname": "resultat_extraordinaire_viii_n1",
+   "fieldtype": "Currency",
+   "label": "VIII - RÉSULTAT EXTRAORDINAIRE (N-1)",
+   "read_only": 1
+  },
+  {
+   "default": "10000",
+   "fieldname": "impots_exigibles_ibs_n1",
+   "fieldtype": "Currency",
+   "label": "Impôts exigibles sur résultats (IBS) (N-1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 692 (Imposition différée actif) et 693 (Imposition différée passif) [Charge nette SD positive ou Produit net SC négatif].",
+   "fieldname": "impots_differes_variation",
+   "fieldtype": "Currency",
+   "label": "Impôts différés (variations) sur résultats ordinaires (N)"
+  },
+  {
+   "default": "0",
+   "fieldname": "impots_differes_variation_n1",
+   "fieldtype": "Currency",
+   "label": "Impôts différés (variations) (N-1)"
+  },
+  {
+   "default": "1399897",
+   "description": "[FORMULE DGI] = VII N-1 + VIII N-1 - IBS N-1 - Impôts différés N-1.",
+   "fieldname": "resultat_net_exercice_ix_n1",
+   "fieldtype": "Currency",
+   "label": "IX - RÉSULTAT NET DE L'EXERCICE (N-1)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tab_annexes_1_8",
+   "fieldtype": "Tab Break",
+   "label": "5. Tableaux Annexes 1 à 8/2 (Pages 5 à 9)"
+  },
+  {
+   "fieldname": "sec_tab_1_2",
+   "fieldtype": "Section Break",
+   "label": "Page 5 — Marge Brute, Tableau 1 (Mouvements des Stocks) & Tableau 2 (Fluctuation de la Production Stockée)"
+  },
+  {
+   "default": "10063349",
+   "description": "[COMPTE SCF] Comptes 600 (Achats de marchandises vendues) +/- 6030 (Variation des stocks de marchandises) - 6090 (RRR obtenus sur achats de marchandises) [SD].",
+   "fieldname": "marge_brute_marchandises_consommees",
+   "fieldtype": "Currency",
+   "label": "Marchandises consommées (N)"
+  },
+  {
+   "default": "10063349",
+   "description": "[REPORT N-1] Marchandises consommées de l'exercice précédent.",
+   "fieldname": "marge_brute_marchandises_consommees_n1",
+   "fieldtype": "Currency",
+   "label": "Marchandises consommées (N-1)"
+  },
+  {
+   "default": "462345",
+   "description": "[FORMULE DGI] = Ventes de marchandises (Compte 700) - Marchandises consommées (Comptes 600 +/- 6030 - 6090).",
+   "fieldname": "marge_brute_ventes_etat",
+   "fieldtype": "Currency",
+   "label": "Marge brute sur ventes en l'état (N)",
+   "read_only": 1
+  },
+  {
+   "default": "462345",
+   "description": "[FORMULE DGI] = Ventes de marchandises N-1 - Marchandises consommées N-1.",
+   "fieldname": "marge_brute_ventes_etat_n1",
+   "fieldtype": "Currency",
+   "label": "Marge brute sur ventes en l'état (N-1)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Solde débiteur initial au 01/01 des comptes 30 à 37.",
+   "fieldname": "tab1_total_debut",
+   "fieldtype": "Currency",
+   "label": "Tab 1 - Total Stocks Début d'exercice"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF & HYBRIDE] Total des mouvements débits (Entrées) sur 30 à 37 en Inventaire Permanent ERPNext, ou formule de secours Inventaire Intermittent PC COMPTA (SF - SI + Mvm Crédit).",
+   "fieldname": "tab1_total_debit",
+   "fieldtype": "Currency",
+   "label": "Tab 1 - Total Mouvements Débit (Entrées)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF & HYBRIDE] Total des mouvements crédits (Sorties) sur 30 à 37 en Inventaire Permanent ERPNext, ou formule de secours Inventaire Intermittent PC COMPTA (600..602 + 6030..6032).",
+   "fieldname": "tab1_total_credit",
+   "fieldtype": "Currency",
+   "label": "Tab 1 - Total Mouvements Crédit (Sorties)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Solde de début d'exercice + Mouvements Débit - Mouvements Crédit (Doit correspondre à la rubrique 'Stocks et encours - Brut' du Bilan Actif).",
+   "fieldname": "tab1_total_fin",
+   "fieldtype": "Currency",
+   "label": "Tab 1 - Total Stocks Fin d'exercice",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tab_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Mouvement débit du compte 72 (annulation du stock initial des comptes 33, 34, 35).",
+   "fieldname": "tab2_debit",
+   "fieldtype": "Currency",
+   "label": "Tab 2 - Débit (Stock initial en-cours & produits)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Mouvement crédit du compte 72 (constatation du stock final des comptes 33, 34, 35).",
+   "fieldname": "tab2_credit",
+   "fieldtype": "Currency",
+   "label": "Tab 2 - Crédit (Stock final en-cours & produits)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Crédit - Débit (Solde créditeur si > 0, Solde débiteur si < 0 ; correspond à la rubrique 'Production stockée ou déstockée' du TCR).",
+   "fieldname": "tab2_solde_fin",
+   "fieldtype": "Currency",
+   "label": "Tab 2 - Solde de fin d'exercice (Compte 72)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tab_3_4",
+   "fieldtype": "Section Break",
+   "label": "Page 6 — Tableau 3 (Charges de personnel, impôts et autres services) & Tableau 4 (Autres charges et produits opérationnels)"
+  },
+  {
+   "default": "89010",
+   "description": "[FORMULE & COMPTES SCF] = Somme des comptes 614, 617, 618, 624, 626, 627, 628 (Correspond aux Autres services du TCR).",
+   "fieldname": "tab3_total_1_autres_services",
+   "fieldtype": "Currency",
+   "label": "Tab 3 - TOTAL (1) Autres services",
+   "read_only": 1
+  },
+  {
+   "default": "502527",
+   "description": "[FORMULE & COMPTES SCF] = Somme des comptes 631, 634, 635, 636, 637, 638 (Égal à la rubrique 'Charges de personnel' du TCR).",
+   "fieldname": "tab3_total_2_personnel",
+   "fieldtype": "Currency",
+   "label": "Tab 3 - TOTAL (2) Charges de personnel",
+   "read_only": 1
+  },
+  {
+   "default": "98280",
+   "description": "[FORMULE & COMPTES SCF] = Somme des comptes 641, 642, 645 (Égal à la rubrique 'Impôts et taxes et versements assimilés' du TCR).",
+   "fieldname": "tab3_total_3_impots_taxes",
+   "fieldtype": "Currency",
+   "label": "Tab 3 - TOTAL (3) Impôts, taxes et versements assimilés",
+   "read_only": 1
+  },
+  {
+   "default": "689817",
+   "description": "[FORMULE DGI] = TOTAL (1) + TOTAL (2) + TOTAL (3).",
+   "fieldname": "tab3_total_general_1_2_3",
+   "fieldtype": "Currency",
+   "label": "Tab 3 - TOTAL (1)+(2)+(3)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tab_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2754",
+   "description": "[FORMULE & COMPTES SCF] = Somme des comptes 651 à 658 (Égal à 'Autres charges opérationnelles' du TCR).",
+   "fieldname": "tab4_total_charges_op",
+   "fieldtype": "Currency",
+   "label": "Tab 4 - TOTAL Autres charges opérationnelles (Compte 65)",
+   "read_only": 1
+  },
+  {
+   "default": "95",
+   "description": "[FORMULE & COMPTES SCF] = Somme des comptes 751 à 758 (Égal à 'Autres produits opérationnels' du TCR).",
+   "fieldname": "tab4_total_produits_op",
+   "fieldtype": "Currency",
+   "label": "Tab 4 - TOTAL Autres produits opérationnels (Compte 75)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tab_5_6",
+   "fieldtype": "Section Break",
+   "label": "Page 7 — Tableau 5 (Amortissements et pertes de valeurs) & Tableau 6 (Immobilisations créées ou acquises)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Mouvement crédit de l'exercice des comptes 281/291 par le débit du compte 681.",
+   "fieldname": "tab5_dotations_exercice",
+   "fieldtype": "Currency",
+   "label": "5. Immos Corporelles - Dotations de l'exercice (1)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Mouvement débit des comptes 281/291 (reprises d'amortissements sur immobilisations cédées ou mises au rebut).",
+   "fieldname": "tab5_diminutions_sorties",
+   "fieldtype": "Currency",
+   "label": "5. Immos Corporelles - Diminutions éléments sortis"
+  },
+  {
+   "default": "0",
+   "description": "[RÈGLE FISCALE CIDTA] Dotation fiscalement déductible (plafonnée pour les véhicules de tourisme sur une base de 3 000 000 DZD TTC - Art. 141-2 CIDTA).",
+   "fieldname": "tab5_dotations_fiscales",
+   "fieldtype": "Currency",
+   "label": "5. Immos Corporelles - Dotations fiscales de l'exercice (2)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Dotations comptables de l'exercice (1) - Dotations fiscales de l'exercice (2). Cet écart positif est à réintégrer au Tableau 9.",
+   "fieldname": "tab5_ecart_amort",
+   "fieldtype": "Currency",
+   "label": "5. Immos Corporelles - Écarts (1) - (2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tab_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tab_annexes_9_13",
+   "fieldtype": "Tab Break",
+   "label": "6. Tableau 9 (Résultat Fiscal) & Tab 10 à 13 (Pages 10 à 12)"
+  },
+  {
+   "fieldname": "sec_tab9_header",
+   "fieldtype": "Section Break",
+   "label": "Page 10 — Tableau 9 : Détermination du Résultat Fiscal (CIDTA Art. 140 à 173 & LF 2024–2026)"
+  },
+  {
+   "default": "1399897",
+   "description": "[FORMULE DGI] = max(0, IX - Résultat Net de l'Exercice du TCR).",
+   "fieldname": "tab9_benefice_comptable",
+   "fieldtype": "Currency",
+   "label": "I. Résultat net de l'exercice — Bénéfice (Compte 120)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tab9_h1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = abs(min(0, IX - Résultat Net de l'Exercice du TCR)).",
+   "fieldname": "tab9_perte_comptable",
+   "fieldtype": "Currency",
+   "label": "I. Résultat net de l'exercice — Perte (Compte 129)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tab9_reint",
+   "fieldtype": "Section Break",
+   "label": "II. Réintégrations Extracomptables (Les 16 Cases Officielles DGI)"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 141-1 CIDTA] Charges d'entretien, d'amortissement et de fonctionnement des biens immobiliers non affectés directement à l'exploitation.",
+   "fieldname": "tab9_reint_charges_immeubles",
+   "fieldtype": "Currency",
+   "label": "1. Charges des immeubles non affectés directement à l'exploitation"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 169-1 CIDTA] Fraction des cadeaux publicitaires (Compte 623) excédant la valeur unitaire limite de 1 000 DZD TTC par objet ou dans la limite d'un plafond global de 500 000 DZD.",
+   "fieldname": "tab9_reint_cadeaux_pub",
+   "fieldtype": "Currency",
+   "label": "2. Quote-part des cadeaux publicitaires non déductibles"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 169-2 CIDTA] Sommes consacrées au sponsoring/parrainage (Compte 623) excédant 10% du chiffre d'affaires de l'exercice et/ou le plafond annuel de 30 000 000 DZD.",
+   "fieldname": "tab9_reint_sponsoring",
+   "fieldtype": "Currency",
+   "label": "3. Quote-part du sponsoring et parrainage non déductibles"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 141-1 CIDTA] Frais d'hôtel, de restaurant et de réception (Compte 625) non dûment justifiés ou non engagés dans l'intérêt direct de l'exploitation.",
+   "fieldname": "tab9_reint_frais_reception",
+   "fieldtype": "Currency",
+   "label": "4. Frais de réception non déductibles"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 169-1 CIDTA] Subventions et dons (Comptes 628/656) autres que ceux consentis aux établissements et associations à caractère humanitaire, ou excédant le plafond annuel de 4 000 000 DZD.",
+   "fieldname": "tab9_reint_cotisations_dons",
+   "fieldtype": "Currency",
+   "label": "5. Cotisations et dons non déductibles"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 141-4 CIDTA] Taxes non déductibles par nature (Taxe de formation professionnelle 1%, Taxe d'apprentissage 1%, rappels d'impôts - Compte 64).",
+   "fieldname": "tab9_reint_impots_taxes",
+   "fieldtype": "Currency",
+   "label": "6. Impôts et taxes non déductibles"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 141-5 CIDTA] Provisions ne remplissant pas les conditions de déductibilité fiscale (provisions pour congés payés, retraite/IDR, provisions forfaitaires ou sans action en justice - Comptes 681/685).",
+   "fieldname": "tab9_reint_provisions",
+   "fieldtype": "Currency",
+   "label": "7. Provisions non déductibles"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 141-2 CIDTA] Quote-part d'amortissement des véhicules de tourisme calculée sur la fraction du prix d'acquisition excédant le plafond légal de 3 000 000 DZD TTC (Report de l'écart du Tableau 5).",
+   "fieldname": "tab9_reint_amortissements",
+   "fieldtype": "Currency",
+   "label": "8. Amortissements non déductibles"
+  },
+  {
+   "fieldname": "col_tab9_r1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 171 CIDTA] Dépenses de recherche et développement (Compte 617) excédant le plafond de 30% du bénéfice imposable et/ou 200 000 000 DZD.",
+   "fieldname": "tab9_reint_frais_rd",
+   "fieldtype": "Currency",
+   "label": "9. Quote-part des frais de recherche développement non déductibles"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 27 LFC 2010] Neutralisation fiscale de l'amortissement comptabilisé en SCF par le crédit-preneur sur le bien loué en location-financement (Compte 681).",
+   "fieldname": "tab9_reint_amort_cb_preneur",
+   "fieldtype": "Currency",
+   "label": "10. Amortissements non déductibles liés aux opérations de crédit-bail (Preneur)"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 27 LFC 2010] Réintégration chez le crédit-bailleur de la quote-part des loyers perçus correspondant au remboursement du capital financier.",
+   "fieldname": "tab9_reint_loyers_cb_bailleur",
+   "fieldtype": "Currency",
+   "label": "11. Loyers hors produits financiers (Bailleur)"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 141-4 CIDTA] Montant de l'IBS comptabilisé en charge (Compte 695 - Rubrique 'Impôts exigibles sur résultats' du TCR). L'IBS n'est pas déductible de sa propre assiette.",
+   "fieldname": "tab9_reint_ibs_exigible",
+   "fieldtype": "Currency",
+   "label": "12. Impôts sur les bénéfices des sociétés — Impôt exigible sur résultat"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Règle SCF/DGI] Charge nette d'impôt différé comptabilisée au cours de l'exercice (Comptes 692/693 débiteurs).",
+   "fieldname": "tab9_reint_impot_differe",
+   "fieldtype": "Currency",
+   "label": "13. Impôts sur les bénéfices des sociétés — Impôt différé (variation)"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 141-5 CIDTA] Dépréciations sur stocks (39), créances clients (491 sans poursuite judiciaire) ou titres (296/591) non admises en déduction fiscale.",
+   "fieldname": "tab9_reint_pertes_valeur",
+   "fieldtype": "Currency",
+   "label": "14. Pertes de valeurs non déductibles"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Art. 141-6 CIDTA] Amendes fiscales, pénalités de retard, majorations, transactions et confiscations de toute nature (Compte 656).",
+   "fieldname": "tab9_reint_amendes_penalites",
+   "fieldtype": "Currency",
+   "label": "15. Amendes et pénalités"
+  },
+  {
+   "default": "0",
+   "description": "[RÉINTÉGRATION - Lois de Finances] Charges payées en espèces au-delà du plafond légal de 1 000 000 DZD TTC, loyers de véhicules de tourisme > 200 000 DZD/an, charges d'exercices antérieurs, etc.",
+   "fieldname": "tab9_reint_autres",
+   "fieldtype": "Currency",
+   "label": "16. Autres réintégrations (*)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des 16 rubriques de réintégrations extracomptables (Lignes 1 à 16).",
+   "fieldname": "tab9_total_reintegrations",
+   "fieldtype": "Currency",
+   "label": "Total des réintégrations (II)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tab9_deduct",
+   "fieldtype": "Section Break",
+   "label": "III. Déductions Extracomptables (Les 7 Cases Officielles DGI) & IV. Déficits Antérieurs (Art. 147 CIDTA)"
+  },
+  {
+   "default": "0",
+   "description": "[DÉDUCTION - Art. 172 & 173 CIDTA] Fraction exonérée des plus-values de cession d'immobilisations (Compte 752) : 30% si court terme (<= 3 ans), 65% si long terme (> 3 ans), ou 100% si engagement de réinvestissement dans les 3 ans.",
+   "fieldname": "tab9_deduct_pv_cession",
+   "fieldtype": "Currency",
+   "label": "1. Plus-values sur cession d'éléments d'actif immobilisés (cf. art. 173 du CIDTA)"
+  },
+  {
+   "default": "0",
+   "description": "[DÉDUCTION - Lois de Finances] Produits et plus-values de cession des actions, titres assimilés cotés à la Bourse d'Alger et parts d'OPCVM exonérés d'IBS (Comptes 761/767).",
+   "fieldname": "tab9_deduct_produits_actions_opcvm",
+   "fieldtype": "Currency",
+   "label": "2. Produits et plus-values de cession des actions et titres cotés en bourse / OPCVM"
+  },
+  {
+   "default": "0",
+   "description": "[DÉDUCTION - Art. 147 bis CIDTA] Dividendes et produits de participations perçus (Compte 761) ayant déjà supporté l'IBS ou expressément exonérés (élimination de la double imposition).",
+   "fieldname": "tab9_deduct_revenus_dividendes",
+   "fieldtype": "Currency",
+   "label": "3. Revenus provenant de la distribution des bénéfices soumis à l'IBS (cf. art. 147 bis du CIDTA)"
+  },
+  {
+   "default": "0",
+   "description": "[DÉDUCTION - Art. 27 LFC 2010] Déduction extracomptable de l'amortissement fiscal du bien donné en crédit-bail chez le crédit-bailleur.",
+   "fieldname": "tab9_deduct_amort_cb_bailleur",
+   "fieldtype": "Currency",
+   "label": "4. Amortissements liés aux opérations de crédit-bail (Bailleur) (cf. art. 27 LFC 2010)"
+  },
+  {
+   "default": "0",
+   "description": "[DÉDUCTION - Art. 27 LFC 2010] Déduction chez le crédit-preneur de la quote-part des redevances de crédit-bail correspondant à l'amortissement du capital financier.",
+   "fieldname": "tab9_deduct_loyers_cb_preneur",
+   "fieldtype": "Currency",
+   "label": "5. Loyers hors charges financières (Preneur) (cf. art. 27 LFC 2010)"
+  },
+  {
+   "default": "0",
+   "description": "[DÉDUCTION FISCALE] Complément d'amortissement dégressif ou accéléré autorisé fiscalement au-delà de l'amortissement linéaire comptable.",
+   "fieldname": "tab9_deduct_complement_amort",
+   "fieldtype": "Currency",
+   "label": "6. Complément d'amortissements"
+  },
+  {
+   "default": "0",
+   "description": "[DÉDUCTION FISCALE] Reprises sur provisions/pertes de valeur antérieurement réintégrées (Compte 78), variation créditrice d'impôt différé (692), exonérations AAPI/NESDA/Export (Art. 138), abattement R&D.",
+   "fieldname": "tab9_deduct_autres",
+   "fieldtype": "Currency",
+   "label": "7. Autres déductions (*)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des 7 rubriques de déductions extracomptables (Lignes 1 à 7).",
+   "fieldname": "tab9_total_deductions",
+   "fieldtype": "Currency",
+   "label": "Total des déductions (III)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tab9_d1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[REPORT DÉFICITAIRE - Art. 147 CIDTA] Déficit fiscal reportable du 4ème exercice antérieur (délai maximal de report : 4 ans).",
+   "fieldname": "tab9_deficit_2022",
+   "fieldtype": "Currency",
+   "label": "Déficit de l'année N-4 (2022)"
+  },
+  {
+   "default": "0",
+   "description": "[REPORT DÉFICITAIRE - Art. 147 CIDTA] Déficit fiscal reportable du 3ème exercice antérieur.",
+   "fieldname": "tab9_deficit_2023",
+   "fieldtype": "Currency",
+   "label": "Déficit de l'année N-3 (2023)"
+  },
+  {
+   "default": "0",
+   "description": "[REPORT DÉFICITAIRE - Art. 147 CIDTA] Déficit fiscal reportable du 2ème exercice antérieur.",
+   "fieldname": "tab9_deficit_2024",
+   "fieldtype": "Currency",
+   "label": "Déficit de l'année N-2 (2024)"
+  },
+  {
+   "default": "0",
+   "description": "[REPORT DÉFICITAIRE - Art. 147 CIDTA] Déficit fiscal reportable de l'exercice précédent.",
+   "fieldname": "tab9_deficit_2025",
+   "fieldtype": "Currency",
+   "label": "Déficit de l'année N-1 (2025)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Déficit 2022 + Déficit 2023 + Déficit 2024 + Déficit 2025 (Art. 147 CIDTA).",
+   "fieldname": "tab9_total_deficits",
+   "fieldtype": "Currency",
+   "label": "Total des déficits à déduire (IV)",
+   "read_only": 1
+  },
+  {
+   "default": "1399897",
+   "description": "[FORMULE DGI] = max(0, (Bénéfice comptable - Perte comptable) + Total des réintégrations (II) - Total des déductions (III) - Total des déficits à déduire (IV)). Base de calcul de l'IBS.",
+   "fieldname": "tab9_resultat_fiscal_benefice",
+   "fieldtype": "Currency",
+   "label": "Résultat fiscal (I + II - III - IV) — Bénéfice Imposable",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = abs(min(0, (Bénéfice comptable - Perte comptable) + Total des réintégrations (II) - Total des déductions (III) - Total des déficits à déduire (IV))). Soumis au minimum d'IBS de 10 000 DZD (Art. 365 bis).",
+   "fieldname": "tab9_resultat_fiscal_deficit",
+   "fieldtype": "Currency",
+   "label": "Résultat fiscal (I + II - III - IV) — Déficit Fiscal Reportable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tab_10_13",
+   "fieldtype": "Section Break",
+   "label": "Pages 11 & 12 — Tableaux 10 (Affectation N-1), 11 (Participations), 12 (Honoraires/Commissions) & 13 (TAP)"
+  },
+  {
+   "default": "0",
+   "fieldname": "tab10_orig_ran_n1",
+   "fieldtype": "Currency",
+   "label": "Tab 10 Origine - Report à nouveau N-1 (Comptes 110/119)"
+  },
+  {
+   "default": "0",
+   "fieldname": "tab10_orig_resultat_n1",
+   "fieldtype": "Currency",
+   "label": "Tab 10 Origine - Résultat de l'exercice N-1 (Compte 120)"
+  },
+  {
+   "default": "0",
+   "fieldname": "tab10_orig_prelev_reserves",
+   "fieldtype": "Currency",
+   "label": "Tab 10 Origine - Prélèvements sur réserves (Compte 106)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Report à nouveau N-1 + Résultat de l'exercice N-1 + Prélèvements sur réserves.",
+   "fieldname": "tab10_total_origine",
+   "fieldtype": "Currency",
+   "label": "Tab 10 - TOTAL ORIGINE",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tab_10_aff",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "tab10_aff_reserves",
+   "fieldtype": "Currency",
+   "label": "Tab 10 Affectation - Réserves (Compte 106)"
+  },
+  {
+   "default": "0",
+   "fieldname": "tab10_aff_aug_capital",
+   "fieldtype": "Currency",
+   "label": "Tab 10 Affectation - Augmentation du capital (Compte 101)"
+  },
+  {
+   "default": "0",
+   "fieldname": "tab10_aff_dividendes",
+   "fieldtype": "Currency",
+   "label": "Tab 10 Affectation - Dividendes (Compte 457 - soumis à IRG 15%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "tab10_aff_ran",
+   "fieldtype": "Currency",
+   "label": "Tab 10 Affectation - Report à nouveau (Compte 110)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Réserves + Augmentation du capital + Dividendes + Report à nouveau (Doit être égal au TOTAL ORIGINE).",
+   "fieldname": "tab10_total_affectation",
+   "fieldtype": "Currency",
+   "label": "Tab 10 - TOTAL AFFECTATION",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tab_11_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des montants bruts des lignes du Tableau 6 (Comptes 20 et 21).",
+   "fieldname": "tab6_total_brut",
+   "fieldtype": "Currency",
+   "label": "Tab 6 - TOTAL Montant Brut",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme de la TVA déduite sur immobilisations (Compte 44561) du Tableau 6.",
+   "fieldname": "tab6_total_tva_deduite",
+   "fieldtype": "Currency",
+   "label": "Tab 6 - TOTAL TVA Déduite",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des montants nets à amortir (= Total Brut - Total TVA déduite).",
+   "fieldname": "tab6_total_net_amortir",
+   "fieldtype": "Currency",
+   "label": "Tab 6 - TOTAL Montant Net à Amortir",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tab6_grid",
+   "fieldtype": "Section Break",
+   "label": "Page 7 — Détail Ligne par Ligne du Tableau 6 (Immobilisations créées ou acquises au cours de l'exercice)"
+  },
+  {
+   "description": "[TABLEAU 6 OFFICIEL DGI] Saisir chaque immobilisation créée ou acquise (Comptes 20, 21). Le Montant net à amortir (= Brut - TVA déduite) est calculé automatiquement.",
+   "fieldname": "tab6_lignes",
+   "fieldtype": "Table",
+   "label": "Lignes du Tableau 6 (Acquisitions d'Immobilisations)",
+   "options": "Bilan Fiscal Tableau 6 Acquisition"
+  },
+  {
+   "fieldname": "sec_tab7_grid",
+   "fieldtype": "Section Break",
+   "label": "Page 8 — Tableau 7 (Immobilisations cédées : Plus ou Moins-values - Art. 172 & 173 CIDTA) & Tableau 8 (Provisions)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des valeurs d'origine des immobilisations cédées (Crédit Comptes 20/21).",
+   "fieldname": "tab7_total_vo",
+   "fieldtype": "Currency",
+   "label": "Tab 7 - TOTAL Valeur d'origine (Net à amortir)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des amortissements cumulés des éléments sortis (Débit Compte 28).",
+   "fieldname": "tab7_total_amort",
+   "fieldtype": "Currency",
+   "label": "Tab 7 - TOTAL Amortissements pratiqués",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tab7_tot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Total Valeur d'origine - Total Amortissements pratiqués.",
+   "fieldname": "tab7_total_vnc",
+   "fieldtype": "Currency",
+   "label": "Tab 7 - TOTAL Valeur Nette Comptable (VNC)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des prix de cession HT des immobilisations cédées.",
+   "fieldname": "tab7_total_prix_cession",
+   "fieldtype": "Currency",
+   "label": "Tab 7 - TOTAL Prix de cession",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Total Prix de cession - Total VNC (Compte 752 si > 0, Compte 652 si < 0).",
+   "fieldname": "tab7_total_pmv",
+   "fieldtype": "Currency",
+   "label": "Tab 7 - TOTAL Plus ou Moins-values de cession",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tab7_table",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "[TABLEAU 7 OFFICIEL DGI] Saisir chaque immobilisation cédée ou mise au rebut. La VNC et la Plus/Moins-value sont calculées automatiquement.",
+   "fieldname": "tab7_lignes",
+   "fieldtype": "Table",
+   "label": "Lignes du Tableau 7 (Cessions d'Immobilisations)",
+   "options": "Bilan Fiscal Tableau 7 Cession"
+  },
+  {
+   "fieldname": "sec_tab8_grid",
+   "fieldtype": "Section Break",
+   "label": "Pages 8 & 9 — Tableaux 8 (Provisions), 8/1 (Pertes de valeur sur créances) & 8/2 (Actions et parts sociales)"
+  },
+  {
+   "fieldname": "col_tab8_tot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des valeurs des créances douteuses inscrites au Tableau 8/1.",
+   "fieldname": "tab8_1_total_creances",
+   "fieldtype": "Currency",
+   "label": "Tab 8/1 - TOTAL Valeur des créances douteuses (416)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des dépréciations constituées au Tableau 8/1 (Doit concorder avec le compte 491 à l'Actif).",
+   "fieldname": "tab8_1_total_provisions",
+   "fieldtype": "Currency",
+   "label": "Tab 8/1 - TOTAL Pertes de valeur constituées (491)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tab8_1_table",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "[TABLEAU 8/1 OFFICIEL DGI] État nominatif des débiteurs douteux (Compte 416) et provisions constituées (Compte 491).",
+   "fieldname": "tab8_1_lignes",
+   "fieldtype": "Table",
+   "label": "Lignes du Tableau 8/1 (Relevé nominatif des créances douteuses - Compte 491)",
+   "options": "Bilan Fiscal Tableau 8 Creance"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des valeurs comptables des titres détenus au Tableau 11.",
+   "fieldname": "tab11_total_valeur_comptable",
+   "fieldtype": "Currency",
+   "label": "Tab 11 - TOTAL Valeur comptable des titres (261/262/265)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des dividendes encaissés au Tableau 11 (Déductibles au Tableau 9 Ligne III.3 selon Art. 147 bis CIDTA).",
+   "fieldname": "tab11_total_dividendes",
+   "fieldtype": "Currency",
+   "label": "Tab 11 - TOTAL Dividendes encaissés (Compte 761)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tab11_table",
+   "fieldtype": "Section Break",
+   "label": "Page 11 — Détail Ligne par Ligne du Tableau 11 (Participations : Filiales et Entités Associées)"
+  },
+  {
+   "description": "[TABLEAU 11 OFFICIEL DGI] Saisir chaque filiale ou entité associée.",
+   "fieldname": "tab11_lignes",
+   "fieldtype": "Table",
+   "label": "Lignes du Tableau 11 (Participations - Comptes 261, 262, 265)",
+   "options": "Bilan Fiscal Tableau 11 Participation"
+  },
+  {
+   "fieldname": "sec_tab12_table",
+   "fieldtype": "Section Break",
+   "label": "Page 12 — Tableau 12 : Commissions, Courtages, Redevances, Honoraires, Sous-traitance (Art. 176 CIDTA)"
+  },
+  {
+   "fieldname": "col_tab12_tot1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des montants HT inscrits au Tableau 12 (Comptes 611, 622, 651).",
+   "fieldname": "tab12_total_montant",
+   "fieldtype": "Currency",
+   "label": "Tab 12 - TOTAL Montants versés aux bénéficiaires (HT)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tab12_tot2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DE CONTRÔLE] = (Sous-traitance 611 + Honoraires 622 au TCR) - Total Tableau 12. Doit être égal à 0,00 DZD.",
+   "fieldname": "ecart_tab12_tcr",
+   "fieldtype": "Currency",
+   "label": "Contrôle Art. 176 CIDTA : Écart (TCR 611+622 - Tableau 12)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tab12_grid_rows",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "[TABLEAU 12 OFFICIEL DGI - Art. 176 CIDTA] Renseigner la désignation, le NIF à 15 chiffres, l'adresse et le montant HT versé à chaque bénéficiaire.",
+   "fieldname": "tab12_lignes",
+   "fieldtype": "Table",
+   "label": "Lignes du Tableau 12 (État nominatif Art. 176 CIDTA : Honoraires, Commissions, Sous-traitance)",
+   "options": "Bilan Fiscal Tableau 12 Honoraire"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bilan Fiscal",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-11-04 17:00:42.764048",
+ "modified_by": "Administrator",
+ "module": "Algeria Tax",
+ "name": "Bilan Fiscal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Auditor",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

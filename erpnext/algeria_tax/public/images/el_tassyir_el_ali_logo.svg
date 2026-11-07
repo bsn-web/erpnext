@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="420" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <!-- Emblem Shield / Ledger & Balance Scale Icon -->
+  <rect x="8" y="10" width="80" height="80" rx="18" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+  <!-- Accounting Ledger Grid & Rising Financial Bars -->
+  <rect x="24" y="54" width="10" height="20" rx="2" fill="#38bdf8"/>
+  <rect x="39" y="42" width="10" height="32" rx="2" fill="#60a5fa"/>
+  <rect x="54" y="28" width="10" height="46" rx="2" fill="url(#goldGrad)"/>
+  <!-- Balance Scale / Audit Check Arc -->
+  <path d="M 22 36 Q 46 16 70 24" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="70" cy="24" r="4" fill="#fbbf24"/>
+  <!-- Brand Typography FR & AR -->
+  <text x="104" y="42" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="800" fill="#0f172a" letter-spacing="0.5">EL TASSYIR EL ALI</text>
+  <text x="104" y="69" font-family="Cairo, Tajawal, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#1e3a8a">التسيير الآلي</text>
+  <text x="104" y="87" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#475569" letter-spacing="0.8">COMPTABILITÉ SCF • FISCALITÉ DGI • PAIE CNAS • AUDIT CAC</text>
+</svg>

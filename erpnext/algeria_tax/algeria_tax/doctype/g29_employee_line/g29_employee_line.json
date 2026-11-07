@@ -1,0 +1,90 @@
+{
+  "actions": [],
+  "creation": "2026-11-05 10:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "employee",
+    "employee_name",
+    "nss_cnas",
+    "situation_familiale",
+    "working_days_year",
+    "total_brut_annuel",
+    "total_cnas_9_annuel",
+    "total_imposable_irg_annuel",
+    "total_irg_retenu_annuel",
+    "total_net_annuel"
+  ],
+  "fields": [
+    {
+      "fieldname": "employee",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Salarié",
+      "options": "Employee",
+      "reqd": 1
+    },
+    {
+      "fieldname": "employee_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Nom et Prénom"
+    },
+    {
+      "fieldname": "nss_cnas",
+      "fieldtype": "Data",
+      "label": "N° Sécurité Sociale (NSS)"
+    },
+    {
+      "fieldname": "situation_familiale",
+      "fieldtype": "Data",
+      "label": "Situation Familiale"
+    },
+    {
+      "fieldname": "working_days_year",
+      "fieldtype": "Float",
+      "in_list_view": 1,
+      "label": "Jours / Mois Travaillés"
+    },
+    {
+      "fieldname": "total_brut_annuel",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Brut Annuel (DZD)"
+    },
+    {
+      "fieldname": "total_cnas_9_annuel",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Retenue CNAS 9% (DZD)"
+    },
+    {
+      "fieldname": "total_imposable_irg_annuel",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Net Imposable IRG (DZD)"
+    },
+    {
+      "fieldname": "total_irg_retenu_annuel",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "IRG Retenu (DZD)"
+    },
+    {
+      "fieldname": "total_net_annuel",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Net Perçu Annuel (DZD)"
+    }
+  ],
+  "istable": 1,
+  "modified": "2026-11-06 18:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Algeria Tax",
+  "name": "G29 Employee Line",
+  "owner": "Administrator",
+  "permissions": [],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

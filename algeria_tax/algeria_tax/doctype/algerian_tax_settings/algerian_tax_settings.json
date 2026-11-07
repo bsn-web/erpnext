@@ -1,0 +1,265 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-11-04 15:23:49.339065",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_ident",
+  "company",
+  "nif",
+  "col_1",
+  "nis",
+  "rc",
+  "article_imposition",
+  "tax_center",
+  "sec_regime",
+  "activity_type",
+  "ibs_rate",
+  "min_ibs_amount",
+  "col_2",
+  "exemption_program",
+  "decision_number",
+  "decision_date",
+  "start_date",
+  "end_date",
+  "current_stage",
+  "reinvestment_obligation",
+  "sec_comptes",
+  "account_tva_collectee",
+  "account_tva_deductible_goods",
+  "account_tva_deductible_assets",
+  "account_tva_credit",
+  "account_tva_due",
+  "col_3",
+  "account_irg_salaries",
+  "account_ibs_installments",
+  "account_ibs_due",
+  "account_reinvestment_reserve",
+  "account_cash"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_ident",
+   "fieldtype": "Section Break",
+   "label": "Identification Fiscale"
+  },
+  {
+   "default": "Build And Secure Networks",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Soci\u00e9t\u00e9",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nif",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NIF (Num\u00e9ro d'Identification Fiscale - 15 chiffres)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nis",
+   "fieldtype": "Data",
+   "label": "NIS (Num\u00e9ro d'Identification Statistique)"
+  },
+  {
+   "fieldname": "rc",
+   "fieldtype": "Data",
+   "label": "Registre de Commerce (RC)"
+  },
+  {
+   "fieldname": "article_imposition",
+   "fieldtype": "Data",
+   "label": "N\u00b0 Article d'Imposition (AI)"
+  },
+  {
+   "default": "CDI (Centre des Imp\u00f4ts)",
+   "fieldname": "tax_center",
+   "fieldtype": "Select",
+   "label": "Centre des Imp\u00f4ts de Rattachement",
+   "options": "CDI (Centre des Imp\u00f4ts)\nDGE (Direction des Grandes Entreprises)\nCPI (Centre de Proximit\u00e9 des Imp\u00f4ts)"
+  },
+  {
+   "fieldname": "sec_regime",
+   "fieldtype": "Section Break",
+   "label": "R\u00e9gime Fiscal & Taux d'IBS"
+  },
+  {
+   "default": "Prestations de Services (26%)",
+   "fieldname": "activity_type",
+   "fieldtype": "Select",
+   "label": "Activit\u00e9 Principale",
+   "options": "Commerce / N\u00e9goce (26%)\nPrestations de Services (26%)\nBTPH et Tourisme (23%)\nProduction de biens (19%)\nActivit\u00e9s Mixtes (Comptabilit\u00e9 s\u00e9par\u00e9e)"
+  },
+  {
+   "default": "26.0",
+   "fieldname": "ibs_rate",
+   "fieldtype": "Percent",
+   "label": "Taux d'IBS Applicable (%)"
+  },
+  {
+   "default": "10000.0",
+   "fieldname": "min_ibs_amount",
+   "fieldtype": "Currency",
+   "label": "Minimum Forfaitaire IBS (DZD)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Aucun (R\u00e9gime de droit commun)",
+   "fieldname": "exemption_program",
+   "fieldtype": "Select",
+   "label": "Dispositif d'Avantage / Exon\u00e9ration",
+   "options": "Aucun (R\u00e9gime de droit commun)\nAAPI (ex-ANDI) - Secteurs prioritaires\nAAPI - Zones Sud / Hauts-Plateaux\nNESDA (ex-ANSEJ) - Emploi jeunes\nCNAC\nANGEM\nLabel Startup / Incubateur (D\u00e9cret 20-254)\nExportateur hors hydrocarbures (Art. 138-1)\nWilaya du Grand Sud (Art. 138 bis)"
+  },
+  {
+   "fieldname": "decision_number",
+   "fieldtype": "Data",
+   "label": "N\u00b0 D\u00e9cision d'Octroi d'Avantages"
+  },
+  {
+   "fieldname": "decision_date",
+   "fieldtype": "Date",
+   "label": "Date de la D\u00e9cision"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Date D\u00e9but d'Exon\u00e9ration"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "Date Fin d'Exon\u00e9ration"
+  },
+  {
+   "default": "Exon\u00e9ration Totale (100%)",
+   "fieldname": "current_stage",
+   "fieldtype": "Select",
+   "label": "Phase Actuelle de l'Avantage",
+   "options": "Exon\u00e9ration Totale (100%)\nAbattement D\u00e9gressif 1\u00e8re Ann\u00e9e (70%)\nAbattement D\u00e9gressif 2\u00e8me Ann\u00e9e (50%)\nAbattement D\u00e9gressif 3\u00e8me Ann\u00e9e (25%)\nR\u00e9gime Normal / Expir\u00e9"
+  },
+  {
+   "default": "0",
+   "fieldname": "reinvestment_obligation",
+   "fieldtype": "Check",
+   "label": "Obligation de R\u00e9investissement 30% (Art. 142)"
+  },
+  {
+   "fieldname": "sec_comptes",
+   "fieldtype": "Section Break",
+   "label": "Comptes SCF de Liaison Fiscale"
+  },
+  {
+   "fieldname": "account_tva_collectee",
+   "fieldtype": "Link",
+   "label": "Compte TVA Collect\u00e9e",
+   "options": "Account"
+  },
+  {
+   "fieldname": "account_tva_deductible_goods",
+   "fieldtype": "Link",
+   "label": "Compte TVA D\u00e9ductible (Biens & Services)",
+   "options": "Account"
+  },
+  {
+   "fieldname": "account_tva_deductible_assets",
+   "fieldtype": "Link",
+   "label": "Compte TVA D\u00e9ductible (Immobilisations)",
+   "options": "Account"
+  },
+  {
+   "fieldname": "account_tva_credit",
+   "fieldtype": "Link",
+   "label": "Compte Cr\u00e9dit de TVA Reportable",
+   "options": "Account"
+  },
+  {
+   "fieldname": "account_tva_due",
+   "fieldtype": "Link",
+   "label": "Compte TVA \u00e0 Payer",
+   "options": "Account"
+  },
+  {
+   "fieldname": "col_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account_irg_salaries",
+   "fieldtype": "Link",
+   "label": "Compte IRG Salaires Retenu",
+   "options": "Account"
+  },
+  {
+   "fieldname": "account_ibs_installments",
+   "fieldtype": "Link",
+   "label": "Compte Acomptes IBS",
+   "options": "Account"
+  },
+  {
+   "fieldname": "account_ibs_due",
+   "fieldtype": "Link",
+   "label": "Compte IBS D\u00fb",
+   "options": "Account"
+  },
+  {
+   "fieldname": "account_reinvestment_reserve",
+   "fieldtype": "Link",
+   "label": "Compte R\u00e9serve R\u00e9investissement",
+   "options": "Account"
+  },
+  {
+   "fieldname": "account_cash",
+   "fieldtype": "Link",
+   "label": "Compte Caisse Esp\u00e8ces",
+   "options": "Account"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-11-04 15:23:49.339065",
+ "modified_by": "Administrator",
+ "module": "Algeria Tax",
+ "name": "Algerian Tax Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

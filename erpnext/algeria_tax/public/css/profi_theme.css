@@ -1,0 +1,356 @@
+/* ==============================================================================
+ * ERPNext / Frappe Modern Professional Theme (Profi Style)
+ * Clean, Polished, Accessible Dual-Mode (Light & Dark) UI
+ * High contrast, refined typography, modern navbar, streamlined sidebar
+ * ============================================================================== */
+
+/* --- 1. SYSTEM FONTS & SMOOTH RENDERING (Zero external HTTP dependencies) --- */
+body, .desk-page, .frappe-control, input, select, textarea, button {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- 2. COLOR TOKENS --- */
+:root, [data-theme="light"], body[data-theme="light"] {
+    --profi-bg-page: #f8fafc;
+    --profi-bg-card: #ffffff;
+    --profi-bg-sidebar: #f8fafc;
+    --profi-bg-navbar: #ffffff;
+    --profi-border: #e2e8f0;
+    --profi-border-subtle: #f1f5f9;
+    --profi-text: #0f172a;
+    --profi-text-muted: #475569;
+    --profi-text-light: #64748b;
+    --profi-primary: #2563eb;
+    --profi-primary-hover: #1d4ed8;
+    --profi-primary-bg: #eff6ff;
+    --profi-primary-active-text: #1d4ed8;
+    --profi-subtle-hover: #f1f5f9;
+    --profi-input-bg: #f8fafc;
+    --profi-input-border: #cbd5e1;
+    --profi-shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+    --profi-shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="dark"], [data-theme="night"], [data-theme="timeless"], body[data-theme="dark"] {
+    --profi-bg-page: #0b0f19;
+    --profi-bg-card: #131b2a;
+    --profi-bg-sidebar: #0e1624;
+    --profi-bg-navbar: #0e1624;
+    --profi-border: #1e293b;
+    --profi-border-subtle: #172033;
+    --profi-text: #f8fafc;
+    --profi-text-muted: #94a3b8;
+    --profi-text-light: #64748b;
+    --profi-primary: #3b82f6;
+    --profi-primary-hover: #60a5fa;
+    --profi-primary-bg: rgba(59, 130, 246, 0.15);
+    --profi-primary-active-text: #60a5fa;
+    --profi-subtle-hover: #172234;
+    --profi-input-bg: #131b2a;
+    --profi-input-border: #334155;
+    --profi-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+    --profi-shadow-md: 0 4px 10px -1px rgba(0, 0, 0, 0.5);
+}
+
+/* --- 3. TOP NAVBAR REDESIGN --- */
+.navbar, .navbar-default {
+    background-color: var(--profi-bg-navbar) !important;
+    background-image: none !important;
+    border-bottom: 1px solid var(--profi-border) !important;
+    box-shadow: var(--profi-shadow-sm) !important;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Brand, Breadcrumbs, and Top Links */
+.navbar .navbar-brand {
+    color: var(--profi-text) !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    letter-spacing: -0.02em !important;
+}
+
+.navbar a, 
+.navbar .navbar-text,
+.navbar .nav > li > a,
+.navbar .breadcrumb a,
+.navbar .breadcrumb span {
+    color: var(--profi-text-muted) !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
+.navbar .breadcrumb a:hover,
+.navbar a:hover {
+    color: var(--profi-primary) !important;
+}
+
+.navbar .breadcrumb .active,
+.navbar .breadcrumb li:last-child a {
+    color: var(--profi-text) !important;
+    font-weight: 600 !important;
+}
+
+/* Awesomebar / Search Bar */
+.navbar .search-bar, .navbar .form-inline {
+    max-width: 420px !important;
+    width: 100% !important;
+}
+
+.navbar .awesomebar, 
+.navbar .input-with-feedback,
+.search-bar input {
+    background-color: var(--profi-input-bg) !important;
+    border: 1px solid var(--profi-input-border) !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    color: var(--profi-text) !important;
+    height: 34px !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.navbar .awesomebar:focus,
+.search-bar input:focus {
+    background-color: var(--profi-bg-card) !important;
+    border-color: var(--profi-primary) !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18) !important;
+    outline: none !important;
+    color: var(--profi-text) !important;
+}
+
+.navbar .awesomebar::placeholder,
+.search-bar input::placeholder {
+    color: var(--profi-text-light) !important;
+}
+
+/* Search Dropdown / Autocomplete Results (Ensure High Contrast & Readability) */
+.navbar .dropdown-menu,
+.awesomebar-results,
+.awesomplete > ul {
+    background-color: var(--profi-bg-card) !important;
+    border: 1px solid var(--profi-border) !important;
+    border-radius: 8px !important;
+    box-shadow: var(--profi-shadow-md) !important;
+    padding: 6px !important;
+}
+
+.navbar .dropdown-menu a,
+.awesomebar-results a,
+.awesomplete > ul > li {
+    color: var(--profi-text) !important;
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+.navbar .dropdown-menu a:hover,
+.awesomplete > ul > li:hover,
+.awesomplete > ul > li[aria-selected="true"] {
+    background-color: var(--profi-subtle-hover) !important;
+    color: var(--profi-primary) !important;
+}
+
+/* Navbar Action Icons */
+.navbar .nav > li > a i,
+.navbar .nav > li > a svg {
+    color: var(--profi-text-muted) !important;
+    stroke: var(--profi-text-muted) !important;
+}
+
+.navbar .nav > li > a:hover i,
+.navbar .nav > li > a:hover svg {
+    color: var(--profi-primary) !important;
+    stroke: var(--profi-primary) !important;
+}
+
+/* --- 4. SIDEBAR REDESIGN & HIGH CONTRAST FIX --- */
+.layout-side-section, 
+.desk-sidebar {
+    background-color: var(--profi-bg-sidebar) !important;
+    border-right: 1px solid var(--profi-border) !important;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Section Labels / Group Titles */
+.desk-sidebar .standard-sidebar-section .standard-sidebar-label,
+.layout-side-section .standard-sidebar-label {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+    color: var(--profi-text-light) !important;
+    padding: 10px 12px 4px 12px !important;
+}
+
+/* Sidebar Links & Items (CRITICAL CONTRAST FIX) */
+.layout-side-section a,
+.layout-side-section .desk-sidebar-item a,
+.desk-sidebar .sidebar-item-container a,
+.desk-sidebar .standard-sidebar-item {
+    color: var(--profi-text) !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    border-radius: 6px !important;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.desk-sidebar-item,
+.standard-sidebar-item {
+    margin: 2px 0 !important;
+    border-radius: 6px !important;
+}
+
+/* Sidebar Item Hover */
+.layout-side-section .desk-sidebar-item:hover,
+.layout-side-section .desk-sidebar-item a:hover,
+.desk-sidebar .standard-sidebar-item:hover,
+.layout-side-section a:hover {
+    background-color: var(--profi-subtle-hover) !important;
+    color: var(--profi-primary) !important;
+}
+
+/* Sidebar Active / Selected Item */
+.layout-side-section .desk-sidebar-item.selected,
+.layout-side-section .desk-sidebar-item.active,
+.layout-side-section .desk-sidebar-item.selected a,
+.layout-side-section .desk-sidebar-item.active a,
+.desk-sidebar .standard-sidebar-item.selected,
+.desk-sidebar .standard-sidebar-item.active {
+    background-color: var(--profi-primary-bg) !important;
+    color: var(--profi-primary-active-text) !important;
+    font-weight: 600 !important;
+}
+
+/* Sidebar Icons */
+.desk-sidebar-item svg,
+.standard-sidebar-item svg,
+.layout-side-section svg {
+    stroke: var(--profi-text-muted) !important;
+    stroke-width: 1.8px !important;
+    transition: stroke 0.15s ease;
+}
+
+.desk-sidebar-item:hover svg,
+.standard-sidebar-item:hover svg {
+    stroke: var(--profi-primary) !important;
+}
+
+.desk-sidebar-item.selected svg,
+.desk-sidebar-item.active svg,
+.standard-sidebar-item.selected svg,
+.standard-sidebar-item.active svg {
+    stroke: var(--profi-primary-active-text) !important;
+}
+
+/* Sidebar Filter Pills / Buttons in List View (Fixing White on Light Gray) */
+.layout-side-section .list-sidebar .list-filter-item,
+.layout-side-section .list-sidebar .btn-group,
+.layout-side-section .list-sidebar .dropdown-toggle {
+    color: var(--profi-text) !important;
+}
+
+/* --- 5. MAIN CONTENT AREA & CARDS (NO AGGRESSIVE BORDERS) --- */
+.layout-main-section {
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    transition: none !important;
+    background-color: transparent !important;
+}
+
+.layout-main-section:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.page-head {
+    background-color: var(--profi-bg-page) !important;
+    border-bottom: 1px solid var(--profi-border) !important;
+}
+
+.page-head .title-text {
+    color: var(--profi-text) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+}
+
+/* Dashboard Cards & Widgets */
+.frappe-card, 
+.widget, 
+.dashboard-widget-box {
+    background-color: var(--profi-bg-card) !important;
+    border: 1px solid var(--profi-border) !important;
+    border-radius: 10px !important;
+    box-shadow: var(--profi-shadow-sm) !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.frappe-card:hover, 
+.widget:hover {
+    box-shadow: var(--profi-shadow-md) !important;
+    border-color: var(--profi-primary) !important;
+}
+
+.widget-title, .widget .widget-head h5 {
+    color: var(--profi-text) !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+
+/* Number / KPI Cards */
+.number-widget-box .number {
+    color: var(--profi-primary) !important;
+    font-weight: 700 !important;
+}
+
+/* Modern Primary Buttons */
+.btn-primary {
+    background-color: var(--profi-primary) !important;
+    border-color: var(--profi-primary) !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    box-shadow: 0 1px 2px 0 rgba(37, 99, 235, 0.2) !important;
+    transition: all 0.15s ease-in-out !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--profi-primary-hover) !important;
+    border-color: var(--profi-primary-hover) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 4px 0 rgba(37, 99, 235, 0.3) !important;
+}
+
+/* Form Controls */
+.form-control {
+    background-color: var(--profi-input-bg) !important;
+    border: 1px solid var(--profi-input-border) !important;
+    color: var(--profi-text) !important;
+    border-radius: 6px !important;
+}
+
+.form-control:focus {
+    border-color: var(--profi-primary) !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+}
+
+/* Modern Clean Scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.35);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.6);
+}

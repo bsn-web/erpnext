@@ -1,0 +1,1092 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DECL-G50-.YYYY.-.MM.-.###",
+ "creation": "2026-11-04 15:24:59.238307",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_ident_recap",
+  "sec_guide_g50",
+  "html_guide_g50",
+  "sec_header",
+  "company",
+  "company_name_fiscal",
+  "activity",
+  "address",
+  "col_1",
+  "nif",
+  "article_imposition",
+  "wilaya_direction",
+  "recette_impots",
+  "col_2",
+  "declaration_month",
+  "fiscal_year",
+  "posting_date",
+  "due_date_legale",
+  "status",
+  "is_neant_g50",
+  "is_g50_locked",
+  "sec_total",
+  "recap_p1_tap_tls",
+  "recap_p2_acomptes_ibs_irg",
+  "recap_p3_irg_retenues",
+  "col_recap_1",
+  "recap_p4_timbre_autres",
+  "recap_p5_tva_a_payer",
+  "penalite_retard_taux",
+  "col_recap_2",
+  "penalite_retard_montant",
+  "total_g50_a_payer",
+  "journal_entry_cloture",
+  "sec_controles_g50",
+  "ecart_ca_tva_collectee",
+  "col_ctrl_1",
+  "ecart_tva_deductible_annexe",
+  "col_ctrl_2",
+  "ecart_ca_annexe_clients",
+  "tab_p1_p2",
+  "sec_p1_tls",
+  "c1a11_ca_brut_mois",
+  "c1a12_operations_exonerees",
+  "col_p1_1",
+  "c1a13_ca_imposable_tls",
+  "c1a14_taux_tls",
+  "tap_tls_droits_dus",
+  "sec_p2_ibs",
+  "e1m10_numero_acompte",
+  "e1m10_base_benefice_ref",
+  "e1m10_taux_ibs_applicable",
+  "e1m10_dispositif_avantage",
+  "e1m10_taux_abattement_exo",
+  "e1m10_ibs_brut_avant_avantage",
+  "e1m10_montant_avantage_ibs",
+  "e1m10_imputation_excedent_anterieur",
+  "e1m10_ibs_reference",
+  "e1m10_acompte_ibs_droits",
+  "col_p2_1",
+  "e1m20_ibs_annuel_liquide",
+  "e1m20_total_acomptes_verses",
+  "e1m20_solde_ibs_droits",
+  "e1m20_excedent_ibs_a_imputer",
+  "e1m30_acompte_irg_droits",
+  "tab_p3_p4",
+  "sec_ras",
+  "masse_salariale_imposable",
+  "irg_salaries_retenu",
+  "base_dividendes_distribues",
+  "irg_dividendes_15",
+  "base_interets_creances",
+  "irg_interets_creances_10",
+  "col_ras",
+  "base_irg_honoraires",
+  "irg_honoraires_10",
+  "base_ibs_etranger_30",
+  "ibs_retenue_etranger_30",
+  "sec_p4_timbre",
+  "base_encaissements_especes",
+  "droit_de_timbre_especes",
+  "col_p4_1",
+  "taxe_formation_apprentissage",
+  "autres_taxes_paragraphe_4",
+  "tab_p5_tva",
+  "sec_ventilation_fait_generateur",
+  "sec_tva_collectee",
+  "ca_vente_etat_ht_mois",
+  "ca_taxable_19",
+  "tva_vente_etat_mois",
+  "tva_collectee_19",
+  "col_vent_fg_1",
+  "ca_taxable_9",
+  "ca_prestation_encaisse_ht_mois",
+  "tva_collectee_9",
+  "tva_prestation_encaisse_mois",
+  "col_tva_col",
+  "col_vent_fg_2",
+  "tva_regularisation_reprise",
+  "ca_prestation_non_encaisse_ht_mois",
+  "ca_autoliquidation_services_importes",
+  "tva_prestation_non_encaisse_mois",
+  "tva_autoliquidation_19",
+  "col_tva_exo",
+  "ca_exportation_exonere",
+  "ca_exonere_franchise",
+  "ca_total_ht_mois",
+  "total_tva_collectee",
+  "sec_tva_deductible",
+  "tva_credit_reporte_anterior",
+  "tva_deductible_goods",
+  "tva_deductible_assets",
+  "tva_deductible_complementaire",
+  "col_tva_ded",
+  "total_tva_deductible",
+  "tva_nette_a_payer",
+  "tva_nouveau_credit",
+  "tab_annexes_g50",
+  "sec_annexe_fourn",
+  "sync_tva_from_annexe_fournisseurs",
+  "annexe_fournisseurs_total_ht",
+  "col_af_1",
+  "annexe_fournisseurs_total_tva_biens",
+  "annexe_fournisseurs_total_tva_immos",
+  "annexe_fournisseurs_total_tva",
+  "sec_af_grid",
+  "annexe_fournisseurs",
+  "sec_annexe_clients",
+  "annexe_clients_total_ht",
+  "col_ac_g50_1",
+  "annexe_clients_total_tva",
+  "col_ac_g50_2",
+  "annexe_clients_total_ttc",
+  "sec_ac_grid",
+  "annexe_clients",
+  "sec_detail",
+  "tax_lines"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_header",
+   "fieldtype": "Section Break",
+   "label": "Période & Identification Fiscale du Contribuable (En-tête Série G n° 50)"
+  },
+  {
+   "default": "Build And Secure Networks",
+   "description": "[IDENTIFICATION] Société soumise au régime du réel.",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Société",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "default": "11 - Novembre",
+   "description": "[PÉRIODE FISCALE] Mois au titre duquel les opérations imposables ont été réalisées.",
+   "fieldname": "declaration_month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Mois Déclaré",
+   "options": "01 - Janvier\n02 - Février\n03 - Mars\n04 - Avril\n05 - Mai\n06 - Juin\n07 - Juillet\n08 - Août\n09 - Septembre\n10 - Octobre\n11 - Novembre\n12 - Décembre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2026",
+   "fieldname": "fiscal_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Exercice Fiscal",
+   "options": "Fiscal Year",
+   "reqd": 1
+  },
+  {
+   "default": "2026-12-18",
+   "description": "[DATE DE DÉPÔT] Date effective de télédéclaration / paiement. Si postérieure au 20 du mois suivant, déclenche les pénalités de retard (Art. 402 CIDTA).",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Date de Dépôt / Paiement"
+  },
+  {
+   "default": "Brouillon",
+   "description": "[STATUT] Le statut 'Déposé Jibayatic' verrouille définitivement la déclaration en lecture seule.",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Statut de la Déclaration G50",
+   "options": "Brouillon\nCalculé\nValidé & Comptabilisé\nDéposé Jibayatic"
+  },
+  {
+   "fieldname": "sec_tva_collectee",
+   "fieldtype": "Section Break",
+   "label": "I. CHIFFRE D'AFFAIRES DU MOIS & TVA COLLECTÉE (Cadre A — Codes E4L01 à E4L13, Art. 21 & 23 CTCA)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 700 (Marchandises), 701 (Produits finis), 704 (Travaux), 705/706 (Prestations de services), 708 (Produits annexes) soumis à 19% [SC].",
+   "fieldname": "ca_taxable_19",
+   "fieldtype": "Currency",
+   "label": "E4L01 — CA Taxable au Taux Normal de 19% (DZD HT)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI & COMPTE SCF 44571 SC] = round(CA Taxable à 19% * 0,19).",
+   "fieldname": "tva_collectee_19",
+   "fieldtype": "Currency",
+   "label": "E4L01 — TVA Facturée / Collectée à 19% (DZD)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Comptes 70 soumis au taux réduit de 9% (Art. 23 CTCA) [SC].",
+   "fieldname": "ca_taxable_9",
+   "fieldtype": "Currency",
+   "label": "E4L02 — CA Taxable au Taux Réduit de 9% (DZD HT)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI & COMPTE SCF 44572 SC] = round(CA Taxable à 9% * 0,09).",
+   "fieldname": "tva_collectee_9",
+   "fieldtype": "Currency",
+   "label": "E4L02 — TVA Facturée / Collectée à 9% (DZD)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tva_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 70 Franchise SC] Ventes en franchise de TVA sur présentation d'attestations F20/C20 (AAPI, ANADE/NESDA, Secteur pétrolier - Art. 9 & 42 CTCA).",
+   "fieldname": "ca_exonere_franchise",
+   "fieldtype": "Currency",
+   "label": "E4L11 — CA Exonéré / Vendu en Franchise de TVA (Attestations F20/C20)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = TVA Collectée 19% + TVA Collectée 9% + Régularisations TVA + TVA Autoliquidée (Total des comptes 4457 SC).",
+   "fieldname": "total_tva_collectee",
+   "fieldtype": "Currency",
+   "label": "TOTAL (A) — TOTAL TVA COLLECTÉE & RÉGULARISATIONS (DZD)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_tva_deductible",
+   "fieldtype": "Section Break",
+   "label": "II. DÉDUCTIONS DE TVA (Cadre B — Lignes C1 à C4, Art. 29 à 41 CTCA) & III. SOLDE DE LIQUIDATION (Cases E et P)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 44562 SD] TVA récupérable sur achats de stocks et services du mois (Doit être justifiée par l'Annexe Fournisseurs Art. 29 CTCA).",
+   "fieldname": "tva_deductible_goods",
+   "fieldtype": "Currency",
+   "label": "Ligne C2 — TVA Déductible s/ Achats de Matières, Biens et Services (DZD)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 44561 SD] TVA récupérable sur immobilisations corporelles et incorporelles acquises au cours du mois.",
+   "fieldname": "tva_deductible_assets",
+   "fieldtype": "Currency",
+   "label": "Ligne C3 — TVA Déductible s/ Acquisitions d'Immobilisations (DZD)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 44567 SD] Solde débiteur du compte 44567 (Crédit de TVA à reporter) issu de la case (P) du G50 du mois précédent.",
+   "fieldname": "tva_credit_reporte_anterior",
+   "fieldtype": "Currency",
+   "label": "Ligne C1 — Précompte (Crédit de TVA) Reporté du Mois Précédent (DZD)"
+  },
+  {
+   "fieldname": "col_tva_ded",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Ligne C1 (Précompte antérieur) + Ligne C2 (TVA Biens/Services) + Ligne C3 (TVA Immobilisations) + Ligne C4 (TVA Complémentaire).",
+   "fieldname": "total_tva_deductible",
+   "fieldtype": "Currency",
+   "label": "TOTAL (B) — TOTAL DES DÉDUCTIONS & PRÉCOMPTE (C1 + C2 + C3 + C4)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI & COMPTE SCF 4455 SC] = max(0, Total TVA Collectée (A) - Total TVA Déductible (B)). Reportée au Paragraphe 5 de la Récapitulation.",
+   "fieldname": "tva_nette_a_payer",
+   "fieldtype": "Currency",
+   "label": "CASE (E) — TVA NETTE À PAYER DU MOIS (Si A > B : E = A - B)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI & COMPTE SCF 44567 SD] = max(0, Total TVA Déductible (B) - Total TVA Collectée (A)). À reporter en ligne C1 du G50 du mois suivant.",
+   "fieldname": "tva_nouveau_credit",
+   "fieldtype": "Currency",
+   "label": "CASE (P) — PRÉCOMPTE À REPORTER AU MOIS SUIVANT (Si B > A : P = B - A)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_ras",
+   "fieldtype": "Section Break",
+   "label": "PARAGRAPHE 3 — IRG Salaires & Retenues à la Source IRG / IBS (Codes E2M05 à E2M40 — Art. 75, 104, 150 & 156 CIDTA)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Compte 631 (Rémunérations du personnel) diminué de la quote-part ouvrière CNAS 9% (Compte 431) et des primes/indemnités exonérées (Art. 68 CIDTA).",
+   "fieldname": "masse_salariale_imposable",
+   "fieldtype": "Currency",
+   "label": "E2M05 — Masse Salariale Brute Imposable du Mois (DZD)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 4421 SC] Montant de l'IRG retenu sur les bulletins de paie du mois selon le barème progressif (exonération totale <= 30 000 DZD - Art. 104 CIDTA).",
+   "fieldname": "irg_salaries_retenu",
+   "fieldtype": "Currency",
+   "label": "E2M05 — Droits IRG / Traitements & Salaires Retenus (DZD)"
+  },
+  {
+   "fieldname": "col_ras",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 4423 SC] Retenue à la source opérée sur honoraires/vacations.",
+   "fieldname": "irg_honoraires_10",
+   "fieldtype": "Currency",
+   "label": "E2M30 — Droits IRG / Honoraires & Autres Retenues (10%)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI / COMPTE SCF 4422 SC] = round(Base Dividendes * 15%) si la base est renseignée, ou saisie directe du compte 4422.",
+   "fieldname": "irg_dividendes_15",
+   "fieldtype": "Currency",
+   "label": "E2M10 — Droits IRG / Dividendes (15% Libératoire - Art. 104 CIDTA)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 4458 / 447 SC] Droits de timbre collectés sur quittances en espèces (1% jusqu'à 30 000 DZD, 1,5% de 30 001 à 100 000 DZD, 2% au-delà).",
+   "fieldname": "droit_de_timbre_especes",
+   "fieldtype": "Currency",
+   "label": "E3L10 — Droits de Timbre sur État (1% à 2% - Art. 100 Code du Timbre)"
+  },
+  {
+   "fieldname": "sec_total",
+   "fieldtype": "Section Break",
+   "label": "RÉCAPITULATION GÉNÉRALE DES DROITS DUS (Page 4 du G50 — Cases [FORMULE DGI])"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Paragraphe 1 + Paragraphe 2 + Paragraphe 3 + Paragraphe 4 + Paragraphe 5 (TVA Nette E) + Pénalités de retard.",
+   "fieldname": "total_g50_a_payer",
+   "fieldtype": "Currency",
+   "label": "TOTAL GÉNÉRAL À PAYER AU CDI / RECETTE (DZD)",
+   "read_only": 1
+  },
+  {
+   "description": "[PIÈCE COMPTABLE SCF] Écriture d'OD centralisant la liquidation de la TVA (4457 / 4456 -> 4455 ou 44567).",
+   "fieldname": "journal_entry_cloture",
+   "fieldtype": "Link",
+   "label": "Écriture de Liquidation Comptable Générée",
+   "options": "Journal Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_detail",
+   "fieldtype": "Section Break",
+   "label": "Synthèse Analytique des Lignes Officielles G50 (Générée Automatiquement)"
+  },
+  {
+   "fieldname": "tax_lines",
+   "fieldtype": "Table",
+   "label": "Lignes Officielles de la Déclaration G50 (Codes DGI & Comptes SCF)",
+   "options": "G50 Tax Line",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tab_ident_recap",
+   "fieldtype": "Tab Break",
+   "label": "1. Identification & Récapitulation G50"
+  },
+  {
+   "fieldname": "sec_guide_g50",
+   "fieldtype": "Section Break",
+   "label": "Référentiel Officiel Série G n° 50 (DGI / Jibayatic / CIDTA / CTCA / LF 2024–2026)"
+  },
+  {
+   "fieldname": "html_guide_g50",
+   "fieldtype": "HTML",
+   "label": "Guide Officiel G50",
+   "options": "\n        <div style=\"background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #0f172a; border-radius:6px; padding:12px 16px; font-size:12.5px; line-height:1.5; color:#1e293b;\">\n            <div style=\"font-weight:700; font-size:13.5px; color:#0f172a; margin-bottom:6px;\">\n                🏛️ Déclaration Mensuelle Série G n° 50 (Régime du Réel / Jibayatic) — Référentiel Officiel à Jour\n            </div>\n            <ul style=\"margin:0; padding-left:18px;\">\n                <li><b>Échéance Légale (Art. 355 CIDTA &amp; Art. 76 CTCA) :</b> Dépôt et télépaiement dans les <b>20 premiers jours du mois suivant</b> celui au titre duquel les droits sont dus.</li>\n                <li><b>Distinction Normative des Cases :</b> Chaque rubrique distingue strictement\n                    <span style=\"background:#dcfce7; color:#166534; padding:1px 6px; border-radius:4px; font-weight:600;\">[COMPTE SCF]</span> (montant issu des comptes de Classes 4, 5, 6 ou 7 du SCF) et\n                    <span style=\"background:#dbeafe; color:#1e40af; padding:1px 6px; border-radius:4px; font-weight:600;\">[FORMULE DGI]</span> (case calculée automatiquement en lecture seule).\n                </li>\n                <li><b>Dispositions Légales Clés :</b> Abrogation de la TAP de droit commun depuis le 01/01/2024 (<b>Art. 14 LF 2024</b>) ; 3 acomptes IBS de 30% (20 mars, 20 juin, 20 novembre - <b>Art. 356 CIDTA</b>) ; interdiction de déduire la TVA sur factures &gt; <b>1 000 000 DZD TTC</b> payées en espèces (<b>Art. 30 CTCA</b>) ; obligation de joindre l'état détaillé des déductions de TVA (<b>Art. 29 CTCA</b>).</li>\n            </ul>\n        </div>\n    "
+  },
+  {
+   "default": "EURL BUILD AND SECURE NETWORKS",
+   "description": "[IDENTIFICATION DGI] Désignation exacte figurant sur la carte d'immatriculation fiscale.",
+   "fieldname": "company_name_fiscal",
+   "fieldtype": "Data",
+   "label": "Nom, Prénom ou Raison Sociale"
+  },
+  {
+   "default": "SERVICE INFORMATIQUE",
+   "description": "[IDENTIFICATION DGI] Activité principale exercée.",
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "label": "Profession ou Activité Exercée"
+  },
+  {
+   "default": "AISSA LALAM N°13 RDC EL MOURADIA -ALGER-",
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Adresse du Siège Social / Principal Établissement"
+  },
+  {
+   "default": "001716099938766",
+   "description": "[IDENTIFICATION DGI] Numéro d'Identification Fiscale officiel à 15 chiffres.",
+   "fieldname": "nif",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "N.I.F (15 Chiffres)",
+   "reqd": 1
+  },
+  {
+   "default": "16099938766",
+   "description": "[IDENTIFICATION DGI] Numéro d'article d'imposition à 11 chiffres figurant sur l'extrait de rôles.",
+   "fieldname": "article_imposition",
+   "fieldtype": "Data",
+   "label": "N° d'Article d'Imposition (11 Chiffres)"
+  },
+  {
+   "default": "DIW D'ALGER CENTRE",
+   "fieldname": "wilaya_direction",
+   "fieldtype": "Data",
+   "label": "Direction des Impôts de Wilaya (DIW / DGE)"
+  },
+  {
+   "default": "RECETTE DES IMPÔTS D'EL MOURADIA - ALGER",
+   "fieldname": "recette_impots",
+   "fieldtype": "Data",
+   "label": "Recette des Impôts / CDI / CPI Compétent"
+  },
+  {
+   "fieldname": "col_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "[FORMULE DGI] = Le 20 du mois suivant le mois déclaré (Art. 355 CIDTA & Art. 76 CTCA).",
+   "fieldname": "due_date_legale",
+   "fieldtype": "Date",
+   "label": "Date Limite Légale (20 du mois M+1)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[MENTION NÉANT] Cocher uniquement si aucune opération imposable, aucune retenue à la source et aucun précompte de TVA n'existent sur le mois.",
+   "fieldname": "is_neant_g50",
+   "fieldtype": "Check",
+   "label": "Déclaration G50 « NÉANT »"
+  },
+  {
+   "default": "0",
+   "description": "[SÉCURITÉ FISCALE] Verrouille toutes les cases de la G50 après dépôt/paiement ou clôture de l'exercice.",
+   "fieldname": "is_g50_locked",
+   "fieldtype": "Check",
+   "label": "Déclaration Verrouillée (Lecture Seule)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Droits dus au Paragraphe 1 (Code C1A11..20). Égal à 0 DZD pour les activités de droit commun depuis l'Art. 14 LF 2024.",
+   "fieldname": "recap_p1_tap_tls",
+   "fieldtype": "Currency",
+   "label": "1. Paragraphe 1 — TAP (Abrogée) / Taxe Locale de Solidarité (TLS)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Acompte IBS (E1M10) + Solde de liquidation IBS (E1M20) + Acompte IRG (E1M30).",
+   "fieldname": "recap_p2_acomptes_ibs_irg",
+   "fieldtype": "Currency",
+   "label": "2. Paragraphe 2 — Acomptes Provisionnels & Solde IBS / IRG (E1)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = IRG Salaires (E2M05) + IRG Dividendes 15% (E2M10) + IRG Créances 10% (E2M15) + IRG Non-résidents (E2M20) + IRG Honoraires/Autres (E2M30) + IBS Étrangers 30% (E2M40).",
+   "fieldname": "recap_p3_irg_retenues",
+   "fieldtype": "Currency",
+   "label": "3. Paragraphe 3 — IRG Salaires & Retenues à la Source (E2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_recap_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Droits de timbre sur état (E3L10) + Taxe Formation/Apprentissage (E3L20) + Autres taxes (E3L30).",
+   "fieldname": "recap_p4_timbre_autres",
+   "fieldtype": "Currency",
+   "label": "4. Paragraphe 4 — Droits de Timbre & Autres Impôts et Taxes (E3)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = TVA Nette à Payer (Case E = max(0, Total TVA Collectée A - Total TVA Déductible B)).",
+   "fieldname": "recap_p5_tva_a_payer",
+   "fieldtype": "Currency",
+   "label": "5. Paragraphe 5 — Taxes sur le Chiffre d'Affaires (TVA Nette à Payer E)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[RÈGLE LÉGALE] 0% si payé <= 20 M+1 ; 10% dès le 21 M+1 ; +3% par mois de retard supplémentaire jusqu'à 25% max.",
+   "fieldname": "penalite_retard_taux",
+   "fieldtype": "Percent",
+   "label": "Taux Pénalité de Retard (%) (Art. 402 CIDTA / Art. 115 CTCA)"
+  },
+  {
+   "fieldname": "col_recap_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = round((1 + 2 + 3 + 4 + 5) * Taux Pénalité / 100) [Compte SCF 656 Non déductible Art. 141-6 CIDTA].",
+   "fieldname": "penalite_retard_montant",
+   "fieldtype": "Currency",
+   "label": "Montant des Pénalités de Retard",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_controles_g50",
+   "fieldtype": "Section Break",
+   "label": "Contrôles Automatisés de Cohérence Fiscale & Comptable (Expert-Comptable / CAC)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DE CONTRÔLE] = (TVA 19% - CA 19% * 0,19) + (TVA 9% - CA 9% * 0,09). Doit être égal à 0,00 DZD.",
+   "fieldname": "ecart_ca_tva_collectee",
+   "fieldtype": "Currency",
+   "label": "1. Écart arithmétique TVA Collectée vs CA Imposable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_ctrl_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DE CONTRÔLE] = (TVA Biens/Services C2 + TVA Immos C3) - Total TVA de l'Annexe Fournisseurs. Doit être égal à 0,00 DZD.",
+   "fieldname": "ecart_tva_deductible_annexe",
+   "fieldtype": "Currency",
+   "label": "2. Écart TVA Déductible (C2+C3) vs Annexe Fournisseurs (Art. 29 CTCA)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_ctrl_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DE CONTRÔLE] = Total CA HT du mois - Total HT de l'Annexe Clients (lorsque renseignée).",
+   "fieldname": "ecart_ca_annexe_clients",
+   "fieldtype": "Currency",
+   "label": "3. Écart CA Total HT vs Annexe Clients (Art. 224 CTCA)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tab_p1_p2",
+   "fieldtype": "Tab Break",
+   "label": "2. Paragraphes 1 (TAP/TLS) & 2 (Acomptes IBS)"
+  },
+  {
+   "fieldname": "sec_p1_tls",
+   "fieldtype": "Section Break",
+   "label": "PARAGRAPHE 1 — Taxe sur l'Activité Professionnelle (Abrogée Art. 14 LF 2024) / Taxe Locale de Solidarité (Codes C1A11 à C1A20)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF] Somme des comptes 700, 701, 702, 704, 705, 706, 708 diminuée du 709 au titre du mois [SC].",
+   "fieldname": "c1a11_ca_brut_mois",
+   "fieldtype": "Currency",
+   "label": "C1A11 — Chiffre d'affaires brut du mois (HT)"
+  },
+  {
+   "default": "0",
+   "description": "[RÈGLE Art. 14 LF 2024] La TAP étant abrogée depuis le 01/01/2024 pour toutes les activités de droit commun, la totalité du CA hors mines/canalisations est exonérée.",
+   "fieldname": "c1a12_operations_exonerees",
+   "fieldtype": "Currency",
+   "label": "C1A12 — Opérations exonérées / Hors champ TLS (Droit commun LF 2024)"
+  },
+  {
+   "fieldname": "col_p1_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = max(0, C1A11 Chiffre d'affaires brut - C1A12 Opérations exonérées).",
+   "fieldname": "c1a13_ca_imposable_tls",
+   "fieldtype": "Currency",
+   "label": "C1A13 — Chiffre d'affaires imposable à la TLS",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[TAUX LÉGAL] 0% pour les entreprises de production, BTPH, services et commerce (Art. 14 LF 2024).",
+   "fieldname": "c1a14_taux_tls",
+   "fieldtype": "Percent",
+   "label": "Taux TLS (%) (0% Droit commun, 1,5% Mines, 3% Canalisations)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = round(C1A13 * Taux TLS / 100) [Compte SCF 642 / 447 SC].",
+   "fieldname": "tap_tls_droits_dus",
+   "fieldtype": "Currency",
+   "label": "Droits dus Paragraphe 1 (TLS)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_p2_ibs",
+   "fieldtype": "Section Break",
+   "label": "PARAGRAPHE 2 — Acomptes Provisionnels & Solde de Liquidation IBS / IRG (Codes E1M10, E1M20, E1M30 — Art. 356 CIDTA)"
+  },
+  {
+   "default": "3ème Acompte IBS (20 Octobre - 20 Novembre : 30%)",
+   "description": "[CALENDRIER Art. 356 CIDTA] Les 3 acomptes IBS de 30% chacun sont déclarés sur les G50 de Février (payé <= 20 Mars), Mai (<= 20 Juin) et Octobre/Novembre (<= 20 Novembre).",
+   "fieldname": "e1m10_numero_acompte",
+   "fieldtype": "Select",
+   "label": "E1M10 — Échéance d'Acompte Provisionnel IBS du mois",
+   "options": "Aucun acompte ce mois\n1er Acompte IBS (20 Février - 20 Mars : 30%)\n2ème Acompte IBS (20 Mai - 20 Juin : 30%)\n3ème Acompte IBS (20 Octobre - 20 Novembre : 30%)"
+  },
+  {
+   "default": "1399897",
+   "description": "[RÉFÉRENCE TABLEAU 9 N-1] Bénéfice fiscal du dernier exercice clos (ou 5% du capital appelé pour les sociétés nouvellement créées - Art. 356-4 CIDTA).",
+   "fieldname": "e1m10_base_benefice_ref",
+   "fieldtype": "Currency",
+   "label": "E1M10 — Bénéfice imposable de référence N-1 (ou 5% du Capital social)"
+  },
+  {
+   "default": "26",
+   "description": "[TAUX Art. 150 CIDTA] 19% Production de biens ; 23% BTPH, Tourisme, Hydromécanique ; 26% Commerce et Prestations de services.",
+   "fieldname": "e1m10_taux_ibs_applicable",
+   "fieldtype": "Percent",
+   "label": "Taux IBS de l'entreprise (%) (Art. 150 CIDTA : 19%, 23% ou 26%)"
+  },
+  {
+   "default": "363973",
+   "description": "[FORMULE DGI] = max(10 000 DZD, round(Bénéfice de référence * Taux IBS / 100)).",
+   "fieldname": "e1m10_ibs_reference",
+   "fieldtype": "Currency",
+   "label": "IBS annuel de référence N-1",
+   "read_only": 1
+  },
+  {
+   "default": "109192",
+   "description": "[FORMULE DGI & COMPTE SCF 4441] = round(IBS de référence * 30%) si un acompte est échu sur le mois, sinon 0 DZD. Comptabilisé au débit du compte 4441 (État - Acomptes IBS).",
+   "fieldname": "e1m10_acompte_ibs_droits",
+   "fieldtype": "Currency",
+   "label": "E1M10 — Montant de l'Acompte Provisionnel IBS (30%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_p2_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 695 / 444] Montant total de l'IBS liquidé sur le Bilan Fiscal (minimum forfaitaire 10 000 DZD - Art. 365 bis CIDTA).",
+   "fieldname": "e1m20_ibs_annuel_liquide",
+   "fieldtype": "Currency",
+   "label": "E1M20 — IBS annuel dû au titre de l'exercice clos (Liquidation au 20 Mai)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 4441 SD] Cumul des 3 acomptes provisionnels versés au cours de l'exercice clos + excédent d'IBS antérieur.",
+   "fieldname": "e1m20_total_acomptes_verses",
+   "fieldtype": "Currency",
+   "label": "E1M20 — Total des acomptes déjà versés et excédents antérieurs (Compte 4441 SD)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI & COMPTE SCF 444] = max(0, IBS annuel liquidé - Total des acomptes versés).",
+   "fieldname": "e1m20_solde_ibs_droits",
+   "fieldtype": "Currency",
+   "label": "E1M20 — Solde de Liquidation IBS à Payer",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI & COMPTE SCF 444 SD] = max(0, Total des acomptes versés - IBS annuel liquidé). Figurera à l'Actif du Bilan sous 'Impôts et assimilés'.",
+   "fieldname": "e1m20_excedent_ibs_a_imputer",
+   "fieldtype": "Currency",
+   "label": "Excédent d'IBS à imputer sur les prochains acomptes (Art. 356-6 CIDTA)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 442] Réservé aux contribuables relevant de l'IRG catégorie Bénéfices Professionnels.",
+   "fieldname": "e1m30_acompte_irg_droits",
+   "fieldtype": "Currency",
+   "label": "E1M30 — Acomptes Provisionnels IRG (Entreprises individuelles)"
+  },
+  {
+   "fieldname": "tab_p3_p4",
+   "fieldtype": "Tab Break",
+   "label": "3. Paragraphes 3 (IRG & RAS) & 4 (Timbre)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 457] Montant brut des dividendes et bénéfices distribués aux associés personnes physiques résidentes.",
+   "fieldname": "base_dividendes_distribues",
+   "fieldtype": "Currency",
+   "label": "E2M10 — Base des Revenus des Capitaux Mobiliers (Dividendes distribués)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 661] Intérêts des comptes courants d'associés et dépôts.",
+   "fieldname": "base_interets_creances",
+   "fieldtype": "Currency",
+   "label": "E2M15 — Base des Revenus des Créances, Dépôts et Cautionnements"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI & COMPTE SCF 4422 SC] = round(Base intérêts des créances * 10%).",
+   "fieldname": "irg_interets_creances_10",
+   "fieldtype": "Currency",
+   "label": "E2M15 — Droits IRG / Créances et Dépôts (10%)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 622 / 613] Base des rémunérations soumises à retenue à la source IRG.",
+   "fieldname": "base_irg_honoraires",
+   "fieldtype": "Currency",
+   "label": "E2M30 — Base Imposable des Autres Retenues IRG (Honoraires / Vacations / Loyers)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 604/611/622] Sommes brutes versées aux sociétés étrangères sans installation permanente en Algérie (Art. 150 & 156 CIDTA).",
+   "fieldname": "base_ibs_etranger_30",
+   "fieldtype": "Currency",
+   "label": "E2M40 — Base des Contrats de Services d'Entreprises Étrangères non résidentes"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI & COMPTE SCF 4423 SC] = round(Base Entreprises Étrangères * 30%).",
+   "fieldname": "ibs_retenue_etranger_30",
+   "fieldtype": "Currency",
+   "label": "E2M40 — Droits IBS Retenus à la Source sur Sociétés Étrangères (30%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_p4_timbre",
+   "fieldtype": "Section Break",
+   "label": "PARAGRAPHE 4 — Droits de Timbre sur État & Autres Impôts et Taxes (Codes E3L10 à E3L30)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 531 SD] Total des factures encaissées en espèces au cours du mois.",
+   "fieldname": "base_encaissements_especes",
+   "fieldtype": "Currency",
+   "label": "E3L10 — Total des Encaissements en Espèces soumis au Timbre (Compte 531)"
+  },
+  {
+   "fieldname": "col_p4_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 6412 / 6413 / 447 SC] Quote-part non consommée de la TFP (1%) et de la TA (1%) sur la masse salariale annuelle.",
+   "fieldname": "taxe_formation_apprentissage",
+   "fieldtype": "Currency",
+   "label": "E3L20 — Taxe de Formation Professionnelle (1%) & Taxe d'Apprentissage (1%)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 645 / 447 SC] Autres taxes déclarées au Paragraphe 4 de la G50.",
+   "fieldname": "autres_taxes_paragraphe_4",
+   "fieldtype": "Currency",
+   "label": "E3L30 — Autres Taxes Parafiscales et Spécifiques (TIC, Taxe Véhicules, etc.)"
+  },
+  {
+   "fieldname": "tab_p5_tva",
+   "fieldtype": "Tab Break",
+   "label": "4. Paragraphe 5 : TVA (Collectée, Déductible & Solde)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 44578 SC] Reversement de TVA sur immobilisations cédées avant 5 ans ou régularisation du prorata de déduction.",
+   "fieldname": "tva_regularisation_reprise",
+   "fieldtype": "Currency",
+   "label": "E4L03 — Régularisations / Reversements de TVA (Art. 38 & 40 CTCA)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 604/611/622] Montant HT des prestations de services immatérielles fournies par un prestataire étranger.",
+   "fieldname": "ca_autoliquidation_services_importes",
+   "fieldtype": "Currency",
+   "label": "E4L04 — Base HT Autoliquidation TVA sur Services Importés (Art. 83 bis CTCA)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = round(Base Autoliquidation * 0,19).",
+   "fieldname": "tva_autoliquidation_19",
+   "fieldtype": "Currency",
+   "label": "E4L04 — TVA Autoliquidée à 19% (Art. 83 bis CTCA)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_tva_exo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 70 Export SC] Chiffre d'affaires réalisé à l'exportation exonéré de TVA.",
+   "fieldname": "ca_exportation_exonere",
+   "fieldtype": "Currency",
+   "label": "E4L10 — CA à l'Exportation Exonéré de TVA (Art. 13 CTCA)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = CA Taxable 19% + CA Taxable 9% + CA Exportation + CA Exonéré/Franchise.",
+   "fieldname": "ca_total_ht_mois",
+   "fieldtype": "Currency",
+   "label": "TOTAL CHIFFRE D'AFFAIRES DU MOIS (HT)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 44568 SD] Régularisation positive de TVA déductible ou TVA sur ventes résiliées.",
+   "fieldname": "tva_deductible_complementaire",
+   "fieldtype": "Currency",
+   "label": "Ligne C4 — TVA Complémentaire Déductible (Factures annulées/impayées - Art. 18 CTCA)"
+  },
+  {
+   "fieldname": "tab_annexes_g50",
+   "fieldtype": "Tab Break",
+   "label": "5. Annexes Fournisseurs (Art. 29) & Clients (Art. 224)"
+  },
+  {
+   "fieldname": "sec_annexe_fourn",
+   "fieldtype": "Section Break",
+   "label": "ANNEXE 1 — État Détaillé des Déductions de TVA / Fournisseurs (Obligatoire — Art. 29 & 30 CTCA)"
+  },
+  {
+   "default": "1",
+   "description": "[AUTOMATISATION] Si coché, les cases C2 (TVA Biens/Services) et C3 (TVA Immobilisations) sont automatiquement calculées à partir des factures saisies dans l'Annexe Fournisseurs.",
+   "fieldname": "sync_tva_from_annexe_fournisseurs",
+   "fieldtype": "Check",
+   "label": "Alimenter automatiquement les lignes C2 et C3 depuis le tableau des factures fournisseurs ci-dessous"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des montants HT des factures de l'Annexe Fournisseurs.",
+   "fieldname": "annexe_fournisseurs_total_ht",
+   "fieldtype": "Currency",
+   "label": "Total Achats HT justifiés (Annexe Fournisseurs)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_af_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme de la TVA déductible sur Biens et Services.",
+   "fieldname": "annexe_fournisseurs_total_tva_biens",
+   "fieldtype": "Currency",
+   "label": "Total TVA Biens & Services (C2 — Compte 44562)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme de la TVA déductible sur Immobilisations.",
+   "fieldname": "annexe_fournisseurs_total_tva_immos",
+   "fieldtype": "Currency",
+   "label": "Total TVA Immobilisations (C3 — Compte 44561)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Total TVA Biens & Services (C2) + Total TVA Immobilisations (C3).",
+   "fieldname": "annexe_fournisseurs_total_tva",
+   "fieldtype": "Currency",
+   "label": "Total Général TVA Déductible Justifiée (C2 + C3)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_af_grid",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "annexe_fournisseurs",
+   "fieldtype": "Table",
+   "label": "Bordereau Détaillé des Factures Fournisseurs donnant droit à déduction (Art. 29 & 30 CTCA)",
+   "options": "G50 Annexe Fournisseur TVA"
+  },
+  {
+   "fieldname": "sec_annexe_clients",
+   "fieldtype": "Section Break",
+   "label": "ANNEXE 2 — État Détaillé des Clients en Gros / Franchise TVA (Art. 224 CTCA)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme des montants HT facturés dans l'Annexe Clients.",
+   "fieldname": "annexe_clients_total_ht",
+   "fieldtype": "Currency",
+   "label": "Total Chiffre d'Affaires HT (Annexe Clients)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_ac_g50_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Somme de la TVA facturée dans l'Annexe Clients.",
+   "fieldname": "annexe_clients_total_tva",
+   "fieldtype": "Currency",
+   "label": "Total TVA Facturée (Annexe Clients)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_ac_g50_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = Total HT + Total TVA.",
+   "fieldname": "annexe_clients_total_ttc",
+   "fieldtype": "Currency",
+   "label": "Total Facturé TTC (Annexe Clients)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_ac_grid",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "annexe_clients",
+   "fieldtype": "Table",
+   "label": "État Nominatif des Factures Clients (Art. 224 CTCA)",
+   "options": "G50 Annexe Client"
+  },
+  {
+   "fieldname": "sec_ventilation_fait_generateur",
+   "fieldtype": "Section Break",
+   "label": "Ventilation du Fait Générateur TVA : Vente en l'État (Facturation) vs Prestation (Encaissement - Art. 14 CTCA)"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 700 & ART. 14-1 CTCA] Total HT des factures émises durant le mois dont la part Vente en l'état représente >= 50% du TTC.",
+   "fieldname": "ca_vente_etat_ht_mois",
+   "fieldtype": "Currency",
+   "label": "CA HT — Ventes en l'État (Fait générateur : Facturation, Biens >= 50% TTC)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI & COMPTE SCF 44571] TVA exigible dès la facturation sur les ventes en l'état (et factures mixtes où Biens >= 50% TTC).",
+   "fieldname": "tva_vente_etat_mois",
+   "fieldtype": "Currency",
+   "label": "TVA Collectée — Ventes en l'État (Facturation)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_vent_fg_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[COMPTE SCF 706/512 & ART. 14-2 CTCA] Total HT encaissé via Payment Entry (Receive) durant le mois sur des factures dont la part Prestation de service est > 50% du TTC.",
+   "fieldname": "ca_prestation_encaisse_ht_mois",
+   "fieldtype": "Currency",
+   "label": "CA HT — Prestations de Services Encaissées (Payment Entry du mois, Services > 50% TTC)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI & COMPTE SCF 44571] TVA devenue exigible lors de l'encaissement (Payment Entry) des factures de prestation de service (> 50% TTC).",
+   "fieldname": "tva_prestation_encaisse_mois",
+   "fieldtype": "Currency",
+   "label": "TVA Exigible — Prestations de Services Encaissées (Payment Entry)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_vent_fg_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "[INFO AUDIT CAC - COMPTE 411] Chiffre d'affaires HT des factures de prestations de services (> 50% TTC) émises durant le mois mais non encore encaissées à la fin du mois (TVA différée à l'encaissement).",
+   "fieldname": "ca_prestation_non_encaisse_ht_mois",
+   "fieldtype": "Currency",
+   "label": "[Mémoire Audit] CA HT Prestations Facturées du Mois Non Encore Encaissées",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[INFO AUDIT CAC - COMPTE 44578] TVA facturée sur prestations de services (> 50% TTC) du mois non encore encaissées (exclue de la ligne E4L01 du mois).",
+   "fieldname": "tva_prestation_non_encaisse_mois",
+   "fieldtype": "Currency",
+   "label": "[Mémoire Audit] TVA Différée en Attente d'Encaissement (Compte 44578)",
+   "read_only": 1
+  },
+  {
+   "default": "Aucun (Régime de droit commun)",
+   "description": "[AVANTAGE FISCAL CIDTA & LOI 22-18 AAPI] Synchronisé avec Algerian Tax Settings (vérifie la validité de la décision start_date..end_date). Réduit ou dispense automatiquement les 3 acomptes IBS de 30% (Art. 138, 138 bis, 142, 356 CIDTA).",
+   "fieldname": "e1m10_dispositif_avantage",
+   "fieldtype": "Select",
+   "label": "Dispositif d'Avantage Fiscal / Abattement sur Acomptes IBS",
+   "options": "Aucun (Régime de droit commun)\nExonération Totale IBS 100% (AAPI / NESDA / CNAC / ANGEM / Startup)\nAbattement IBS 70% (1ère année post-exonération NESDA/CNAC)\nAbattement IBS 50% (Wilayas Grand Sud Art. 138 bis / 2ème année post-exo)\nAbattement IBS 25% (3ème année post-exonération NESDA/CNAC)\nExonération Partielle / Prorata Export ou Extension AAPI (%)\nTaux Réduit IBS 10% (Bénéfices Réinvestis - Art. 150-2 CIDTA)"
+  },
+  {
+   "default": "0",
+   "description": "[TAUX D'AVANTAGE FISCAL] 100% (Dispense totale d'acomptes IBS), 70%, 50% (Grand Sud Art. 138 bis / 2e année post-exo), 25%, ou prorata personnalisé (CA Export / Extension AAPI).",
+   "fieldname": "e1m10_taux_abattement_exo",
+   "fieldtype": "Percent",
+   "label": "Taux d'Exonération / Abattement ou Prorata Exonéré (%)"
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE DGI] = round(Bénéfice de référence N-1 * Taux IBS / 100) avant application de l'avantage fiscal.",
+   "fieldname": "e1m10_ibs_brut_avant_avantage",
+   "fieldtype": "Currency",
+   "label": "IBS de Référence Brut (Avant Avantage Fiscal)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[FORMULE AVANTAGE FISCAL] = round(IBS Brut * Taux d'Exonération ou Abattement / 100). Économie d'IBS générée par l'avantage fiscal.",
+   "fieldname": "e1m10_montant_avantage_ibs",
+   "fieldtype": "Currency",
+   "label": "Montant de l'Abattement / Exonération sur IBS de Référence",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "[ART. 356-5 & 356-6 CIDTA - COMPTE SCF 4441 SD] Excédent de versement d'IBS de l'exercice précédent imputé directement en diminution de l'acompte du mois.",
+   "fieldname": "e1m10_imputation_excedent_anterieur",
+   "fieldtype": "Currency",
+   "label": "Imputation d'Excédent d'IBS Antérieur sur l'Acompte (Art. 356-5 CIDTA)"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-04 17:32:53.664850",
+ "modified_by": "Administrator",
+ "module": "Algeria Tax",
+ "name": "G50 Declaration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

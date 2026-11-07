@@ -1,0 +1,78 @@
+{
+  "actions": [],
+  "creation": "2026-11-05 10:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "employee",
+    "employee_name",
+    "nss_cnas",
+    "working_days",
+    "assiette_cnas",
+    "cnas_salarie_9",
+    "cnas_employeur_26",
+    "total_cnas_35"
+  ],
+  "fields": [
+    {
+      "fieldname": "employee",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Salarié / الموظف",
+      "options": "Employee",
+      "reqd": 1
+    },
+    {
+      "fieldname": "employee_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Nom et Prénom / الاسم واللقب"
+    },
+    {
+      "fieldname": "nss_cnas",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "N° Sécurité Sociale (NSS 12 chiffres)"
+    },
+    {
+      "fieldname": "working_days",
+      "fieldtype": "Float",
+      "in_list_view": 1,
+      "label": "Jours Travaillés / أيام العمل"
+    },
+    {
+      "fieldname": "assiette_cnas",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Assiette Cotisable CNAS (DZD)"
+    },
+    {
+      "fieldname": "cnas_salarie_9",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Part Ouvrière 9% (DZD)"
+    },
+    {
+      "fieldname": "cnas_employeur_26",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Part Patronale 26% (DZD)"
+    },
+    {
+      "fieldname": "total_cnas_35",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Total Cotisation 35% (DZD)"
+    }
+  ],
+  "istable": 1,
+  "modified": "2026-11-06 18:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Algeria Tax",
+  "name": "CNAS Employee Line",
+  "owner": "Administrator",
+  "permissions": [],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

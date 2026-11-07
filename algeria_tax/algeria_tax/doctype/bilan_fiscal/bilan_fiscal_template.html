@@ -1,0 +1,1464 @@
+
+
+<style>
+
+  @page {
+
+    size: A4 portrait;
+
+    margin: 8mm 8mm 8mm 8mm;
+
+  }
+
+  body, .print-format {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    color: #000;
+
+    background: #fff;
+
+    line-height: 1.2;
+
+    margin: 0;
+
+    padding: 0;
+
+  }
+
+  .page-container {
+
+    width: 100%;
+
+    max-width: 190mm;
+
+    margin: 0 auto;
+
+    page-break-after: always;
+
+    break-after: page;
+
+    box-sizing: border-box;
+
+    padding: 2mm 0;
+
+  }
+
+  .page-container:last-child {
+
+    page-break-after: auto;
+
+    break-after: auto;
+
+  }
+
+  .header-box {
+
+    border: 1.5px solid #000;
+
+    padding: 4px 6px;
+
+    margin-bottom: 6px;
+
+  }
+
+  .header-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #000;
+
+    padding-bottom: 3px;
+
+    margin-bottom: 3px;
+
+  }
+
+  .admin-stamp {
+
+    font-weight: bold;
+
+    font-size: 11px;
+
+    letter-spacing: 0.5px;
+
+  }
+
+  .nif-group {
+
+    display: flex;
+
+    align-items: center;
+
+  }
+
+  .nif-label {
+
+    font-weight: bold;
+
+    font-size: 11px;
+
+    margin-right: 5px;
+
+  }
+
+  .nif-grid {
+
+    display: flex;
+
+    border-top: 1px solid #000;
+
+    border-bottom: 1px solid #000;
+
+    border-left: 1px solid #000;
+
+  }
+
+  .nif-cell {
+
+    width: 13px;
+
+    height: 16px;
+
+    text-align: center;
+
+    line-height: 16px;
+
+    border-right: 1px solid #000;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+  }
+
+  .header-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 9.5px;
+
+  }
+
+  .info-left {
+
+    width: 65%;
+
+  }
+
+  .info-right {
+
+    width: 33%;
+
+    text-align: right;
+
+  }
+
+  .company-line {
+
+    font-size: 10.5px;
+
+    font-weight: bold;
+
+    margin-bottom: 2px;
+
+  }
+
+  .period-box {
+
+    display: inline-block;
+
+    border: 1.5px solid #000;
+
+    padding: 2px 8px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    margin-top: 4px;
+
+    text-align: center;
+
+  }
+
+  .page-title {
+
+    text-align: center;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    border: 1.5px solid #000;
+
+    padding: 3px;
+
+    background-color: #f2f2f2;
+
+    margin-bottom: 6px;
+
+  }
+
+  table.dci-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    border: 1.5px solid #000;
+
+    font-size: 9px;
+
+  }
+
+  table.dci-table th, table.dci-table td {
+
+    border: 1px solid #000;
+
+    padding: 2px 4px;
+
+  }
+
+  table.dci-table th {
+
+    background-color: #f2f2f2;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    font-size: 9px;
+
+  }
+
+  table.dci-table td.num {
+
+    text-align: right;
+
+    white-space: nowrap;
+
+  }
+
+  table.dci-table tr.total-row td {
+
+    font-weight: bold;
+
+    background-color: #e8e8e8;
+
+  }
+
+  table.dci-table tr.subtotal-row td {
+
+    font-weight: bold;
+
+    background-color: #f7f7f7;
+
+  }
+
+  .neant-box {
+
+    position: relative;
+
+    min-height: 120px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+  }
+
+  .neant-text {
+
+    font-size: 26px;
+
+    font-weight: 900;
+
+    letter-spacing: 6px;
+
+    color: #222;
+
+    transform: rotate(-22deg);
+
+    border: 2px dashed #444;
+
+    padding: 6px 20px;
+
+    background: rgba(255,255,255,0.9);
+
+  }
+
+  .table-subtitle {
+
+    font-weight: bold;
+
+    font-size: 10.5px;
+
+    border: 1px solid #000;
+
+    padding: 2px 5px;
+
+    background-color: #eee;
+
+    margin-top: 6px;
+
+    margin-bottom: 0px;
+
+  }
+
+  .footnote {
+
+    font-size: 8.5px;
+
+    margin-top: 4px;
+
+    font-style: italic;
+
+  }
+
+</style>
+
+
+
+{% set nif_clean = (doc.nif or "001716099938766") | replace(" ", "") | replace("-", "") %}
+
+{% set d_nif = nif_clean ~ "               " %}
+
+
+
+{% macro header_block(title, is_period_range=False) %}
+
+<div class="header-box">
+
+  <div class="header-top">
+
+    <div class="admin-stamp">IMPRIME DESTINE A L'ADMINISTRATION</div>
+
+    <div class="nif-group">
+
+      <span class="nif-label">N.I.F</span>
+
+      <div class="nif-grid">
+
+        {% for i in range(15) %}
+
+          <div class="nif-cell">{{ d_nif[i] }}</div>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="header-info">
+
+    <div class="info-left">
+
+      <div class="company-line">Désignation de l'entreprise: {{ doc.company_name_fiscal or doc.company }}</div>
+
+      <div><b>Activité:</b> {{ doc.activity or "SERVICE INFORMATIQUE" }}</div>
+
+      <div><b>Adresse:</b> {{ doc.address or "AISSA LALAM N°13 RDC EL MOURADIA -ALGER-" }}</div>
+
+    </div>
+
+    <div class="info-right">
+
+      <div class="period-box">
+
+        {% if is_period_range %}
+
+          Exercice du 01/01/26 au 31/12/26
+
+        {% else %}
+
+          Exercice clos le : 31/12/26
+
+        {% endif %}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="page-title">{{ title }}</div>
+
+{% endmacro %}
+
+
+
+{% macro fmt(val) %}
+
+  {% if val and val != 0 %}
+
+    {{ "{:,.0f}".format(val).replace(",", " ") }}
+
+  {% else %}
+
+    &nbsp;
+
+  {% endif %}
+
+{% endmacro %}
+
+
+
+<!-- ========================================== -->
+
+<!-- PAGE 1: BILAN (ACTIF)                     -->
+
+<!-- ========================================== -->
+
+<div class="page-container">
+
+  {{ header_block("BILAN (ACTIF)", False) }}
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th rowspan="2" style="width: 44%;">ACTIF</th>
+
+        <th colspan="3" style="width: 42%;">2026</th>
+
+        <th rowspan="2" style="width: 14%;">2025<br>Net</th>
+
+      </tr>
+
+      <tr>
+
+        <th style="width: 14%;">Montants Bruts</th>
+
+        <th style="width: 14%;">Amortissements<br>Provisions et pertes</th>
+
+        <th style="width: 14%;">Net</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr class="subtotal-row"><td colspan="5"><b>ACTIFS NON COURANTS</b></td></tr>
+
+      <tr><td>Ecart d'acquisition-goodwill positif ou négatif</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Immobilisations incorporelles</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="subtotal-row"><td colspan="5"><b>Immobilisations corporelles</b></td></tr>
+
+      <tr><td>Terrains</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Bâtiments</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Autres immobilisations corporelles</td><td class="num">{{ fmt(doc.autres_immo_corporelles_brut) }}</td><td class="num">{{ fmt(doc.autres_immo_corporelles_amort) }}</td><td class="num">{{ fmt(doc.autres_immo_corporelles_net) }}</td><td class="num">{{ fmt(doc.autres_immo_corporelles_net_n1) }}</td></tr>
+
+      <tr><td>Immobilisations en concession</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Immobilisations encours</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="subtotal-row"><td colspan="5"><b>Immobilisations financières</b></td></tr>
+
+      <tr><td>Titres mis en équivalence</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Autres participations et créances rattachées</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Autres titres immobilisés</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Prêts et autres actifs financiers non courants</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Impôts différés actif</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="total-row"><td>TOTAL ACTIF NON COURANT</td><td class="num">{{ fmt(doc.total_actif_non_courant_brut) }}</td><td class="num">{{ fmt(doc.total_actif_non_courant_amort) }}</td><td class="num">{{ fmt(doc.total_actif_non_courant_net) }}</td><td class="num">{{ fmt(doc.total_actif_non_courant_net_n1) }}</td></tr>
+
+
+
+      <tr class="subtotal-row"><td colspan="5"><b>ACTIF COURANT</b></td></tr>
+
+      <tr><td>Stocks et encours</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="subtotal-row"><td colspan="5"><b>Créances et emplois assimilés</b></td></tr>
+
+      <tr><td>Clients</td><td class="num">{{ fmt(doc.clients_brut) }}</td><td></td><td class="num">{{ fmt(doc.clients_net) }}</td><td class="num">{{ fmt(doc.clients_net_n1) }}</td></tr>
+
+      <tr><td>Autres débiteurs</td><td class="num">{{ fmt(doc.autres_debiteurs_brut) }}</td><td></td><td class="num">{{ fmt(doc.autres_debiteurs_net) }}</td><td class="num">{{ fmt(doc.autres_debiteurs_net_n1) }}</td></tr>
+
+      <tr><td>Impôts et assimilés</td><td class="num">{{ fmt(doc.impots_assimiles_actif_brut) }}</td><td></td><td class="num">{{ fmt(doc.impots_assimiles_actif_net) }}</td><td class="num">{{ fmt(doc.impots_assimiles_actif_net_n1) }}</td></tr>
+
+      <tr><td>Autres créances et emplois assimilés</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="subtotal-row"><td colspan="5"><b>Disponibilités et assimilés</b></td></tr>
+
+      <tr><td>Placements et autres actifs financiers courants</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Trésorerie</td><td class="num">{{ fmt(doc.tresorerie_actif_brut) }}</td><td></td><td class="num">{{ fmt(doc.tresorerie_actif_net) }}</td><td class="num">{{ fmt(doc.tresorerie_actif_net_n1) }}</td></tr>
+
+      <tr class="total-row"><td>TOTAL ACTIF COURANT</td><td class="num">{{ fmt(doc.total_actif_courant_brut) }}</td><td></td><td class="num">{{ fmt(doc.total_actif_courant_net) }}</td><td class="num">{{ fmt(doc.total_actif_courant_net_n1) }}</td></tr>
+
+      <tr class="total-row" style="background-color: #dcdcdc; font-size: 9.5px;"><td>TOTAL GENERAL ACTIF</td><td class="num">{{ fmt(doc.total_general_actif_brut) }}</td><td class="num">{{ fmt(doc.total_general_actif_amort) }}</td><td class="num">{{ fmt(doc.total_general_actif_net) }}</td><td class="num">{{ fmt(doc.total_general_actif_net_n1) }}</td></tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+
+
+<!-- ========================================== -->
+
+<!-- PAGE 2: BILAN (PASSIF)                     -->
+
+<!-- ========================================== -->
+
+<div class="page-container">
+
+  {{ header_block("BILAN (PASSIF)", False) }}
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 70%;">PASSIF</th>
+
+        <th style="width: 15%;">2026</th>
+
+        <th style="width: 15%;">2025</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr class="subtotal-row"><td colspan="3"><b>CAPITAUX PROPRES</b></td></tr>
+
+      <tr><td>Capital émis</td><td class="num">{{ fmt(doc.capital_emis) }}</td><td class="num">{{ fmt(doc.capital_emis_n1) }}</td></tr>
+
+      <tr><td>Capital non appelé</td><td></td><td></td></tr>
+
+      <tr><td>Primes et réserves - Réserves consolidées (1)</td><td class="num">{{ fmt(doc.primes_et_reserves) }}</td><td class="num">{{ fmt(doc.primes_et_reserves_n1) }}</td></tr>
+
+      <tr><td>Ecart de réévaluation</td><td></td><td></td></tr>
+
+      <tr><td>Ecart d'équivalence (1)</td><td></td><td></td></tr>
+
+      <tr><td>Résultat net - Résultat net part du groupe (1)</td><td class="num">{{ fmt(doc.resultat_net_passif) }}</td><td class="num">{{ fmt(doc.resultat_net_passif_n1) }}</td></tr>
+
+      <tr><td>Autres capitaux propres - Report à nouveau</td><td class="num">{{ fmt(doc.report_a_nouveau) }}</td><td class="num">{{ fmt(doc.report_a_nouveau_n1) }}</td></tr>
+
+      <tr><td>Part de la société consolidante (1)</td><td></td><td></td></tr>
+
+      <tr><td>Part des minoritaires (1)</td><td></td><td></td></tr>
+
+      <tr class="total-row"><td>TOTAL I</td><td class="num">{{ fmt(doc.total_capitaux_propres_i) }}</td><td class="num">{{ fmt(doc.total_capitaux_propres_i_n1) }}</td></tr>
+
+
+
+      <tr class="subtotal-row"><td colspan="3"><b>PASSIFS NON-COURANTS</b></td></tr>
+
+      <tr><td>Emprunts et dettes financières</td><td class="num">{{ fmt(doc.emprunts_dettes_financieres) }}</td><td class="num">{{ fmt(doc.emprunts_dettes_financieres_n1) }}</td></tr>
+
+      <tr><td>Impôts (différés et provisionnés)</td><td></td><td></td></tr>
+
+      <tr><td>Autres dettes non courantes</td><td></td><td></td></tr>
+
+      <tr><td>Provisions et produits constatés d'avance</td><td></td><td></td></tr>
+
+      <tr class="total-row"><td>TOTAL II</td><td class="num">{{ fmt(doc.total_passifs_non_courants_ii) }}</td><td class="num">{{ fmt(doc.total_passifs_non_courants_ii_n1) }}</td></tr>
+
+
+
+      <tr class="subtotal-row"><td colspan="3"><b>PASSIFS COURANTS:</b></td></tr>
+
+      <tr><td>Fournisseurs et comptes rattachés</td><td class="num">{{ fmt(doc.fournisseurs_comptes_rattaches) }}</td><td class="num">{{ fmt(doc.fournisseurs_comptes_rattaches_n1) }}</td></tr>
+
+      <tr><td>Impôts</td><td class="num">{{ fmt(doc.impots_passif) }}</td><td class="num">{{ fmt(doc.impots_passif_n1) }}</td></tr>
+
+      <tr><td>Autres dettes</td><td class="num">{{ fmt(doc.autres_dettes_passif) }}</td><td class="num">{{ fmt(doc.autres_dettes_passif_n1) }}</td></tr>
+
+      <tr><td>Trésorerie passif</td><td></td><td></td></tr>
+
+      <tr class="total-row"><td>TOTAL III</td><td class="num">{{ fmt(doc.total_passifs_courants_iii) }}</td><td class="num">{{ fmt(doc.total_passifs_courants_iii_n1) }}</td></tr>
+
+      <tr class="total-row" style="background-color: #dcdcdc; font-size: 9.5px;"><td>TOTAL GENERAL PASSIF (I+II+III)</td><td class="num">{{ fmt(doc.total_general_passif) }}</td><td class="num">{{ fmt(doc.total_general_passif_n1) }}</td></tr>
+
+    </tbody>
+
+  </table>
+
+  <div class="footnote">(1) A utiliser uniquement pour la présentation d'états financiers consolidés</div>
+
+</div>
+
+
+
+<!-- ========================================== -->
+
+<!-- PAGE 3: COMPTE DE RESULTAT (Partie 1)      -->
+
+<!-- ========================================== -->
+
+<div class="page-container">
+
+  {{ header_block("COMPTE DE RESULTAT", True) }}
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th rowspan="2" style="width: 48%;">RUBRIQUES</th>
+
+        <th colspan="2" style="width: 26%;">2026</th>
+
+        <th colspan="2" style="width: 26%;">2025</th>
+
+      </tr>
+
+      <tr>
+
+        <th style="width: 13%;">DEBIT</th>
+
+        <th style="width: 13%;">CREDIT</th>
+
+        <th style="width: 13%;">DEBIT</th>
+
+        <th style="width: 13%;">CREDIT</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr><td>Ventes de marchandises</td><td></td><td></td><td></td><td class="num">{{ fmt(doc.ventes_marchandises) }}</td></tr>
+
+      <tr><td style="padding-left: 15px;">Production vendue - Prestations de services</td><td></td><td></td><td></td><td class="num">{{ fmt(doc.production_services) }}</td></tr>
+
+      <tr><td style="padding-left: 15px;">Production vendue - Vente de travaux</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Produits annexes</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Rabais, remises, ristournes accordés</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="subtotal-row"><td>Chiffre d'affaires net des Rabais, remises, ristournes</td><td></td><td></td><td></td><td class="num">{{ fmt(doc.chiffre_affaires_net) }}</td></tr>
+
+      <tr><td>Production stockée ou déstockée</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Production immobilisée</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Subventions d'exploitation</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="total-row"><td>I-Production de l'exercice</td><td></td><td></td><td></td><td class="num">{{ fmt(doc.total_production_i) }}</td></tr>
+
+
+
+      <tr><td>Achats de marchandises vendues</td><td></td><td></td><td class="num">{{ fmt(doc.achats_marchandises) }}</td><td></td></tr>
+
+      <tr><td>Matières premières</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Autres approvisionnements</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Variations des stocks</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Achats d'études et de prestations de services</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Autres consommations</td><td></td><td></td><td class="num">{{ fmt(doc.autres_consommations) }}</td><td></td></tr>
+
+      <tr><td>Rabais, remises, ristournes obtenus sur achats</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td style="padding-left: 15px;">Services extérieurs - Locations</td><td></td><td></td><td class="num">{{ fmt(doc.services_locations) }}</td><td></td></tr>
+
+      <tr><td style="padding-left: 15px;">Services extérieurs - Publicité</td><td></td><td></td><td class="num">{{ fmt(doc.services_publicite) }}</td><td></td></tr>
+
+      <tr><td>Autres services</td><td></td><td></td><td class="num">{{ fmt(doc.autres_services) }}</td><td></td></tr>
+
+      <tr><td>Rabais, remises, ristournes obtenus sur services extérieurs</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="total-row"><td>II-Consommations de l'exercice</td><td></td><td></td><td class="num">{{ fmt(doc.total_consommations_ii) }}</td><td></td></tr>
+
+      <tr class="total-row" style="background-color: #dcdcdc;"><td>III-Valeur ajoutée d'exploitation (I-II)</td><td></td><td></td><td></td><td class="num">{{ fmt(doc.valeur_ajoutee_iii) }}</td></tr>
+
+    </tbody>
+
+  </table>
+
+  <div class="footnote" style="text-align: right;">../.. la suite sur la page suivante</div>
+
+</div>
+
+
+
+<!-- ========================================== -->
+
+<!-- PAGE 4: COMPTE DE RESULTAT (Partie 2)      -->
+
+<!-- ========================================== -->
+
+<div class="page-container">
+
+  {{ header_block("COMPTE DE RESULTAT ../..", True) }}
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th rowspan="2" style="width: 48%;">RUBRIQUES</th>
+
+        <th colspan="2" style="width: 26%;">2026</th>
+
+        <th colspan="2" style="width: 26%;">2025</th>
+
+      </tr>
+
+      <tr>
+
+        <th style="width: 13%;">DEBIT</th>
+
+        <th style="width: 13%;">CREDIT</th>
+
+        <th style="width: 13%;">DEBIT</th>
+
+        <th style="width: 13%;">CREDIT</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr><td>Charges de personnel</td><td></td><td></td><td class="num">{{ fmt(doc.charges_personnel) }}</td><td></td></tr>
+
+      <tr><td>Impôts et taxes et versements assimilés</td><td></td><td></td><td class="num">{{ fmt(doc.impots_taxes_assimiles) }}</td><td></td></tr>
+
+      <tr class="total-row"><td>IV-Excédent brut d'exploitation</td><td></td><td></td><td></td><td class="num">{{ fmt(doc.excedent_brut_exploitation_iv) }}</td></tr>
+
+      <tr><td>Autres produits opérationnels</td><td></td><td></td><td></td><td class="num">{{ fmt(doc.autres_produits_operationnels) }}</td></tr>
+
+      <tr><td>Autres charges opérationnelles</td><td></td><td></td><td class="num">{{ fmt(doc.autres_charges_operationnelles) }}</td><td></td></tr>
+
+      <tr><td>Dotations aux amortissements</td><td></td><td></td><td class="num">{{ fmt(doc.dotations_amortissements) }}</td><td></td></tr>
+
+      <tr><td>Provision</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Pertes de valeur</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Reprise sur pertes de valeur et provisions</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="total-row"><td>V-Résultat opérationnel</td><td></td><td></td><td></td><td class="num">{{ fmt(doc.resultat_operationnel_v) }}</td></tr>
+
+      <tr><td>Produits financiers</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Charges financières</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="subtotal-row"><td>VI-Résultat financier</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="total-row"><td>VII-Résultat ordinaire (V+VI)</td><td></td><td></td><td></td><td class="num">{{ fmt(doc.resultat_ordinaire_vii) }}</td></tr>
+
+      <tr><td>Eléments extraordinaires (produits) (*)</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Eléments extraordinaires (charges) (*)</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="subtotal-row"><td>VIII-Résultat extraordinaire</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Impôts exigibles sur résultats</td><td></td><td></td><td class="num">{{ fmt(doc.impots_exigibles_ibs) }}</td><td></td></tr>
+
+      <tr><td>Impôts différés (variations) sur résultats ordinaire</td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="total-row" style="background-color: #dcdcdc; font-size: 9.5px;"><td>IX-RESULTAT NET DE L'EXERCICE</td><td></td><td></td><td></td><td class="num">{{ fmt(doc.resultat_net_exercice_ix) }}</td></tr>
+
+    </tbody>
+
+  </table>
+
+  <div class="footnote">(*) A détailler sur état annexe à joindre</div>
+
+</div>
+
+
+
+<!-- ========================================== -->
+
+<!-- PAGE 5: TABLEAUX 1 & 2                     -->
+
+<!-- ========================================== -->
+
+<div class="page-container">
+
+  {{ header_block("TABLEAUX ANNEXES 1 & 2", True) }}
+
+  <div class="table-subtitle">1/Tableau des mouvements des stocks</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 35%;">Rubrique</th>
+
+        <th style="width: 20%;">Solde début</th>
+
+        <th colspan="2" style="width: 25%;">Mouvements période</th>
+
+        <th style="width: 20%;">Solde fin</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="5" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+
+
+  <div class="table-subtitle" style="margin-top: 15px;">2°/Tableau de la fluctuation de la production stockée</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 25%;">Débit</th>
+
+        <th style="width: 25%;">Crédit</th>
+
+        <th colspan="2" style="width: 50%;">Solde de fin d'exercice</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="4" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+
+
+<!-- ========================================== -->
+
+<!-- PAGE 6: TABLEAUX 3 & 4                     -->
+
+<!-- ========================================== -->
+
+<div class="page-container">
+
+  {{ header_block("TABLEAUX ANNEXES 3 & 4", True) }}
+
+  <div class="table-subtitle">3/Charges de personnel, impôts, taxes et versements assimilés, autres services :</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 75%;">Rubrique</th>
+
+        <th style="width: 25%;">Montants</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="2" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+
+
+  <div class="table-subtitle" style="margin-top: 15px;">4/Autres charges et produits opérationnels :</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 75%;">Rubrique</th>
+
+        <th style="width: 25%;">Montants</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="2" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+
+
+<!-- ========================================== -->
+
+<!-- PAGE 7: TABLEAUX 5 & 6                     -->
+
+<!-- ========================================== -->
+
+<div class="page-container">
+
+  {{ header_block("TABLEAUX ANNEXES 5 & 6", True) }}
+
+  <div class="table-subtitle">5/Tableau des amortissements et pertes de valeurs :</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 26%;">Rubriques et Postes</th>
+
+        <th style="width: 14%;">Dotations début</th>
+
+        <th style="width: 12%;">Dotations exercice</th>
+
+        <th style="width: 12%;">Diminutions sorties</th>
+
+        <th style="width: 14%;">Dotations fin</th>
+
+        <th style="width: 12%;">Fiscales</th>
+
+        <th style="width: 10%;">Ecarts</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr><td>Goodwill</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Immobilisations incorporelles</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Immobilisations corporelles</td><td class="num">{{ fmt(doc.tab5_dotations_cumulees_debut) }}</td><td></td><td></td><td class="num">{{ fmt(doc.tab5_dotations_cumulees_fin) }}</td><td></td><td></td></tr>
+
+      <tr><td>Participations</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+      <tr><td>Autres actifs financiers</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+      <tr class="total-row"><td>TOTAL</td><td class="num">{{ fmt(doc.tab5_dotations_cumulees_debut) }}</td><td></td><td></td><td class="num">{{ fmt(doc.tab5_dotations_cumulees_fin) }}</td><td></td><td></td></tr>
+
+    </tbody>
+
+  </table>
+
+
+
+  <div class="table-subtitle" style="margin-top: 15px;">6/Tableau des immobilisations créées ou acquises au cours de l'exercice :</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 40%;">Rubrique (Nature des immobilisations)</th>
+
+        <th style="width: 20%;">Montants bruts</th>
+
+        <th style="width: 20%;">TVA déduite</th>
+
+        <th style="width: 20%;">Net à amortir</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="4" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+
+
+<!-- ========================================== -->
+
+<!-- PAGE 8: TABLEAUX 7 & 8                     -->
+
+<!-- ========================================== -->
+
+<div class="page-container">
+
+  {{ header_block("TABLEAUX ANNEXES 7 & 8", True) }}
+
+  <div class="table-subtitle">7/Tableau des immobilisations cédées (plus ou moins values) au cours de l'exercice</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 25%;">Nature</th>
+
+        <th style="width: 15%;">Date acq.</th>
+
+        <th style="width: 15%;">Montant net</th>
+
+        <th style="width: 15%;">Amort.</th>
+
+        <th style="width: 15%;">Prix cession</th>
+
+        <th style="width: 15%;">Plus/Moins value</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="6" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+
+
+  <div class="table-subtitle" style="margin-top: 15px;">8/Tableau des provisions et pertes de valeurs:</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 40%;">Rubriques et postes</th>
+
+        <th style="width: 20%;">Provisions début</th>
+
+        <th style="width: 20%;">Dotations</th>
+
+        <th style="width: 20%;">Provisions fin</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="4" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+
+
+<!-- ========================================== -->
+
+<!-- PAGE 9: TABLEAUX 8/1 & 8/2                 -->
+
+<!-- ========================================== -->
+
+<div class="page-container">
+
+  {{ header_block("TABLEAUX ANNEXES 8/1 & 8/2", True) }}
+
+  <div class="table-subtitle">8/1 Relevé des pertes de valeurs sur créances:</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 50%;">Désignation des débiteurs</th>
+
+        <th style="width: 25%;">Valeur de la créance</th>
+
+        <th style="width: 25%;">Provision constituée</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="3" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+
+
+  <div class="table-subtitle" style="margin-top: 15px;">8/2 Relevé des pertes de valeurs sur actions et parts sociales:</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 40%;">Filiales</th>
+
+        <th style="width: 20%;">Valeur nominale</th>
+
+        <th style="width: 20%;">Perte valeur</th>
+
+        <th style="width: 20%;">Valeur nette</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="4" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+
+
+<!-- ========================================== -->
+
+<!-- PAGE 10: TABLEAU 9                         -->
+
+<!-- ========================================== -->
+
+<div class="page-container">
+
+  {{ header_block("TABLEAU 9 : DETERMINATION DU RESULTAT FISCAL", True) }}
+
+  <div class="table-subtitle">9/ Tableau de détermination du résultat fiscal:</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 75%;">Rubriques fiscales</th>
+
+        <th style="width: 25%;">Montants (DZD)</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="2" class="neant-box" style="min-height: 250px;">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <div class="footnote">(*) A détailler sur état annexe à joindre</div>
+
+</div>
+
+
+
+<!-- ========================================== -->
+
+<!-- PAGE 11: TABLEAUX 10 & 11                  -->
+
+<!-- ========================================== -->
+
+<div class="page-container">
+
+  {{ header_block("TABLEAUX ANNEXES 10 & 11", True) }}
+
+  <div class="table-subtitle">10/Tableau d'affectation du résultat et des réserves (N-1) :</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 75%;">Rubrique</th>
+
+        <th style="width: 25%;">Montants</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="2" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+
+
+  <div class="table-subtitle" style="margin-top: 15px;">11/Tableau des participations (filiales et entités associées):</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 30%;">Filiales et entités associées</th>
+
+        <th style="width: 15%;">Capitaux propres</th>
+
+        <th style="width: 15%;">Quote-part %</th>
+
+        <th style="width: 20%;">Résultat dernier ex.</th>
+
+        <th style="width: 20%;">Valeur comptable</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="5" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+
+
+<!-- ========================================== -->
+
+<!-- PAGE 12: TABLEAUX 12 & 13                  -->
+
+<!-- ========================================== -->
+
+<div class="page-container">
+
+  {{ header_block("TABLEAUX ANNEXES 12 & 13", True) }}
+
+  <div class="table-subtitle">12/ Commissions et courtages, redevances, honoraires, sous-traitance, rémunérations diverses :</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 35%;">Désignation des bénéficiaires</th>
+
+        <th style="width: 20%;">Identifiant fiscal</th>
+
+        <th style="width: 30%;">Adresse</th>
+
+        <th style="width: 15%;">Montant perçu</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="4" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+
+
+  <div class="table-subtitle" style="margin-top: 15px;">13/ Taxe sur l'activité professionnelle :</div>
+
+  <table class="dci-table">
+
+    <thead>
+
+      <tr>
+
+        <th style="width: 35%;">Lieu de paiement de la TAP</th>
+
+        <th style="width: 25%;">CA Imposable</th>
+
+        <th style="width: 20%;">CA Exonéré</th>
+
+        <th style="width: 20%;">TAP acquittée</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td colspan="4" class="neant-box">
+
+          <div class="neant-text">==N E A N T===</div>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+

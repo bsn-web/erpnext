@@ -1,0 +1,194 @@
+{
+  "actions": [],
+  "autoname": "field:dossier_code",
+  "creation": "2026-11-06 18:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "dossier_code",
+    "client_company_name",
+    "legal_form",
+    "mission_type",
+    "wilaya_code",
+    "nif",
+    "nis",
+    "rc_number",
+    "article_imposition",
+    "cnas_employer_number",
+    "casnos_number",
+    "cacobatph_number",
+    "primary_bank_code",
+    "primary_bank_name",
+    "primary_rib_20",
+    "primary_insurer",
+    "g50_current_month_status",
+    "cnas_dac_current_status",
+    "g29_annual_status",
+    "bilan_fiscal_status",
+    "cac_audit_opinion",
+    "annual_fee_ht_dzd",
+    "collaborator_in_charge",
+    "audit_notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "dossier_code",
+      "fieldtype": "Data",
+      "label": "Code Dossier Cabinet (ex: DOS-2026-001)",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "client_company_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Raison Sociale du Client / اسم المؤسسة",
+      "reqd": 1
+    },
+    {
+      "fieldname": "legal_form",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Forme Juridique",
+      "options": "SARL\nEURL\nSPA\nSPAS\nSNC\nSCS\nEPE_SPA\nEPIC\nPERSONNE_PHYSIQUE\nPROF_LIBERALE\nAUTO_ENTREPRENEUR"
+    },
+    {
+      "fieldname": "mission_type",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Type de Mission (Loi 10-01)",
+      "options": "Expertise Comptable & Tenue SCF\nRévision & Assistance Fiscale (G50 / Liasse G n°4)\nCommissariat aux Comptes (Mandat Légal CAC 3 ans)\nAudit Contractuel & Paie CNAS/G29"
+    },
+    {
+      "fieldname": "wilaya_code",
+      "fieldtype": "Data",
+      "label": "Wilaya (01 à 58)"
+    },
+    {
+      "fieldname": "nif",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "N° Identification Fiscale (NIF 15/20 chiffres)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "nis",
+      "fieldtype": "Data",
+      "label": "N° Identification Statistique (NIS)"
+    },
+    {
+      "fieldname": "rc_number",
+      "fieldtype": "Data",
+      "label": "N° Registre du Commerce (CNRC)"
+    },
+    {
+      "fieldname": "article_imposition",
+      "fieldtype": "Data",
+      "label": "N° Article d'Imposition (11 chiffres)"
+    },
+    {
+      "fieldname": "cnas_employer_number",
+      "fieldtype": "Data",
+      "label": "N° Adhérent Employeur CNAS"
+    },
+    {
+      "fieldname": "casnos_number",
+      "fieldtype": "Data",
+      "label": "N° Affiliation CASNOS (Gérant / Non-Salarié)"
+    },
+    {
+      "fieldname": "cacobatph_number",
+      "fieldtype": "Data",
+      "label": "N° Adhérent CACOBATPH (Secteur BTPH)"
+    },
+    {
+      "fieldname": "primary_bank_code",
+      "fieldtype": "Data",
+      "label": "Code Banque Principale (001 BNA, 002 BEA, 004 CPA...)"
+    },
+    {
+      "fieldname": "primary_bank_name",
+      "fieldtype": "Data",
+      "label": "Nom de la Banque Principale"
+    },
+    {
+      "fieldname": "primary_rib_20",
+      "fieldtype": "Data",
+      "label": "RIB Bancaire Principal (20 chiffres)"
+    },
+    {
+      "fieldname": "primary_insurer",
+      "fieldtype": "Data",
+      "label": "Compagnie d'Assurance (SAA, CAAR, CAAT, CIAR, Alliance, CASH...)"
+    },
+    {
+      "fieldname": "g50_current_month_status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Statut G50 (Échéance 20 du mois)",
+      "options": "En attente pièces\nEn cours de saisie SCF\nCalculé & Contrôlé\nTélé-déclaré Jibayatic & Payé"
+    },
+    {
+      "fieldname": "cnas_dac_current_status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Statut DAC CNAS (Échéance 30 du mois)",
+      "options": "En attente paie\nCalculé (35%)\nTélé-déclaré CNAS & Payé"
+    },
+    {
+      "fieldname": "g29_annual_status",
+      "fieldtype": "Select",
+      "label": "Statut G29 & DAS Annuelles",
+      "options": "Non démarré\nCadré Volet A / Volet B\nDéposé DGI & CNAS"
+    },
+    {
+      "fieldname": "bilan_fiscal_status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Statut Bilan Fiscal Série G n°4",
+      "options": "Ouvert\nRévision Balance & Tableau 9 en cours\nVerrouillé & Certifié\nTélé-déclaré DGI"
+    },
+    {
+      "fieldname": "cac_audit_opinion",
+      "fieldtype": "Select",
+      "label": "Opinion du Commissaire aux Comptes (CAC)",
+      "options": "Non applicable (Mission Expertise)\nCertification Sans Réserve\nCertification Avec Réserves\nRefus de Certifier"
+    },
+    {
+      "fieldname": "annual_fee_ht_dzd",
+      "fieldtype": "Currency",
+      "label": "Honoraires Annuels HT (DZD)"
+    },
+    {
+      "fieldname": "collaborator_in_charge",
+      "fieldtype": "Data",
+      "label": "Chef de Mission / Collaborateur Responsable"
+    },
+    {
+      "fieldname": "audit_notes",
+      "fieldtype": "Long Text",
+      "label": "Notes de Révision & Points de Vigilance Fiscaux/Sociaux"
+    }
+  ],
+  "modified": "2026-11-06 18:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Algeria Tax",
+  "name": "Cabinet Client Dossier",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

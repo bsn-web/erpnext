@@ -1,0 +1,180 @@
+{
+  "actions": [],
+  "autoname": "field:order_reference",
+  "creation": "2026-11-06 18:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "order_reference",
+    "company",
+    "company_nif",
+    "posting_date",
+    "transfer_type",
+    "status",
+    "emitter_bank_code",
+    "emitter_bank_name",
+    "emitter_swift_bic",
+    "emitter_branch",
+    "emitter_rib",
+    "emitter_rib_valid",
+    "scf_debit_account",
+    "scf_credit_account",
+    "linked_declaration",
+    "total_beneficiaries",
+    "total_amount",
+    "amount_in_words_fr",
+    "amount_in_words_ar",
+    "lines",
+    "edi_satim_content"
+  ],
+  "fields": [
+    {
+      "fieldname": "order_reference",
+      "fieldtype": "Data",
+      "label": "N° Ordre de Virement / رقم أمر التحويل",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Société Donneur d'Ordre / المؤسسة الآمرة بالدفع",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "company_nif",
+      "fieldtype": "Data",
+      "label": "NIF Donneur d'Ordre (15/20 chiffres)"
+    },
+    {
+      "fieldname": "posting_date",
+      "fieldtype": "Date",
+      "in_list_view": 1,
+      "label": "Date d'Émission / تاريخ الإصدار",
+      "reqd": 1
+    },
+    {
+      "fieldname": "transfer_type",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Nature de l'Ordre de Virement / طبيعة التحويل",
+      "options": "Virement Collectif de Salaires (Paie Mensuelle - Compte 421)\nVirement Fiscal DGI (Paiement G50 / Solde IBS - Compte 442..447)\nVirement Social & Parafiscal (CNAS 35% / CASNOS 15% / CACOBATPH - Compte 431..432)\nVirement Fournisseur / Compagnie d'Assurance (Compte 401)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Statut",
+      "options": "Brouillon\nValidé & Prêt à Signer\nRemis à la Banque / Télécompensé SATIM\nExécuté & Rapproché (Compte 512)"
+    },
+    {
+      "fieldname": "emitter_bank_code",
+      "fieldtype": "Select",
+      "label": "Code Banque Algérienne (Norme BA)",
+      "options": "001\n002\n003\n004\n005\n006\n007\n008\n010\n011\n012\n014\n015\n016\n017\n020\n021\n024\n025\n026\n027\n029"
+    },
+    {
+      "fieldname": "emitter_bank_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Banque Émettrice (BNA, BEA, CPA, BADR, BDL, SGA, AGB, CCP...)"
+    },
+    {
+      "fieldname": "emitter_swift_bic",
+      "fieldtype": "Data",
+      "label": "Code BIC / SWIFT"
+    },
+    {
+      "fieldname": "emitter_branch",
+      "fieldtype": "Data",
+      "label": "Agence Bancaire de Domiciliation"
+    },
+    {
+      "fieldname": "emitter_rib",
+      "fieldtype": "Data",
+      "label": "RIB Donneur d'Ordre (20 chiffres Norme Banque d'Algérie)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "emitter_rib_valid",
+      "fieldtype": "Check",
+      "label": "Clé RIB Donneur d'Ordre Valide (Modulo 97)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "scf_debit_account",
+      "fieldtype": "Data",
+      "label": "Compte SCF Débité (421 / 401 / 431 / 442)"
+    },
+    {
+      "fieldname": "scf_credit_account",
+      "fieldtype": "Data",
+      "label": "Compte SCF Crédité (512 Banques / 515 CCP)"
+    },
+    {
+      "fieldname": "linked_declaration",
+      "fieldtype": "Data",
+      "label": "Déclaration ou Lot de Paie Lié (G50 / CNAS / Bilan)"
+    },
+    {
+      "fieldname": "total_beneficiaries",
+      "fieldtype": "Int",
+      "label": "Nombre de Bénéficiaires",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_amount",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Montant Total à Virer (DZD) / المبلغ الإجمالي",
+      "read_only": 1
+    },
+    {
+      "fieldname": "amount_in_words_fr",
+      "fieldtype": "Small Text",
+      "label": "Montant en Toutes Lettres (Français)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "amount_in_words_ar",
+      "fieldtype": "Small Text",
+      "label": "المبلغ بالحروف (Arabe)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "lines",
+      "fieldtype": "Table",
+      "label": "Bénéficiaires du Virement / قائمة المستفيدين",
+      "options": "Algerian Bank Transfer Line"
+    },
+    {
+      "fieldname": "edi_satim_content",
+      "fieldtype": "Code",
+      "label": "Fichier Magnétique EDI Télécompensation Interbancaire (SATIM / Banque d'Algérie)"
+    }
+  ],
+  "modified": "2026-11-06 18:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Algeria Tax",
+  "name": "Algerian Bank Transfer Order",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

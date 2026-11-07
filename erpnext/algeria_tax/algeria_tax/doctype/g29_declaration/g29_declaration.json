@@ -1,0 +1,142 @@
+{
+  "actions": [],
+  "autoname": "field:declaration_reference",
+  "creation": "2026-11-05 10:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "declaration_reference",
+    "company",
+    "fiscal_year",
+    "nif_employeur",
+    "article_imposition",
+    "status",
+    "effectif_annuel",
+    "total_brut_annuel",
+    "total_cnas_salarie_annuel",
+    "total_assiette_irg_annuelle",
+    "total_irg_retenu_annuel",
+    "total_irg_declare_g50",
+    "ecart_irg_g29_vs_g50",
+    "total_net_percu_annuel",
+    "employees",
+    "audit_reconciliation_notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "declaration_reference",
+      "fieldtype": "Data",
+      "label": "Référence G29 (Série G n°29)",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Société",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "fiscal_year",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Exercice Fiscal",
+      "options": "Fiscal Year",
+      "reqd": 1
+    },
+    {
+      "fieldname": "nif_employeur",
+      "fieldtype": "Data",
+      "label": "NIF Employeur (15/20 chiffres)"
+    },
+    {
+      "fieldname": "article_imposition",
+      "fieldtype": "Data",
+      "label": "N° Article d'Imposition"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Statut",
+      "options": "Brouillon\nCalculé & Cadré G50\nDéposé DGI (Avant 30 Avril N+1)"
+    },
+    {
+      "fieldname": "effectif_annuel",
+      "fieldtype": "Int",
+      "label": "Effectif Salariés Rémunérés"
+    },
+    {
+      "fieldname": "total_brut_annuel",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Total Brut Annuel (DZD)"
+    },
+    {
+      "fieldname": "total_cnas_salarie_annuel",
+      "fieldtype": "Currency",
+      "label": "Total Retenues CNAS 9% (DZD)"
+    },
+    {
+      "fieldname": "total_assiette_irg_annuelle",
+      "fieldtype": "Currency",
+      "label": "Total Masse Salariale Imposable IRG (DZD)"
+    },
+    {
+      "fieldname": "total_irg_retenu_annuel",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Volet A — Total IRG Retenu sur Bulletins & G50 (DZD)"
+    },
+    {
+      "fieldname": "total_irg_declare_g50",
+      "fieldtype": "Currency",
+      "label": "Total IRG Salaires Déclaré sur les 12 G50 (DZD)"
+    },
+    {
+      "fieldname": "ecart_irg_g29_vs_g50",
+      "fieldtype": "Currency",
+      "in_list_view": 1,
+      "label": "Écart de Cadrage Volet A G29 vs G50 (DZD)"
+    },
+    {
+      "fieldname": "total_net_percu_annuel",
+      "fieldtype": "Currency",
+      "label": "Total Net Annuel Versé aux Salariés (DZD)"
+    },
+    {
+      "fieldname": "employees",
+      "fieldtype": "Table",
+      "label": "État Nominatif Annuel des Salariés (Série G n°29)",
+      "options": "G29 Employee Line"
+    },
+    {
+      "fieldname": "audit_reconciliation_notes",
+      "fieldtype": "Long Text",
+      "label": "Rapport de Réconciliation Double-Volet (Volet A Cadré G50 vs Volet B Audit CAC CIDTA)"
+    }
+  ],
+  "modified": "2026-11-06 18:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Algeria Tax",
+  "name": "G29 Declaration",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}
